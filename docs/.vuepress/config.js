@@ -13,7 +13,7 @@ module.exports = {
         ],
         sidebarDepth: 1,
         sidebar: [
-            '/',
+            '',
             'Tree',
              'ComboTree',
             'DataGrid',

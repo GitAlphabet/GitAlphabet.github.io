@@ -1,7 +1,7 @@
-# DataGrid
+# DataGrid  数据列表
 
 ## init
-::: tip init(data,checkbox,lindes)
+::: tip init(data,option,ckeckbox,striped)
 初始化。
 :::
 
@@ -9,34 +9,36 @@
 | 参数名 | 参数类型 | 参数描述 | 
 | :-: | :-: | :-: | 
 | data | Array| 树的数据 | 
+| option  | Object | 标题的信息 | 
 | checkbox | Boolean | 初始化是否有复选框 | 
-| lindes | Boolean | 层级关系线条展示 |
+| striped  | Boolean | 斑马线效果; |
+
+::: warning 注意
+option里面的{key:value},key必须与数据里面的key一致，value:标题的文字
+:::
 
 返回值:无
 
 
 
-## selectNode
+## getChecked
 
-::: tip selectNode(id)
-设置选中项,并滚动到此节点。
+::: tip getChecked()
+获取已勾选的数据。
 :::
-
-参数介绍:
-| 参数名 | 参数类型 | 参数描述 | 
-| :-: | :-: | :-: | 
-| id  | Number| 选中的节点的 ID值 | 
+ 
+ 参数介绍:无
 
 返回值:
 | 返回值类型 | 返回值描述 | 
 | :-: | :-: | 
-| Object| 选中的节点| 
+| Array| 勾选的数据| 
 
 
-## getSelectNode
+## getSelected
 
-::: tip getSelectNode()
-获取选中的节点。
+::: tip getSelected()
+获取选中的数据。
 :::
 
 参数介绍:无
@@ -44,86 +46,108 @@
 返回值:
 | 返回值类型 | 返回值描述 | 
 | :-: | :-: | 
-| Object| 选中的节点| 
+| Object| 选中的数据节点| 
 
 
-## expend
+## getRowIndex
 
-::: tip expend(id)
-选中并展开此节点。
+::: tip getRowIndex(row)
+获取数据索引。
 :::
 
 参数介绍:
 | 参数名 | 参数类型 | 参数描述 | 
 | :-: | :-: | :-: | 
-| id  | Number| 展开的节点的 ID值 | 
+| row  | Object| 想要获取索引的数据 | 
 
 返回值:无 
 
 
-## collapse
+## selectRow
 
-::: tip collapse(id)
-选中并折叠此节点。
+::: tip selectRow(index)
+获取索引。
 :::
 
 参数介绍:
 | 参数名 | 参数类型 | 参数描述 | 
 | :-: | :-: | :-: | 
-| id  | Number| 折叠的节点的 ID值 | 
+| index  | Number| 数据的索引 | 
 
 返回值:无
 
 
-## appendNode
+## refreshRow
 
-::: tip appendNode(data)
-添加子节点。
+::: tip refreshRow(index)
+刷新行。
 :::
 
 参数介绍: 
 | 参数名 | 参数类型 | 参数描述 | 
 | :-: | :-: | :-: | 
-| data  | Array| 子节点数据集合 | 
+| index  | Number| 数据的索引 | 
 
-返回值:无
+返回值:
+| 返回值类型 | 返回值描述 | 
+| :-: | :-: | 
+| Object|刷新后的数据| 
 
 
-## updateNode
+## updateRow
 
-::: tip updateNode(id)
-添加子节点。
+::: tip updateRow(index,row)
+更新数据。
 :::
 
 参数介绍:
 | 参数名 | 参数类型 | 参数描述 | 
 | :-: | :-: | :-: | 
-| id  | Number| 更新节点的 ID值 | 
+| index  | Number| 数据的索引 |
+| row   | Object | 更新的数据 | 
 
 返回值:无
 
 
-## removeNode
+## appendRow
 
-::: tip removeNode(id)
-移除节点。
+::: tip appendRow(row)
+末尾添加一行数据。
 :::
 
 参数介绍:
 | 参数名 | 参数类型 | 参数描述 | 
 | :-: | :-: | :-: | 
-| id  | Number| 选中的节点的 ID值 | 
+| row   | Object | 添加的数据 | 
 
 返回值:无
 
 
-## getRoot
+## appendRows
 
-::: tip getRoot()
-获取根节点。
+::: tip appendRow(rows)
+末尾添加多行数据。
 :::
 
-参数介绍:无
+参数介绍:
+| 参数名 | 参数类型 | 参数描述 | 
+| :-: | :-: | :-: | 
+| rows | Array  | 添加的数据集合 | 
+
+返回值:无
+
+
+## insertRow
+
+::: tip insertRow(index,row)
+指定位置插入数据。
+:::
+
+参数介绍:
+| 参数名 | 参数类型 | 参数描述 | 
+| :-: | :-: | :-: | 
+| index  | Number| 插入的位置，索引 |
+| row   | Object | 插入的数据 | 
 
 返回值:
 | 返回值类型 | 返回值描述 | 
@@ -132,33 +156,32 @@
 
 
 
-## singleClick
+## deleteRow
 
-::: tip selectNode(callback)
+::: tip deleteRow(index)
+删除指定索引数据。
+:::
+
+参数介绍:
+| 参数名 | 参数类型 | 参数描述 | 
+| :-: | :-: | :-: | 
+| index  | Number | 删除数据的索引 |
+
+返回值:无
+
+
+## clickRow 
+
+::: tip clickRow(callback)
 单击事件。
 :::
 
 参数介绍:
 | 参数名 | 参数类型 | 参数描述 | 
 | :-: | :-: | :-: | 
-| callback(node)  | Function| 回调函数 | 
-| node  | Object| 回调函数里面参数;当前点击节点 | 
-
-返回值:无
-
-
-## checkOrUnCheck 
-
-::: tip checkOrUnCheck (callback,callback1)
-勾选/取消勾选。
-:::
-
-参数介绍:
-| 参数名 | 参数类型 | 参数描述 | 
-| :-: | :-: | :-: | 
-| callback(node)  | Function| 回调函数 | 
-| callback1(node)  | Function| 回调函数 | 
-| node  | Object| 回调函数里面参数;当前勾选/取消勾选节点 | 
+| callback(index,row) | Function| 回调函数 | 
+| index  | Number | 该条数据的索引 |
+| row   | Object | 该条数据 |
 
 返回值:无
 

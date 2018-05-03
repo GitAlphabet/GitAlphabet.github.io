@@ -1,5 +1,5 @@
-# Tree 
-基于 Easyui 封装。
+# Tree   树
+
 
 ## init
 ::: tip init(data,checkbox,lindes)
