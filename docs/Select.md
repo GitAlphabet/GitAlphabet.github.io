@@ -1,5 +1,9 @@
 # Select  下拉选择框
-
+``` html
+容器: <select id='select'></select> / <select class='select'></select>
+      let select = new Select('#select') 或者
+      let select = new Select('.select')
+```
 ## init
 ::: tip init(data)
 初始化。

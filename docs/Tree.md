@@ -1,5 +1,9 @@
 # Tree   树
-
+``` html
+容器: <ul id='tree'> / <ul class='tree'>
+      let tree = new Tree('#tree') 或者
+      let tree = new Tree('.tree')
+```
 
 ## init
 ::: tip init(data,checkbox,lindes)

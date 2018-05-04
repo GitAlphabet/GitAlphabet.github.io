@@ -1,5 +1,9 @@
 # DataGrid  数据列表
-
+``` html
+容器: <table id='datagrid'></table> / <table class='datagrid'></table>
+      let datagrid = new Datagrid('#datagrid') 或者
+      let datagrid = new Datagrid('.datagrid')
+```
 ## init
 ::: tip init(data,option,ckeckbox,striped)
 初始化。

@@ -1,5 +1,10 @@
 # Button  按钮
-
+``` html
+容器: <button id='btn'></button> / <button class='btn'></button> 或者
+      <input type='button' id='btn'> / <input type='button' class='btn'>
+      let btn = new Button('#btn') 或者
+      let btn = new Button('.btn')
+```
 ## click
 ::: tip click(callback,active)
 点击事件。

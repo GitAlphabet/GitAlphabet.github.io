@@ -1,5 +1,9 @@
 # Dialog  对话框
-
+``` html
+容器: <div id='dialog'></div> / <div class='dialog'></div>
+      let dialog = new Dialog('#dialog') 或者
+      let dialog = new Dialog('.dialog')
+```
 ## init
 ::: tip init(option)
 初始化。
@@ -7,7 +11,7 @@
 
 参数介绍:
 | 参数名 | 参数类型 | 参数描述 | 
-| :-: | :-: | :-: | 
+| :- | :-: | :-: | 
 | option  | Object | 初始化的数据信息 | 
 | option.title | String  | 标题信息 | 
 | option.width  | Number   | 宽度 | 

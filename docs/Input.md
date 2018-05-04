@@ -1,4 +1,9 @@
 # Input  简单的输入框
+``` html
+容器: <input id='input'> / <input class='input'>
+      let input = new Input('#input') 或者
+      let input = new Input('.input')
+```
 
 ## setData
 ::: tip setData(value)

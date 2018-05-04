@@ -1,5 +1,9 @@
 # ComboTree   下拉树
-
+``` html
+容器: <input id='comboTree'> / <input class='comboTree'>
+      let comboTree = new ComboTree('#comboTree') 或者
+      let comboTree = new ComboTree('.comboTree')
+```
 ## init
 ::: tip init(data)
 初始化。
