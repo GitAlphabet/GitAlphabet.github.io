@@ -7,7 +7,7 @@
 
 ## setData
 ::: tip setData(value)
-设置数据信息。
+设置数据。
 :::
 
 参数介绍:
@@ -21,7 +21,7 @@
 ## getData
 
 ::: tip getData()
-获取输入框数据。
+获取数据。
 :::
  
 参数介绍:无
@@ -47,7 +47,7 @@
 ## setDisabledOrNotDisabled
 
 ::: tip setDisabledOrNotDisabled(disabled)
-设置是否及禁用。
+设置是否禁用。
 :::
  
 参数介绍:无

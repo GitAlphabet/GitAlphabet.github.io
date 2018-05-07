@@ -1,6 +1,7 @@
 module.exports = {
     title: 'API文档',
-    description: 'Just playing around',
+    description: '基于 jQuery,Easyui封装。',
+    serviceWorker:true,
     themeConfig: {
         nav: [{
                 text: '首页',

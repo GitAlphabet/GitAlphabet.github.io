@@ -59,6 +59,20 @@
 | string | 选中的值| 
 
 
+## setDisabledOrNotDisabled
+
+::: tip setDisabledOrNotDisabled(disabled)
+设置是否禁用。
+:::
+ 
+参数介绍:无
+
+返回值:
+| 返回值类型 | 返回值描述 | 
+| :-: | :-: | 
+| disabled | true:设置禁用;false:取消禁用;| 
+
+
 ## change
 
 ::: tip change(callback)

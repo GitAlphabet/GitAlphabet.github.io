@@ -2,7 +2,7 @@
 
 ## 介绍
 
-为了加快开发效率。 utils.js 的 API 是基于 jQuery / EasyUI / Echart 进行封装的。
+为了加快开发效率。 utils.js 的 API 是基于 jQuery / EasyUI / Echart 进行封装的。 [获取 utils.js ](https://github.com/GitAlphabet/utils.git)
 
 1、树，下拉树，数据列表，对话框是基于EasyUI进行封装的，在使用之前需要引入 jQuery.js, EasyUi.css, EasyUi.js，再引入此时封装的 utils.js。 eg:
 
