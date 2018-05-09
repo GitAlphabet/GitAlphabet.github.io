@@ -59,6 +59,31 @@
 | string | 选中的值| 
 
 
+## getSelectedHtml
+
+::: tip getSelectedHtml()
+获取选中的 text 值(描述信息)。
+:::
+
+参数介绍:无
+
+
+返回值:
+| 返回值类型 | 返回值描述 | 
+| :-: | :-: | 
+| string | 选中的值| 
+
+## clearData
+
+::: tip clearData()
+清除数据。
+:::
+
+参数介绍:无
+
+返回值:无
+
+
 ## setDisabledOrNotDisabled
 
 ::: tip setDisabledOrNotDisabled(disabled)

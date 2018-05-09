@@ -23,6 +23,19 @@ option里面的{key:value},key必须与数据里面的key一致，value:标题�
 
 返回值:无
 
+## getData
+
+::: tip getData()
+获取数据列表的所有数据
+:::
+
+参数介绍:无
+
+返回值:
+| 返回值类型 | 返回值描述 | 
+| :-: | :-: | 
+| Array| 所有的数据| 
+
 
 
 ## getChecked
