@@ -15,13 +15,14 @@ module.exports = {
         sidebar: [
             '',
             'Tree',
-             'ComboTree',
+            'ComboTree',
             'DataGrid',
+            'EditDataGrid',
             'Dialog',
-            'Select', 
-            'EchartPie', 
-            'Button', 
-            'Input'
+            'Select',
+            'EchartPie',
+            'Button',
+            'Input',
         ]
     },
 
