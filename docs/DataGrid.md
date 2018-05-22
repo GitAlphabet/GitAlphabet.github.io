@@ -18,7 +18,27 @@
 | striped  | Boolean | 斑马线效果; |
 
 ::: warning 注意
-option里面的{key:value},key必须与数据里面的key一致，value:标题的文字
+1、option是对象的集合,每个对象里面的必须要有 title(表头的每列的标题描述),field(与数据字段名一一对应)属性,这两个字段名不允许改变就是(title,field);
+``` js
+eg:[{field: "text",title: "名称"}];
+```  
+
+2、如果您需要对某一列数据进行处理,可以使用 formatter 函数;  
+
+``` js
+eg:
+{
+      field: "play",
+      title: "是否可行",
+      formatter: function (value, row, index) {
+            if (value == true) {
+                  return '√';
+            } else {
+                   return '×';
+            }
+      }
+}
+``` 
 :::
 
 返回值:无
