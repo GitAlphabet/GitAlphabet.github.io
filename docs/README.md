@@ -15,18 +15,27 @@
 <script	src='utils.js'></script>
 ```
 
-2、饼图是基于 echart 的，同理需要引入
+2、饼图是基于 echart 的，同理需要引入。
 ```  js
 <script	src='jquery.js'></script> 
 <script	src='echarts.js'></script> 
 <script	src='utils.js'></script> 
 ```
 
-3、input、select 是基于 jQuery 封装的。所以需要引入 jQuery.js、utils.js
+3、input、select 是基于 jQuery 封装的。所以需要引入 jQuery.js、utils.js。
 ```  js
 <script	src='jquery.js'></script> 
 <script	src='utils.js'></script> 
 ```
+
+4、可编辑的数据表格需要引入 jQuery.js、datagrid-cellediting.js、utils.js。
+```  js
+<script	src='jquery.js'></script> 
+<script	src='easyui.js'></script> 
+<script	src='datagrid-cellediting.js'></script>
+<script	src='utils.js'></script> 
+```
+
 
 ## 使用方法：(eg:Tree)
 ``` 

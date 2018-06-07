@@ -9,6 +9,13 @@
 初始化。
 :::
 
+使用方法:
+``` js
+pie.init(params,data);
+// params:设置图表的样式等信息。
+// data: 图表的数据。
+```
+
 参数介绍:
 | 参数名 | 参数类型 | 参数描述 | 
 | :- | :- | :- | 
@@ -25,14 +32,36 @@
 | data.value   | Number    |  数据值 | 
 | data.name    | String     |  数据项名称 | 
 | data.itemStyle| Object |配置饼图颜色(不配置,会启用认样式eg:{color:'red'})| 
-返回值:无
+
+::: warning 自定义饼图颜色
+``` js
+// data 每条数据里面可以设置
+{
+      name: '销售'，
+      value: 8,
+      itemStyle: {
+            color: 'green'
+      }
+}
+```
+:::
+
+返回值:无。
 
 
 ## pieClick
 
 ::: tip pieClick(callback)
-点击事件。
+点击事件。 callback => 回调函数。
 :::
+
+使用方法:
+``` js
+pie.pieClick(function(params){
+      // 处理点击饼图某块区域,处理逻辑代码
+      // params => 点击的区域的数据信息
+});
+```
  
 参数介绍:
 | 参数名 | 参数类型 | 参数描述 | 
@@ -40,4 +69,4 @@
 | callback(params)  | Function| 回调函数 | 
 | params   | Object | 当前点击的模块的参数 | 
 
-返回值:无
+返回值:无。
