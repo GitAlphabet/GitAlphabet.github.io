@@ -14,16 +14,21 @@ module.exports = {
         ],
         sidebarDepth: 1,
         sidebar: [
-            '',
-            'Tree',
-            'ComboTree',
-            'DataGrid',
-            'EditDataGrid',
-            'Dialog',
-            'Select',
-            'EchartPie',
-            'Button',
-            'Input',
+
+             {
+                 title: 'Group 1',
+                 collapsable: false,
+                 children: [
+                     'Tree',
+                     'ComboTree',
+                 ]
+             }, {
+                 title: 'Group 2',
+                 children: ['DataGrid',
+                     'EditDataGrid',
+                 ]
+             }
+            
         ]
     },
 
