@@ -1,48 +1,8 @@
-# 首页
-
-## 介绍
-
-为了加快开发效率。 utils.js 的 API 是基于 jQuery / EasyUI / Echart 进行封装的。 [获取 utils.js ](https://github.com/GitAlphabet/utils.git)
-
-1、树，下拉树，数据列表，对话框是基于EasyUI进行封装的，在使用之前需要引入 jQuery.js, EasyUi.css, EasyUi.js，再引入此时封装的 utils.js。 eg:
-
- ``` css
-<link rel='stylesheet'  href = 'easyui.css'> 
+### 热爱生命(汪国真)
 ``` 
-```  js
-<script	src='jquery.js'></script> 
-<script	src='easyui.js'></script> 
-<script	src='utils.js'></script>
+我不去想是否能够成功，既然选择了远方，便只顾风雨兼程。  
+我不去想能否赢得爱情，既然钟情于玫瑰，就勇敢地吐露真诚 。  
+我不去想身后会不会袭来寒风冷雨，既然目标是地平线，留给世界的只能是背影 。  
+我不去想未来是平坦还是泥泞，只要热爱生命，一切，都在意料之中。  
 ```
-
-2、饼图是基于 echart 的，同理需要引入。
-```  js
-<script	src='jquery.js'></script> 
-<script	src='echarts.js'></script> 
-<script	src='utils.js'></script> 
-```
-
-3、input、select 是基于 jQuery 封装的。所以需要引入 jQuery.js、utils.js。
-```  js
-<script	src='jquery.js'></script> 
-<script	src='utils.js'></script> 
-```
-
-4、可编辑的数据表格需要引入 jQuery.js、datagrid-cellediting.js、utils.js。
-```  js
-<script	src='jquery.js'></script> 
-<script	src='easyui.js'></script> 
-<script	src='datagrid-cellediting.js'></script>
-<script	src='utils.js'></script> 
-```
-
-
-## 使用方法：(eg:Tree)
-``` 
-a)	首先你需要一个容器 eg: <ul id='tree'> 或者 <ul class='tree'>
-b)	然后使用new命令。
-    eg: let tree = new Tree('#' + id) 或者 
-        let tree = new Tree('.' + class)。 此参数必需;
-c)	再初始化数据。调用方法都是: [实例.方法] eg: tree.close();
-    tree.init(data);  调用init()方法，data 为树的数据,如果是 json数据需要自己拼接成树的数据形式。
-```
+                                            
