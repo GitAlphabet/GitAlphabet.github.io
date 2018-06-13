@@ -30,6 +30,7 @@ module.exports = {
                     'Vue/fastclick使用',
                     'Vue/组件间通讯',
                     'Vue/axios',
+                    'Vue/路由懒加载',
                     'Vue/px2rem'
                 ]
             }, 
@@ -57,6 +58,12 @@ module.exports = {
                 title: 'Git',
                 children: [
                     'git/git指令'
+                ]
+            },
+            {
+                title: '其他',
+                children: [
+                    'others/vuepress部署'
                 ]
             }
 
