@@ -19,8 +19,9 @@ module.exports = {
                 title: 'Javascript',
                 children: [
                     'javascript/Ajax封装',
-                    'javascript/ES6数组的扩展一',
-                    'javascript/ES6数值'
+                    'javascript/ES6数组的扩展',
+                    'javascript/ES6数值',
+                    'javascript/babel入门',
                 ]
             },
             {
