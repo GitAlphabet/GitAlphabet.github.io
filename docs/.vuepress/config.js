@@ -12,16 +12,16 @@ module.exports = {
             {
                 title: 'CSS',
                 children: [
-                    'css/less'
+                    'CSS/less'
                 ]
             },
             {
                 title: 'Javascript',
                 children: [
-                    'javascript/Ajax封装',
-                    'javascript/ES6数组的扩展',
-                    'javascript/ES6数值',
-                    'javascript/babel入门',
+                    'Javascript/Ajax封装',
+                    'Javascript/ES6数组的扩展',
+                    'Javascript/ES6数值',
+                    'Javascript/babel入门',
                 ]
             },
             {
@@ -44,7 +44,7 @@ module.exports = {
             {
                 title: 'Node',
                 children: [
-                    'node/编写接口'
+                    'Node/编写接口'
                 ]
             },
              {
@@ -58,13 +58,13 @@ module.exports = {
             {
                 title: 'Git',
                 children: [
-                    'git/git指令'
+                    'Git/git指令'
                 ]
             },
             {
                 title: '其他',
                 children: [
-                    'others/vuepress部署'
+                    'Others/vuepress部署'
                 ]
             }
 

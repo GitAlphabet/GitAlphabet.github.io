@@ -4,7 +4,7 @@
 ``` 
 npm init -y
 ```
-####项目目录安装webpack。
+#### 项目目录安装webpack。
 ```
 npm install --save-dev webpack
 ```
@@ -13,7 +13,7 @@ npm install --save-dev webpack
 npm i --save-dev html-webpack-plugin
 ```
 
-####新建 webpack.config.js。
+#### 新建 webpack.config.js。
 
 ``` js
 let path = require('path');
@@ -88,5 +88,5 @@ module.exports = {
 命令行输入 webpack
 ```
 
-####打包后的目录如下
+#### 打包后的目录如下
 ![ml.jpg](https://upload-images.jianshu.io/upload_images/3811706-d6783cf7c810d86a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
