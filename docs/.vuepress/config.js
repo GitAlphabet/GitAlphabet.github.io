@@ -66,7 +66,8 @@ module.exports = {
             {
                 title: '其他',
                 children: [
-                    'Others/vuepress部署'
+                    'Others/vuepress部署',
+                    'Others/vpn'
                 ]
             }
 
