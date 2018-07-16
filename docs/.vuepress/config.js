@@ -12,7 +12,8 @@ module.exports = {
             {
                 title: 'CSS',
                 children: [
-                    'CSS/less'
+                    'CSS/less',
+                    'CSS/布局技巧'
                 ]
             },
             {
@@ -32,7 +33,8 @@ module.exports = {
                     'Vue/组件间通讯',
                     'Vue/axios',
                     'Vue/路由懒加载',
-                    'Vue/px2rem'
+                    'Vue/px2rem',
+                    'Vue/better-scroll封装',
                 ]
             }, 
             {
