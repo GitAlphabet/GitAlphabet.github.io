@@ -23,6 +23,7 @@ module.exports = {
                     'Javascript/ES6数组的扩展',
                     'Javascript/ES6数值',
                     'Javascript/babel入门',
+                    'Javascript/浅拷贝与深拷贝',
                 ]
             },
             {
