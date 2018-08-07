@@ -1,7 +1,7 @@
 # fastclick使用
 ### 1、安装
 ```
-npm install fastclick --save-dev
+npm install fastclick --save
 ```
 ### 2、引入
 ```

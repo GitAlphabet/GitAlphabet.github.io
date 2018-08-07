@@ -2,7 +2,7 @@
 #### 使用 npm 安装 axios。
 
 ```
-npm install axios --save-dev
+npm install axios --save
 ```
 
 安装其他插件的时候，可以直接在 main.js 中引入并 Vue.use()，但是 axios 并不能 use，只能每个需要发送请求的组件中即时引入。
