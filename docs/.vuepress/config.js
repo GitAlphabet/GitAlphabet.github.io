@@ -33,6 +33,7 @@ module.exports = {
                     'Vue/fastclick使用',
                     'Vue/组件间通讯',
                     'Vue/axios',
+                    'Vue/axios-element拦截器',
                     'Vue/路由懒加载',
                     'Vue/px2rem',
                     'Vue/better-scroll封装',
