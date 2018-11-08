@@ -1,4 +1,5 @@
-# Axios
+### Axios
+
 #### 使用 npm 安装 axios。
 
 ```
@@ -31,7 +32,6 @@ this.axios.get("url")
   })
 ```
 
-
 #### 配置 axios
 
 实际上只有 url 是必须的，完整的 api 可以参考[https://www.kancloud.cn/yunye/axios/234845](https://link.jianshu.com?t=https://www.kancloud.cn/yunye/axios/234845)
@@ -50,7 +50,7 @@ axios.get('/user', {
 
 ``` js
 axios.post('/user',{
-    name:"virus" 
+    name:"virus"
 })
 ```
 
@@ -78,7 +78,7 @@ axios({
     method:"POST",
     url:'/user/1111',
     data:{
-      name:"virus" 
+      name:"virus"
     }
 });
 

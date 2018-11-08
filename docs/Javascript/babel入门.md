@@ -1,13 +1,11 @@
-# Babel入门
+### Babel入门
 
-### 初始化。
+#### 初始化。
 ``` js
 npm init
 ```
 
-
-
-### 配置文件.babelrc  
+#### 配置文件.babelrc  
 根目录下创建 .babelrc 文件。文件基本格式如下
 ``` js
 {
@@ -15,7 +13,6 @@ npm init
   "plugins": []
 }
 ```
-
 
 #### presets
 presets字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。
@@ -46,12 +43,12 @@ $ npm install --save-dev babel-preset-stage-3
 }
 ```
 
-### 全局安装 babel-cli 
+#### 全局安装 babel-cli 
 ``` js
 npm install --global babel-cli
 ```
 
-### 基本用法如下。
+#### 基本用法如下。
 
 ``` js
 # 转码结果输出到标准输出
@@ -73,13 +70,14 @@ babel src -d lib
 $ babel src -d lib -s
 ```
 
-### 全局 babel-cli 缺点
+#### 全局 babel-cli 缺点
+
 上面代码是在全局环境下，进行Babel转码。这意味着，如果项目要运行，全局环境必须有Babel，也就是说项目产生了对环境的依赖。另一方面，这样做也无法支持不同项目使用不同版本的Babel。  
   
 一个解决办法是将babel-cli安装在项目之中。
 
 ``` js
-# 安装     
+# 安装
 npm install --save-dev babel-cli
 然后，改写package.json。  
 {
@@ -95,13 +93,12 @@ npm install --save-dev babel-cli
 $ npm run build
 ```
 
-
-### babel-polyfill
+#### babel-polyfill
 Babel默认只转换新的JavaScript句法（syntax），而不转换新的API，比如Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise等全局对象，以及一些定义在全局对象上的方法（比如Object.assign）都不会转码。  
 
 举例来说，ES6在Array对象上新增了Array.from方法。Babel就不会转码这个方法。如果想让这个方法运行，必须使用babel-polyfill，为当前环境提供一个垫片。  
 
-安装命令如下。   
+安装命令如下。
 ```js
 npm install --save babel-polyfill 
 

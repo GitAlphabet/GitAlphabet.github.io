@@ -1,4 +1,4 @@
-# vuex介绍
+### vuex介绍
 ```
 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。
 它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
@@ -16,7 +16,7 @@ src 文件夹下创建 store 文件夹及子目录如下：
         getters.js             //从 store 中的 state 中派生出一些状态
         index.js               // 以上全部倒入 index.js 文件里面y引入到 Vuex.Store()
 ```
-#### state.js    
+#### state.js
 ```
 Vuex 使用单一状态树，用一个对象就包含了全部的应用层级状态。
 至此它便作为一个“唯一数据源 (SSOT:Single_source_of_truth)”而存在。这也意味着，每个应用将仅仅包含一个 store 实例。
@@ -86,11 +86,11 @@ export const setDatas = ({commit,state},{count,num}) => {
 }
 ```
 
+#### index.js
 
-#### index.js  
 ```
 引入 vue、vuex、state.js、getters.js、mutations.js、actions.js。
-使用 Vue.use(Vuex); 
+使用 Vue.use(Vuex);
 new Vuex.Store();
 ```
 ``` js
@@ -103,7 +103,7 @@ import mutations from './mutations'
 import createLogger from 'vuex/dist/logger'    //自带的日志
 
 Vue.use(Vuex);
-//const debug = process.env.NODE_ENV != 'production'    
+//const debug = process.env.NODE_ENV != 'production'
 export default new Vuex.Store({
   actions,
   getters,
@@ -113,7 +113,6 @@ export default new Vuex.Store({
  // plugins: debug ? [createLogger()]:[]
 })
 ```
-
 
 #### main.js
 引入并注册到 Vue 实例里面
@@ -131,6 +130,7 @@ new Vue({
 ```
 
 #### 使用
+
 ``` js
 //当一个组件需要获取多个状态时候，将这些状态都声明为计算属性会有些重复和冗余。为了解决这个问题  mapState, mapGetters,  mapMutations, mapActions这些辅助函数
   import {

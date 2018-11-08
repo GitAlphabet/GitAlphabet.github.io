@@ -1,4 +1,4 @@
-# 打包多个页面以及js文件
+### 打包多个页面以及js文件
 
 #### 初始化项目文件，创建 package.json 文件。
 ``` 
@@ -32,7 +32,6 @@ module.exports = {
         //publicPath:'http://cdn.com/'           // 上线的路径
     },
     plugins: [
-       
       new htmlWebpackPlugin({
             //filename:'index-[hash].html',          // 指定打包后的名称
             filename:'a.html',                       // 指定打包后的名称
@@ -51,24 +50,24 @@ module.exports = {
         }),
         new htmlWebpackPlugin({
             //filename:'index-[hash].html',  
-            filename: 'b.html',   
-            template: 'index.html',         
-            inject: 'body',               
-            title: 'b',    
+            filename: 'b.html',
+            template: 'index.html',
+            inject: 'body',
+            title: 'b',
             chunks: ["b"],
            /*  minify: {
-                removeComments: true,                       
+                removeComments: true,
                 //collapseInlineTagWhitespace:true,
-                collapseWhitespace: true,                  
-                removeScriptTypeAttributes: true,       
-                removeStyleLinkTypeAttributes: true,    
+                collapseWhitespace: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
             } */
         }),
         new htmlWebpackPlugin({
-            //filename:'index-[hash].html',   
+            //filename:'index-[hash].html',
             filename: 'c.html',  
             template: 'index.html',
-            inject: 'body', 
+            inject: 'body',
             title: 'c',
             chunks: ["c"],
            /*  minify: {

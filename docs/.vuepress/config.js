@@ -7,7 +7,7 @@ module.exports = {
             text: '首页',
             link: '/'
         }],
-        sidebarDepth: 1,
+        sidebarDepth: 2,
         sidebar: [
             {
                 title: 'CSS',
@@ -24,6 +24,7 @@ module.exports = {
                     'Javascript/ES6数值',
                     'Javascript/babel入门',
                     'Javascript/浅拷贝与深拷贝',
+                    'Javascript/Base64',
                 ]
             },
             {
@@ -42,13 +43,13 @@ module.exports = {
             {
                 title: 'React',
                 children: [
-                    'React/react'
+                    'React/react',
                 ]
             },
             {
                 title: 'Node',
                 children: [
-                    'Node/编写接口'
+                    'Node/编写接口',
                 ]
             },
              {
@@ -56,13 +57,13 @@ module.exports = {
                  children: [
                      'Webpack/处理css',
                      'Webpack/babel-loader转换ES6',
-                     'Webpack/打包多个页面以及js文件'
+                     'Webpack/打包多个页面以及js文件',
                  ]
              },
             {
                 title: 'Git',
                 children: [
-                    'Git/git指令'
+                    'Git/git指令',
                 ]
             },
             {

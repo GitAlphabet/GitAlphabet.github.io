@@ -1,11 +1,14 @@
-# vuepress部署
-### 1、如果部署到服务器上需要进行下列操作。否则不需要。 
+### vuepress部署
+
+#### 1、如果部署到服务器上需要进行下列操作。否则不需要。
+
 ``` js
-.vuepress下面的 config.js 里面配置   
+.vuepress下面的 config.js 里面配置
     base:'/dist/'
 ```
 
-### 2、部署
+#### 2、部署
+
 ``` js
 a) 切换到 .vuepress文件夹下的 dist 目录
 b) 执行下列代码(以放在 github 上的 username.github.io 仓库上为例)
@@ -14,4 +17,3 @@ b) 执行下列代码(以放在 github 上的 username.github.io 仓库上为例
     git commit -m'deploy'
     git push -f git@github.com:GitAlphabet/GitAlphabet.github.io.git master
 ```
-

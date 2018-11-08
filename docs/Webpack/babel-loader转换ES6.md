@@ -1,4 +1,4 @@
-# 使用babel-loader转换ES6
+### 使用babel-loader转换ES6
 
 #### 初始化。
 ``` js

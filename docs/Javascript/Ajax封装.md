@@ -1,6 +1,6 @@
-# 原生 ajax
+### 原生 ajax
 
-### json转化为字符串
+#### json转化为字符串
 ``` js
 function json2str(data) {
     //随机因子,解决IE浏览器只要URL相同就会返回上次的结果 的问题
@@ -16,7 +16,7 @@ function json2str(data) {
 }
 ```
 
-### ajax封装
+#### ajax封装
 ```js
  function ajax(options) {
 

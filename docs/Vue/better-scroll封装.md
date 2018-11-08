@@ -1,10 +1,13 @@
-# better-scroll封装
+### better-scroll封装
 
-### 安装 better-scroll
+#### 安装 better-scroll
+
 ```
 npm install better-scroll --save
 ```
-### scroll.vue 文件
+
+#### scroll.vue 文件
+
 ``` js
 <template>
   <div ref="wrapper">
@@ -171,7 +174,7 @@ export default {
 </style>
 ```
 
-### scroll.vue 组件使用
+#### scroll.vue 组件使用
 
 ``` js
 <template>

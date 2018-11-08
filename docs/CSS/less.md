@@ -1,29 +1,28 @@
-# Less
-### 安装 less
+### Less
+#### 安装 less
 ```
 npm install  less -g
 ```
 
-### 安装 less-plugin-clean-css
+#### 安装 less-plugin-clean-css
 ```
 npm install -g less-plugin-clean-css
 ```
 
 
-### 压缩
+#### 压缩
 ```
 lessc -x
 lessc --compress
 ```
 
-### 编译 less
+#### 编译 less
 ```
 lessc a.less a.css                          //不压缩代码
 lessc -x a.less a.css                      //压缩代码
 ```
 
-
-### 混入[](http://lesscss.cn/features/#features-overview-feature-mixins)
+#### 混入[](http://lesscss.cn/features/#features-overview-feature-mixins)
 
 混合是一种将一组属性从一个规则集合（另一个规则集合）（“混入”）的方式。所以说我们有以下班级：
 
@@ -48,7 +47,7 @@ lessc -x a.less a.css                      //压缩代码
   .bordered;
 }
 ```
-### 嵌套规则[](http://lesscss.cn/features/#features-overview-feature-nested-rules)
+#### 嵌套规则[](http://lesscss.cn/features/#features-overview-feature-nested-rules)
 
 Less使您能够使用嵌套代替或与级联结合使用。假设我们有以下CSS：
 
@@ -100,13 +99,13 @@ Less使您能够使用嵌套代替或与级联结合使用。假设我们有以�
 }
 ```
 
-### 拼接字符
+#### 拼接字符
 ```
 .bg-img(@url){
   background-image: url("../../components/@{url}@2x.png");
 }
 ```
-### 概观[](http://lesscss.cn/features/#variables-feature-overview)
+#### 概观[](http://lesscss.cn/features/#variables-feature-overview)
 
 在您的样式表中看到相同的值重复数十次（*如果不是几百次）*并不罕见：
 
@@ -142,7 +141,7 @@ a:hover {
   background: @link-color;
 }
 ```
-### 网址[](http://lesscss.cn/features/#variables-feature-urls)
+#### 网址[](http://lesscss.cn/features/#variables-feature-urls)
 
 ``` css
 // Variables
