@@ -23,7 +23,8 @@ module.exports = {
           'Javascript/ES6数值',
           'Javascript/babel入门',
           'Javascript/浅拷贝与深拷贝',
-          'Javascript/Base64'
+          'Javascript/Base64',
+          'Javascript/RegularExpression1'
         ]
       },
       {
@@ -55,19 +56,13 @@ module.exports = {
           'Webpack/打包多个页面以及js文件'
         ]
       },
-
-      {
-        title: '小程序',
-        children: ['miniProgram/whistle']
-      },
-
       {
         title: 'Git',
         children: ['Git/git指令']
       },
       {
         title: '其他',
-        children: ['Others/vuepress部署', 'Others/vpn', 'Others/Mac配置ssh']
+        children: ['Others/whistle', 'Others/vuepress部署', 'Others/vpn', 'Others/Mac配置ssh']
       }
     ]
   }
