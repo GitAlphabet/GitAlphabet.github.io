@@ -1,6 +1,9 @@
 module.exports = {
   title: '向往飞翔的小蚂蚁',
   description: '个人博客',
+  head: [
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }]
+  ],
   //base:'/dist/',
   themeConfig: {
     nav: [
@@ -8,7 +11,7 @@ module.exports = {
         text: '首页',
         link: '/'
       }
-    ],
+    ],   
     sidebarDepth: 2,
     sidebar: [
       {
@@ -24,7 +27,7 @@ module.exports = {
           'Javascript/babel入门',
           'Javascript/浅拷贝与深拷贝',
           'Javascript/Base64',
-          'Javascript/RegularExpression1'
+          'Javascript/RegularExpression'
         ]
       },
       {
@@ -37,7 +40,8 @@ module.exports = {
           'Vue/axios-element拦截器',
           'Vue/路由懒加载',
           'Vue/px2rem',
-          'Vue/better-scroll封装'
+          'Vue/better-scroll封装',
+          'Vue/eslint修复'
         ]
       },
       {

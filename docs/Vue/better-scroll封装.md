@@ -189,13 +189,17 @@ export default {
   </scroll>
 </template>
 <script>
-  import BScroll from 'better-scroll'
+  // 引入封装的组建
+  import scroll from './scroll'
   export default {
     data() {
       return {
         data: [],
         pulldown: true
       }
+    },
+    components:{
+      scroll
     },
     created() {
       this.loadData()
