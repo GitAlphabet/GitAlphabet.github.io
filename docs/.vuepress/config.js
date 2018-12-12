@@ -1,9 +1,12 @@
 module.exports = {
   title: '向往飞翔的小蚂蚁',
   description: '个人博客',
-  head: [
-    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }]
-  ],
+  // head: [
+  //    ['link', {
+  //      rel: 'icon',
+  //      href: './favicon.ico'
+  //    }]
+  // ],
   //base:'/dist/',
   themeConfig: {
     nav: [
