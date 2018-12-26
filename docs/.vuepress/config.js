@@ -37,6 +37,7 @@ module.exports = {
         title: 'Vue',
         children: [
           'Vue/vuex',
+          'Vue/vuex-persistedstate',
           'Vue/fastclick使用',
           'Vue/组件间通讯',
           'Vue/axios',
