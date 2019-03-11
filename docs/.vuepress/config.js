@@ -2,10 +2,13 @@ module.exports = {
   title: '向往飞翔的小蚂蚁',
   description: '个人博客',
   head: [
-     ['link', {
-       rel: 'icon',
-       href: './favicon.ico'
-     }]
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: './favicon.ico'
+      }
+    ]
   ],
   //base:'/dist/',
   themeConfig: {
@@ -14,7 +17,7 @@ module.exports = {
         text: '首页',
         link: '/'
       }
-    ],   
+    ],
     sidebarDepth: 2,
     sidebar: [
       {
@@ -36,21 +39,22 @@ module.exports = {
       {
         title: 'Vue',
         children: [
-          'Vue/vuex',
           'Vue/vuex-persistedstate',
           'Vue/fastclick使用',
           'Vue/组件间通讯',
+          'Vue/px2rem',
+          'Vue/better-scroll封装',
+          'Vue/eslint修复',
+          'Vue/vue组件内局部修改UI库的样式',
           'Vue/axios',
           'Vue/axios-element拦截器',
           'Vue/路由懒加载',
-          'Vue/px2rem',
-          'Vue/better-scroll封装',
-          'Vue/eslint修复'
+          'Vue/vuex',
         ]
       },
       {
         title: 'React',
-        children: ['React/react']
+        children: ['React/react-create-app']
       },
       {
         title: 'Node',
@@ -70,7 +74,12 @@ module.exports = {
       },
       {
         title: '其他',
-        children: ['Others/whistle', 'Others/vuepress部署', 'Others/vpn', 'Others/Mac配置ssh']
+        children: [
+          'Others/whistle',
+          'Others/vuepress部署',
+          'Others/vpn',
+          'Others/Mac配置ssh'
+        ]
       }
     ]
   }
