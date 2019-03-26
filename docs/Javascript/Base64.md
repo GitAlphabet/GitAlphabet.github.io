@@ -14,7 +14,7 @@ Base64.decode('Y3g=') // 返回：'cx'
 
 ``` js
 // 编码
-window.atob('Y3g=') // 返回：'Y3g='
+window.atob('Y3g=') // 返回：'cx'
 // 解码
 window.btoa('cx') // 返回：'Y3g='
 ```

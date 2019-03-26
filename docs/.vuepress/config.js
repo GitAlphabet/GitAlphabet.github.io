@@ -46,6 +46,8 @@ module.exports = {
           'Vue/better-scroll封装',
           'Vue/eslint修复',
           'Vue/vue组件内局部修改UI库的样式',
+          'Vue/Vue.nextTick和Vue.set',
+          'Vue/iviewUI注意点',
           'Vue/axios',
           'Vue/axios-element拦截器',
           'Vue/路由懒加载',
@@ -59,6 +61,10 @@ module.exports = {
       {
         title: 'Node',
         children: ['Node/编写接口']
+      },
+      {
+        title: 'Nginx',
+        children: ['Nginx/nginx安装']
       },
       {
         title: 'Webpack',

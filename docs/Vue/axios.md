@@ -24,12 +24,11 @@ Vue.prototype.axios= axios
 
 在其他组件中使用方式
 ``` js
-this.axios.get("url")
-    .then(function(res){
-        console.log(res)
-    }).catch(function(err){
-        console.log(err)
-  })
+this.axios.get("url").then(function(res){
+    console.log(res)
+}).catch(function(err){
+    console.log(err)
+})
 ```
 
 #### 配置 axios
@@ -40,9 +39,9 @@ this.axios.get("url")
 
 ``` js
 axios.get('/user', {
-        params:{
-            name:"virus"  
-        }
+    params:{
+        name:"virus"  
+    }
 })
 ```
 
@@ -64,9 +63,9 @@ function getUserPermissions(){
   return axios.get('/user/12345/permissions');
 }
 axios.all([getUserAccount(),getUserPermissions()])
-  .then(axios.spread(function(acct,perms){
+    .then(axios.spread(function(acct,perms){
     //当这两个请求都完成的时候会触发这个函数，两个参数分别代表返回的结果
-  }))
+}))
 
 ```
 
@@ -88,11 +87,11 @@ axios({
 
 ```js
 .then(function(res){
-        console.log(res)
-    })
+    console.log(res)
+})
 .catch(function(err){
-        console.log(err)
-    })
+    console.log(err)
+})
 ```
 
 当请求成功时，会执行 .then，否则执行 .catch。
@@ -100,8 +99,8 @@ axios({
 
 ``` js
 .then(function(res){
-        console.log(this.data)
-    }.bind(this))
+    console.log(this.data)
+}.bind(this))
 ```
 
 #### 请求方式的别名，这里对所有已经支持的请求方式都提供了方便的别名
@@ -128,10 +127,10 @@ dev: {
         target: 'https://api.douban.com/',//设置你调用的接口域名和端口号 别忘了加http
         changeOrigin: true,
         pathRewrite: {
-          '^/api': '/'
-                //这里理解成用‘/api’代替target里面的地址，
-                后面组件中我们掉接口时直接用api代替 比如我要调
-                用'https://api.douban.com//user/add'，直接写‘/api/user/add’即可
+        '^/api': '/'
+            //这里理解成用‘/api’代替target里面的地址，
+            //后面组件中我们掉接口时直接用api代替 比如我要调
+            //用'https://api.douban.com//user/add'，直接写‘/api/user/add’即可
         }
       }
     },

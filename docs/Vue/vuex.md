@@ -133,29 +133,29 @@ new Vue({
 
 ``` js
 //当一个组件需要获取多个状态时候，将这些状态都声明为计算属性会有些重复和冗余。为了解决这个问题  mapState, mapGetters,  mapMutations, mapActions这些辅助函数
-  import {
-      mapState,
-      mapGetters,
-      mapMutations,
-      mapActions
-  } from 'vuex'
+import {
+  mapState,
+  mapGetters,
+  mapMutations,
+  mapActions
+} from 'vuex'
 ```
 ``` js
 1、state：
 computed: {
-   count () {
-     return store.state.count
-   }
+  count () {
+    return store.state.count
+  }
 }
 computed:{
-      // 映射 this.count 为 store.state.count
-    ...mapGetters(['count','num'])  
+  // 映射 this.count 为 store.state.count
+  ...mapGetters(['count','num'])  
 }
 
 2、getters：
 computed:{
-      // 映射 `this.count` 为 `store.getters.count`
-    ...mapGetters(['count','num'])  
+  // 映射 `this.count` 为 `store.getters.count`
+  ...mapGetters(['count','num'])  
 }
 如果你想将一个 getter 属性另取一个名字，使用对象形式：
 
@@ -166,35 +166,34 @@ computed:{
 
 3、mutations:
 methods: {
-    ...mapMutations([
-      // 将 `this.SET_COUNT()` 映射为 `this.$store.commit('SET_COUNT')`
-      'SET_COUNT', 
+  ...mapMutations([
+    // 将 `this.SET_COUNT()` 映射为 `this.$store.commit('SET_COUNT')`
+    'SET_COUNT',
 
-      // `mapMutations` 也支持载荷：
-      // 将 `this.SET_COUNT(amount)` 映射为 `this.$store.commit('SET_COUNT', amount)`
-      'SET_COUNT' 
-    ]),
-    ...mapMutations({
-      add: 'SET_COUNT' // 将 `this.add()` 映射为 `this.$store.commit('SET_COUNT')`
-    })
-  }
-
+    // `mapMutations` 也支持载荷：
+    // 将 `this.SET_COUNT(amount)` 映射为 `this.$store.commit('SET_COUNT', amount)`
+    'SET_COUNT'
+  ]),
+  ...mapMutations({
+    add: 'SET_COUNT' // 将 `this.add()` 映射为 `this.$store.commit('SET_COUNT')`
+  })
+}
 
 4、actions:
 methods: {
-    ...mapActions([
-       // 将 `this.SET_COUNT()` 映射为 `this.$store.dispatch('SET_COUNT')`
-      'SET_COUNT', 
+  ...mapActions([
+      // 将 `this.SET_COUNT()` 映射为 `this.$store.dispatch('SET_COUNT')`
+    'SET_COUNT', 
 
-      // `mapActions` 也支持载荷：
-      // 将 `this.SET_COUNT(amount)` 映射为 `this.$store.dispatch('SET_COUNT', amount)`
-      'SET_COUNT' 
-    ]),
-    ...mapActions({
-      // 将 `this.add()` 映射为 `this.$store.dispatch('SET_COUNT')`
-      add: 'SET_COUNT' 
-    })
-  }
+    // `mapActions` 也支持载荷：
+    // 将 `this.SET_COUNT(amount)` 映射为 `this.$store.dispatch('SET_COUNT', amount)`
+    'SET_COUNT' 
+  ]),
+  ...mapActions({
+    // 将 `this.add()` 映射为 `this.$store.dispatch('SET_COUNT')`
+    add: 'SET_COUNT' 
+  })
+}
 ```
 
 #### 因为 state，getter 为返回为某个状态值，所以使用计算属性。mutations，actions 需要放在方法里面。

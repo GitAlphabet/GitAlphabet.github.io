@@ -32,7 +32,7 @@ module.exports = {
         //publicPath:'http://cdn.com/'           // 上线的路径
     },
     plugins: [
-      new htmlWebpackPlugin({
+        new htmlWebpackPlugin({
             //filename:'index-[hash].html',          // 指定打包后的名称
             filename:'a.html',                       // 指定打包后的名称
             template:'index.html',                   // 打包的模板页面

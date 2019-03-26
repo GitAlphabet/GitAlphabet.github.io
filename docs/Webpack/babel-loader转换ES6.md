@@ -35,8 +35,7 @@ module.exports = {
         filename: "js/[name].js"
     },
     module: {
-        rules: [
-            {
+        rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
             include: /src/,
