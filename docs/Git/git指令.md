@@ -42,4 +42,5 @@ git merge <branch>           //合并分支
 git remote -v               //查看远程版本库信息
 git pull origin <branch>    //拉取代码该分支
 git push origin <branch>    //上传代码到该分支
+git push -f origin <branch> //同步到远端仓库
 ```
