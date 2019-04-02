@@ -6,85 +6,82 @@ module.exports = {
       'link',
       {
         rel: 'icon',
-        href: './favicon.ico'
+        href: '/favicon.ico'
       }
     ]
   ],
   //base:'/dist/',
   themeConfig: {
-    nav: [
-      {
-        text: '首页',
-        link: '/'
-      }
-    ],
+    nav: [{
+      text: '首页',
+      link: '/'
+    }],
     sidebarDepth: 2,
-    sidebar: [
-      {
+    sidebar: [{
         title: 'CSS',
-        children: ['CSS/less', 'CSS/布局技巧']
+        children: ['CSS/less', 'CSS/mobileLayout']
       },
       {
         title: 'Javascript',
         children: [
-          'Javascript/Ajax封装',
-          'Javascript/ES6数组的扩展',
-          'Javascript/ES6数值',
-          'Javascript/babel入门',
-          'Javascript/浅拷贝与深拷贝',
-          'Javascript/Base64',
-          'Javascript/RegularExpression'
+          'Javascript/ajax',
+          'Javascript/array',
+          'Javascript/number',
+          'Javascript/babel',
+          'Javascript/copy',
+          'Javascript/base64',
+          'Javascript/regularExpression'
         ]
       },
       {
         title: 'Vue',
         children: [
-          'Vue/vuex-persistedstate',
-          'Vue/fastclick使用',
-          'Vue/组件间通讯',
+          'Vue/persistedstate',
+          'Vue/fastclick',
+          'Vue/componentCommunication',
           'Vue/px2rem',
-          'Vue/better-scroll封装',
-          'Vue/eslint修复',
-          'Vue/vue组件内局部修改UI库的样式',
-          'Vue/Vue.nextTick和Vue.set',
-          'Vue/iviewUI注意点',
+          'Vue/betterScroll',
+          'Vue/eslintRepair',
+          'Vue/reviseStyle',
+          'Vue/nextTickAndset',
+          'Vue/attentionPoints',
           'Vue/axios',
-          'Vue/axios-element拦截器',
-          'Vue/路由懒加载',
+          'Vue/interceptor',
+          'Vue/lazyRouter',
           'Vue/vuex',
         ]
       },
       {
         title: 'React',
-        children: ['React/react-create-app']
+        children: ['React/reactCreateApp']
       },
       {
         title: 'Node',
-        children: ['Node/编写接口']
+        children: ['Node/server']
       },
       {
         title: 'Nginx',
-        children: ['Nginx/nginx安装']
+        children: ['Nginx/install']
       },
       {
         title: 'Webpack',
         children: [
-          'Webpack/处理css',
-          'Webpack/babel-loader转换ES6',
-          'Webpack/打包多个页面以及js文件'
+          'Webpack/handleCss',
+          'Webpack/toES6',
+          'Webpack/packMultipleJs'
         ]
       },
       {
         title: 'Git',
-        children: ['Git/git指令']
+        children: ['Git/basicCommand']
       },
       {
         title: '其他',
         children: [
           'Others/whistle',
-          'Others/vuepress部署',
+          'Others/vuepressDeploy',
           'Others/vpn',
-          'Others/Mac配置ssh'
+          'Others/settingSSH'
         ]
       }
     ]
