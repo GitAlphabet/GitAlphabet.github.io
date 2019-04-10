@@ -26,6 +26,7 @@ module.exports = {
         children: [
           'Javascript/ajax',
           'Javascript/array',
+          'Javascript/async',
           'Javascript/number',
           'Javascript/babel',
           'Javascript/copy',
@@ -76,12 +77,13 @@ module.exports = {
         children: ['Git/basicCommand']
       },
       {
-        title: '其他',
+        title: 'Others',
         children: [
           'Others/whistle',
           'Others/vuepressDeploy',
           'Others/vpn',
-          'Others/settingSSH'
+          'Others/settingSSH',
+          'Others/linkServer',
         ]
       }
     ]
