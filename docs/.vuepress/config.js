@@ -79,6 +79,7 @@ module.exports = {
       {
         title: 'Others',
         children: [
+          'Others/Markdown',
           'Others/whistle',
           'Others/vuepressDeploy',
           'Others/vpn',
