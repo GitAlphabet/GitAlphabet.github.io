@@ -1,7 +1,8 @@
 ### 浅拷贝与深拷贝
 
 #### Object.assign()
-``` js
+
+```js
 Object.assign() 只能浅拷贝。
 eg: let obj1 = {a:1}
     let obj2 = Object.assign({},obj1)
@@ -18,7 +19,8 @@ eg: let obj1 = {a:1,b:{c:1}}
 ```
 
 #### 深拷贝
-``` js
+
+```js
 eg: let obj1 = {a:1,b:{c:1}}
     let obj2 = JSON.parse(JSON.stringify(obj1))
     obj2.b.c = 10;

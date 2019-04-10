@@ -1,41 +1,41 @@
-### react-create-app@2.x创建项目
+### react-create-app@2.x 创建项目
 
 #### 安装依赖
 
-| 插件名称        | 描述           |
-|:-------------|:-------------|
-|react-router|React路由|
-|axios|Ajax请求|
-|less|CSS 样式|
-|less-loader|转换Less|
-|antd|React UI 插件|
-|babel-plugin-import|antd样式按需加载|
+| 插件名称            | 描述              |
+| :------------------ | :---------------- |
+| react-router        | React 路由        |
+| axios               | Ajax 请求         |
+| less                | CSS 样式          |
+| less-loader         | 转换 Less         |
+| antd                | React UI 插件     |
+| babel-plugin-import | antd 样式按需加载 |
 
 #### 暴露配置
 
-``` js
+```js
 npm run eject // 暴露原有的webpack配置文件
 ```
 
-#### 修改webpack.config.js 文件
+#### 修改 webpack.config.js 文件
 
-1、定义less文件匹配规则
+1、定义 less 文件匹配规则
 
-``` js
+```js
 // style files regexes 样式匹配规则
-const cssRegex = /\.css$/;
-const cssModuleRegex = /\.module\.css$/;
-const sassRegex = /\.(scss|sass)$/;
-const sassModuleRegex = /\.module\.(scss|sass)$/;
+const cssRegex = /\.css$/
+const cssModuleRegex = /\.module\.css$/
+const sassRegex = /\.(scss|sass)$/
+const sassModuleRegex = /\.module\.(scss|sass)$/
 
 // 新加less匹配项
-const lessRegex = /\.less$/;
+const lessRegex = /\.less$/
 const lessModuleRegex = /\.module\.less$/
 ```
 
-2、在sass的配置下新增less配置
+2、在 sass 的配置下新增 less 配置
 
-``` js
+```js
 {
     test: lessRegex,
     exclude: lessModuleRegex,
@@ -55,9 +55,9 @@ const lessModuleRegex = /\.module\.less$/
 },
 ```
 
-3、getStyleLoaders替换之前的方法，配置可修改的主题。
+3、getStyleLoaders 替换之前的方法，配置可修改的主题。
 
-``` js
+```js
 /* 之前的方法
 if (preProcessor) {
     loaders.push({
@@ -70,33 +70,35 @@ if (preProcessor) {
 */
 // 修改后的方法，'primary-color' 指定主题颜色
 if (preProcessor) {
-    if (preProcessor === 'less-loader') { // 为less-loader添加配置项，启动javascript
-        loaders.push({
-            loader: require.resolve(preProcessor),
-            options: {
-            sourceMap: isEnvProduction && shouldUseSourceMap,
-            javascriptEnabled: true, // 解决上文报错
-            modifyVars: { // 修改主题颜色
-              'primary-color': '#000000',
-            },
-            },
-        });
-    } else {
-        loaders.push({
-            loader: require.resolve(preProcessor),
-            options: {
-            sourceMap: isEnvProduction && shouldUseSourceMap,
-            },
-        });
-    }
+  if (preProcessor === 'less-loader') {
+    // 为less-loader添加配置项，启动javascript
+    loaders.push({
+      loader: require.resolve(preProcessor),
+      options: {
+        sourceMap: isEnvProduction && shouldUseSourceMap,
+        javascriptEnabled: true, // 解决上文报错
+        modifyVars: {
+          // 修改主题颜色
+          'primary-color': '#000000'
+        }
+      }
+    })
+  } else {
+    loaders.push({
+      loader: require.resolve(preProcessor),
+      options: {
+        sourceMap: isEnvProduction && shouldUseSourceMap
+      }
+    })
+  }
 }
 ```
 
-#### 在package.json中或者.babelrc中配置按需导入的组件库规则
+#### 在 package.json 中或者.babelrc 中配置按需导入的组件库规则
 
-1、package.json配置
+1、package.json 配置
 
-``` js
+```js
 "babel": {
     "presets": [
       "react-app"
@@ -113,9 +115,9 @@ if (preProcessor) {
   }
 ```
 
-1、babelrc中配置
+1、babelrc 中配置
 
-``` js
+```js
 {
     "plugins": [
         [

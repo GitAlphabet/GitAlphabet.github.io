@@ -1,38 +1,41 @@
 ### vuex-persistedstate
 
-```
+```js
 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。页面刷新，数据就没有了，vuex-persistedstate很好的解决了此类问题。
 ```
 
 #### vuex-persistedstate 安装
 
-```
+```js
 npm install vuex-persistedstate
 ```
 
 #### 在 index.js 里面配置
 
 ```js
-import Vue from "vue";
-import Vuex from "vuex";
-import * as actions from "./actions";
-import * as getters from "./getters";
-import state from "./state";
-import mutations from "./mutations";
-import createLogger from "vuex/dist/logger"; //自带的日志
-import createPersistedState from "vuex-persistedstate";
+import Vue from 'vue'
+import Vuex from 'vuex'
+import * as actions from './actions'
+import * as getters from './getters'
+import state from './state'
+import mutations from './mutations'
+import createLogger from 'vuex/dist/logger' //自带的日志
+import createPersistedState from 'vuex-persistedstate'
 const store = new Vuex.Store({
   actions,
   getters,
   state,
   mutations,
   strict: debug,
-  plugins: debug ? [createLogger(), createPersistedState()] : [createPersistedState()]
-});
+  plugins: debug
+    ? [createLogger(), createPersistedState()]
+    : [createPersistedState()]
+})
 ```
 
 #### createPersistedState([options]) API
-``` js
+
+```js
 使用给定选项创建插件的新实例。可以提供以下选项来配置插件以满足您的特定需求：
 
 key <String>：存储持久状态的关键。（默认：vuex）
@@ -55,7 +58,8 @@ arrayMerger <Function>：用于在再水化状态下合并数组的函数。默�
 ```
 
 #### 自定义存储
-``` js
+
+```js
 import { Store } from 'vuex'
 import createPersistedState from 'vuex-persistedstate'
 import * as Cookies from 'js-cookie'
@@ -68,9 +72,9 @@ const store = new Store({
         // Please see https://github.com/js-cookie/js-cookie#json, on how to handle JSON.
         setItem: (key, value) =>
           Cookies.set(key, value, { expires: 3, secure: true }),
-        removeItem: key => Cookies.remove(key),
-      },
-    }),
-  ],
+        removeItem: key => Cookies.remove(key)
+      }
+    })
+  ]
 })
 ```

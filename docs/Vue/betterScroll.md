@@ -1,14 +1,14 @@
-### better-scroll封装
+### better-scroll 封装
 
 #### 安装 better-scroll
 
-```
+```js
 npm install better-scroll --save
 ```
 
 #### scroll.vue 文件
 
-``` js
+```js
 <template>
   <div ref="wrapper">
     <slot></slot>
@@ -170,18 +170,17 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
 ```
 
 #### scroll.vue 组件使用
 
-``` js
+```html
 <template>
   <scroll class="wrapper"
-          :data="data"
-          :pulldown="pulldown"
-          @pulldown="loadData">
+    :data="data"
+    :pulldown="pulldown"
+    @pulldown="loadData">
     <ul class="content">
       <li v-for="item in data">{{item}}</li>
     </ul>

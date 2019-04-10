@@ -79,5 +79,4 @@ async renderData(){
         console.log(err)
     })
 }
-
 ```

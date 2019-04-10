@@ -33,7 +33,7 @@ import 'lib-flexible'
 #### 5.安装 px2rem-loader
 
 在命令行中运行如下安装：
-```
+```js
 npm i px2rem-loader --save-dev
 ```
 

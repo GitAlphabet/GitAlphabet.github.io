@@ -1,9 +1,10 @@
-### ES6数值
+### ES6 数值
 
 #### Number.parseInt(), Number.parseFloat()
-ES6 将全局方法parseInt()和parseFloat()，移植到Number对象上面，行为完全保持不变。
 
-``` js
+ES6 将全局方法 parseInt()和 parseFloat()，移植到 Number 对象上面，行为完全保持不变。
+
+```js
 // ES5的写法
 parseInt('12.34') // 12
 parseFloat('123.45#') // 123.45
@@ -17,9 +18,11 @@ Number.parseInt === parseInt // true
 Number.parseFloat === parseFloat // true
 ```
 
-#### Math.trunc()     
-Math.trunc方法用于去除一个数的小数部分，返回整数部分。
-``` js
+#### Math.trunc()
+
+Math.trunc 方法用于去除一个数的小数部分，返回整数部分。
+
+```js
 Math.trunc(4.1) // 4
 Math.trunc(4.9) // 4
 Math.trunc(-4.1) // -4
@@ -42,9 +45,10 @@ Math.trunc(undefined) // NaN
 ```
 
 #### Math.sign()
-Math.sign方法用来判断一个数到底是正数、负数、还是零。对于非数值，会先将其转换为数值。
 
-``` js
+Math.sign 方法用来判断一个数到底是正数、负数、还是零。对于非数值，会先将其转换为数值。
+
+```js
 它会返回五种值。
 
 参数为正数，返回+1；
@@ -77,8 +81,10 @@ Math.sign = Math.sign || function(x) {
   return x > 0 ? 1 : -1;
 };
 ```
+
 #### Math.cbrt()
-Math.cbrt方法用于计算一个数的立方根。
+
+Math.cbrt 方法用于计算一个数的立方根。
 
 ```js
 Math.cbrt(-1) // -1

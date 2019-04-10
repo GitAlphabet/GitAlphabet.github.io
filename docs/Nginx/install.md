@@ -1,50 +1,51 @@
 ### Mac 安装 Nginx
 
 #### 安装工具
+
 [homebrew](https://brew.sh/index_zh-cn.html)
 
 #### 安装步骤
 
 1、安装 homebrew
 
-``` js
+```js
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 2、更新 homebrew
 
-``` js
+```js
 brew update
 //结果：Already up-to-date.
 ```
 
 3、安装 Nginx
 
-``` js
+```js
 brew install nginx
 ```
 
-4、查看Nginx安装目录
+4、查看 Nginx 安装目录
 
-``` js
+```js
 open /usr/local/etc/nginx/
 //成功打开nginx目录，可以看到nginx.conf的配置文件（后面会用到这个配置文件）。
 ```
 
 5、编辑 nginx.conf
 
-``` js
+```js
 cat /usr/local/etc/nginx/nginx.conf
 ```
 
 #### Nginx 命令
 
-``` js
+```js
 // 启动 nginx
 nginx
 
 //修改配置后重新加载生效
-nginx -s reload  
+nginx -s reload
 
 //重新打开日志文件
 nginx -s reopen
@@ -59,7 +60,7 @@ nginx -s stop
 quit
 
 // 查询nginx 进程
-ps -ef | grep nginx  
+ps -ef | grep nginx
 
 // 从容停止Nginx
 kill -QUIT 主进程号
@@ -73,7 +74,7 @@ pkill -9 nginx
 
 #### 配置文件实例
 
-``` js
+```js
 #user  nobody;
 worker_processes  1;
 
@@ -102,8 +103,8 @@ http {
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header REMOTE-HOST $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            if ($uri ~* "^/uc/.*?"){ 
-                proxy_pass   http://192.168.1.64:7001; 
+            if ($uri ~* "^/uc/.*?"){
+                proxy_pass   http://192.168.1.64:7001;
             }
             index  index.html index.htm;
 

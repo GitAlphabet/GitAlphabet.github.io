@@ -1,10 +1,12 @@
 ### 组件间通讯
+
 #### 父组件给子组件传参
-```  js
+
+```html
 /* 父组件*/
 <template>
-  <div >
-    <son :father="msg"></son > //在子组件绑定所需要传的参数
+  <div>
+    <son :father="msg"></son> //在子组件绑定所需要传的参数
   </div>
 </template>
 
@@ -16,16 +18,14 @@ export default {
       msg: "父组件hellow数据！"
     };
   },
-  components: {
-    son : son ,
-  }
+  components: { son }
 };
 </script>
 
 /* 子组件*/
 <template>
   <div>
-    <p>我是子组件组件---------{{father}}</p>
+    <p>{{father}}</p>
   </div>
 </template>
 
@@ -37,7 +37,8 @@ export default {
 ```
 
 #### 子组件给父组件传参
-``` html
+
+```html
 /* 子组件*/
 <template>
   <div>
@@ -46,62 +47,54 @@ export default {
 </template>
 
 <script>
-export default {
- data() {
-    return {
-      msg: "我是子组件！",
-    };
-  },
- methods: {
-    sonClick() {
-      this.$emit("aaa", this.msg);           // 触发 aaa 事件，附加参数都会传给监听器回调。
-    }
-  },
+  export default {
+   data() {
+      return {
+        msg: "我是子组件！",
+      };
+    },
+   methods: {
+      sonClick() {
+        this.$emit("aaa", this.msg); // 触发 aaa 事件，附加参数都会传给监听器回调。
+      }
+    },
 </script>
 ```
-``` html
+
+```html
 /* 父`件*/
 <template>
-  <div >
-    <son  @aaa = "change"></son >     //监听子组件 $emit 里面的事件参数  aaa
+  <div>
+    <son @aaa="change"></son> //监听子组件 $emit 里面的事件参数 aaa
   </div>
 </template>
 
 <script>
-import son from "../components/son ";
-export default {
-  data() {
-    return {
-      sonData:""
-    };
-  },
-methods: {
-    change(data) {                 // change 是  @aaa = "change" 的 change
-      this.sonData= data;
-    }
-  },
-  components: {
-    son : son ,
+  import son from '../components/son '
+  export default {
+    data() {
+      return {
+        sonData: ''
+      }
+    },
+    methods: {
+      change(data) {
+        // change 是  @aaa = "change" 的 change
+        this.sonData = data
+      }
+    },
+    components: { son }
   }
-};
 </script>
 
-子组件：
-this.$emit("eventName"，[args])  
-eventName:事件名
-[args]：参数
-
-父组件：
-在父组件里面的子组件身上绑定   @eventName = "c"
-methods: {
-    getSonData(data) {
-      this.sonData= data;
-    }
-  }
+子组件： this.$emit("eventName"，[args]) eventName:事件名 [args]：参数 父组件：
+在父组件里面的子组件身上绑定 @eventName = "c" methods: { getSonData(data) {
+this.sonData= data; } }
 ```
 
 #### 非父子组件传参数(也可以使用 vuex)
-``` html
+
+```html
 新建 bus.js 文件，实例全局的 vue 实例 ，文件内容如下：
 import Vue from 'vue';
 export default new Vue();

@@ -1,8 +1,8 @@
-### window翻墙访问外网
+### window 翻墙访问外网
 
 #### 1、准备工作
 
-``` js
+```js
 上网软件
 https://github.com/shadowsocks/shadowsocks-windows/releases
 补丁下载
@@ -32,5 +32,5 @@ http://free-ss.cf/
 
 ##### 5.使用[免费账号]:http://free-ss.cf/
 
-启用系统代理,代理模式为全局代理即可访问 youtube及其他网站
+启用系统代理,代理模式为全局代理即可访问 youtube 及其他网站
 ![ml.jpg](../images/createVpn/5.jpg)

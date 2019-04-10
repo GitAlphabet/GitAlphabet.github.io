@@ -1,6 +1,6 @@
-### vue-router路由懒加载
+### vue-router 路由懒加载
 
-``` js
+```js
 // router 文件夹下的 index.js。
 import Vue from 'vue'
 import Router from 'vue-router'
@@ -53,5 +53,4 @@ export default new Router({
     }
   ]
 })
-
 ```

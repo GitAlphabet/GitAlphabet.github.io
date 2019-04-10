@@ -2,7 +2,7 @@
 
 #### 1、安装/启动
 
-``` js
+```js
 // 安装
 $ sudo npm install -g whistle
 
@@ -22,15 +22,15 @@ $ w2 stop
 $ w2 run
 ```
 
-#### 2、访问Whistle
+#### 2、访问 Whistle
 
-```
+```js
 地址：127.0.0.1:8899
 ```
 
 #### 3、配置代理
 
-```
+```js
 手机(需要和电脑在同一网段)配置代理即可抓包。
 Chrome浏览器可以安装Proxy SwitchyOmega做代理。
 ```

@@ -1,7 +1,8 @@
-### vue组件内局部修改UI库的样式
+### vue 组件内局部修改 UI 库的样式
 
 #### CSS
-``` css
+
+```css
 /deep/ .ivu-dropdown-rel {
     position: absolute!important;
     right: 30px !important;
@@ -11,9 +12,10 @@
 ```
 
 #### 父组件修改子组件的样式(深选择器)
-如果想对设置了scoped的子组件里的元素进行控制可以使用  ’>>>’  或者  ’deep’
 
-``` js
+如果想对设置了 scoped 的子组件里的元素进行控制可以使用 ’>>>’ 或者 ’deep’
+
+```js
 // 父组件
 <template>
   <div id="app">
