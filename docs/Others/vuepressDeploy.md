@@ -17,3 +17,20 @@ b) 执行下列代码(以放在 github 上的 username.github.io 仓库上为例
     git commit -m'deploy'
     git push -f git@github.com:GitAlphabet/GitAlphabet.github.io.git master
 ```
+
+#### 3、脚本部署
+
+创建 deploy.sh 脚本并添加以下命令
+
+```bash
+git init
+git add -A
+git commit -m'deploy'
+git push -f git@github.com:GitAlphabet/GitAlphabet.github.io.git master
+```
+
+执行脚本
+
+```bash
+sh deploy.sh
+```

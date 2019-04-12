@@ -23,9 +23,7 @@ window.btoa('cx') # 返回：'Y3g='
 img/url: 'data:image/gif;base64,' + Base64 图片地址
 
 ```html
-<img
-  src="data:image/gif;base64,R0lGODlhAwADAIABAL6+vv///yH5BAEAAAEALAAAAAADAAMAAAIDjA9WADs="
-/>
+<img src="data:image/gif;base64,R0lGODlhAwADAIABAL6+vv///yH5BAEAAAEALAAAAAADAAMAAAIDjA9WADs="/>
 ```
 
 ```css

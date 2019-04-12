@@ -3,7 +3,7 @@
 #### 父组件给子组件传参
 
 ```html
-/* 父组件*/
+/*父组件*/
 <template>
   <div>
     <son :father="msg"></son> //在子组件绑定所需要传的参数
@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-/* 子组件*/
+/*子组件*/
 <template>
   <div>
     <p>{{father}}</p>
@@ -39,7 +39,7 @@ export default {
 #### 子组件给父组件传参
 
 ```html
-/* 子组件*/
+/*子组件*/
 <template>
   <div>
     <p @click="sonClick">我是子组件组件</p>
@@ -62,7 +62,7 @@ export default {
 ```
 
 ```html
-/* 父`件*/
+/*父件*/
 <template>
   <div>
     <son @aaa="change"></son> //监听子组件 $emit 里面的事件参数 aaa

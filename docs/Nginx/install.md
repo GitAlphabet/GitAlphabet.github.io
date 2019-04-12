@@ -41,34 +41,34 @@ cat /usr/local/etc/nginx/nginx.conf
 #### Nginx 命令
 
 ```bash
-// 启动 nginx
+# 启动 nginx
 nginx
 
-//修改配置后重新加载生效
+# 修改配置后重新加载生效
 nginx -s reload
 
-//重新打开日志文件
+# 重新打开日志文件
 nginx -s reopen
 
-// 测试nginx配置文件是否正确
+# 测试nginx配置文件是否正确
 nginx -t -c /path/to/nginx.conf
 
-// 快速停止nginx
+# 快速停止nginx
 nginx -s stop
 
-// 完整有序的停止nginx
+# 完整有序的停止nginx
 quit
 
-// 查询nginx 进程
+# 查询nginx 进程
 ps -ef | grep nginx
 
-// 从容停止Nginx
+# 从容停止Nginx
 kill -QUIT 主进程号
 
-//快速停止Nginx
+# 快速停止Nginx
 kill -TERM 主进程号
 
-// 强制停止Nginx
+# 强制停止Nginx
 pkill -9 nginx
 ```
 
