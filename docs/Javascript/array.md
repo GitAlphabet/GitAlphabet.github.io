@@ -14,11 +14,9 @@ console.log(1, ...[2, 3, 4], 5) // 1 2 3 4 5
 function push(array, ...items) {
   array.push(...items)
 }
-
 function add(x, y) {
   return x + y
 }
-
 const numbers = [4, 38]
 add(...numbers) // 42
 ```
@@ -32,13 +30,11 @@ function f(v, w, x, y, z) { }
 const args = [0, 1];
 f(-1, ...args, 2, ...[3]);
 扩展运算符后面还可以放置表达式。
-
 const arr = [
   ...(x > 0 ? ['a'] : []),
   'b',
 ];
 如果扩展运算符后面是一个空数组，则不产生任何效果。
-
 [...[], 1]// [1]
 ```
 
@@ -86,14 +82,11 @@ arr1.concat(arr2, arr3);// [ 'a', 'b', 'c', 'd', 'e' ]
 Array.from 方法用于将两类对象转为真正的数组：类似数组的对象（array-like object）和可遍历（iterable）的对象（包括 ES6 新增的数据结构 Set 和 Map）。
 
 ```js
-
 下面是一个类似数组的对象，Array.from将它转为真正的数组。
-
 let arrayLike = {'0': 'a','1': 'b','2': 'c',length: 3};
 
 // ES5的写法
 var arr1 = [].slice.call(arrayLike); // ['a', 'b', 'c']
-
 // ES6的写法
 let arr2 = Array.from(arrayLike); // ['a', 'b', 'c']
 ```
@@ -150,10 +143,8 @@ fill 方法使用给定值，填充一个数组。
 ```js
 ['a', 'b', 'c'].fill(7)// [7, 7, 7]
 new Array(3).fill(7)// [7, 7, 7]
-
 上面代码表明，fill方法用于空数组的初始化非常方便。数组中已有的元素，会被全部抹去。
 fill方法还可以接受第二个和第三个参数，用于指定填充的起始位置和结束位置。
-
 ['a', 'b', 'c'].fill(7, 1, 2)// ['a', 7, 'c']
 上面代码表示，fill方法从 1 号位开始，向原数组填充 7，到 2 号位之前结束。
 ```

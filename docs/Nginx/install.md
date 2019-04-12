@@ -8,39 +8,39 @@
 
 1、安装 homebrew
 
-```js
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 2、更新 homebrew
 
-```js
+```bash
 brew update
-//结果：Already up-to-date.
+#结果：Already up-to-date.
 ```
 
 3、安装 Nginx
 
-```js
+```bash
 brew install nginx
 ```
 
 4、查看 Nginx 安装目录
 
-```js
+```bash
 open /usr/local/etc/nginx/
-//成功打开nginx目录，可以看到nginx.conf的配置文件（后面会用到这个配置文件）。
+# 成功打开nginx目录，可以看到nginx.conf的配置文件（后面会用到这个配置文件）。
 ```
 
 5、编辑 nginx.conf
 
-```js
+```bash
 cat /usr/local/etc/nginx/nginx.conf
 ```
 
 #### Nginx 命令
 
-```js
+```bash
 // 启动 nginx
 nginx
 
@@ -74,7 +74,7 @@ pkill -9 nginx
 
 #### 配置文件实例
 
-```js
+```bash
 #user  nobody;
 worker_processes  1;
 

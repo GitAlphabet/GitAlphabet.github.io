@@ -15,7 +15,7 @@
 
 如果想对设置了 scoped 的子组件里的元素进行控制可以使用 ’>>>’ 或者 ’deep’
 
-```js
+```html
 // 父组件
 <template>
   <div id="app">

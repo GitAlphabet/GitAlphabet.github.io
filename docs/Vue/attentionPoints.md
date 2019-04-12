@@ -10,9 +10,12 @@ Form 的 resetField 方法会重置所有设置了的 prop 属性的 FormItem。
 
 #### 3、额外传参数
 
-```js
+```html
 <Input v-model="value" type="textarea" @on-change="change(1, $event)"></Input>
-// 默认参数凡在后面使用 $event 替代，自定义参数放在前面即可，方法接受参数一致。
+默认参数凡在后面使用 $event 替代，自定义参数放在前面即可，方法接受参数一致。
+```
+
+```js
 change(id, event){
   console.log(id, event);
 }

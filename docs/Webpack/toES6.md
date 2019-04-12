@@ -2,25 +2,25 @@
 
 #### 初始化。
 
-```js
+```bash
 npm init -y
 ```
 
 #### 项目目录安装 webpack。
 
-```js
+```bash
 npm install --save-dev webpack
 ```
 
 #### 安装 html-webpack-plugin。
 
-```js
+```bash
 npm i --save-dev html-webpack-plugin
 ```
 
 #### 安装 babel-loader、babel-core、babel-preset-env。
 
-```js
+```bash
 npm install --save-dev babel-loader babel-core
 npm install babel-preset-env --save-dev
 ```

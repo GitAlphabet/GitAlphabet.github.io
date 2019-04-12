@@ -2,13 +2,13 @@
 
 #### 安装 better-scroll
 
-```js
+```bash
 npm install better-scroll --save
 ```
 
 #### scroll.vue 文件
 
-```js
+```html
 <template>
   <div ref="wrapper">
     <slot></slot>

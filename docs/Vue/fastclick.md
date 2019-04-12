@@ -2,7 +2,7 @@
 
 #### 1、安装
 
-```js
+```bash
 npm install fastclick --save
 ```
 

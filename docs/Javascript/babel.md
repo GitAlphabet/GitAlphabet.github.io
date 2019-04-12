@@ -2,7 +2,7 @@
 
 #### 初始化。
 
-```js
+```bash
 npm init
 ```
 
@@ -10,7 +10,7 @@ npm init
 
 根目录下创建 .babelrc 文件。文件基本格式如下
 
-```js
+```json
 {
   "presets": [],
   "plugins": []
@@ -21,42 +21,38 @@ npm init
 
 presets 字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。
 
-```js
+```bash
 # ES2015转码规则
-$ npm install --save-dev babel-preset-es2015
+npm install --save-dev babel-preset-es2015
 
 # react转码规则
-$ npm install --save-dev babel-preset-react
+npm install --save-dev babel-preset-react
 
 # ES7不同阶段语法提案的转码规则（共有4个阶段），选装一个
-$ npm install --save-dev babel-preset-stage-0
-$ npm install --save-dev babel-preset-stage-1
-$ npm install --save-dev babel-preset-stage-2
-$ npm install --save-dev babel-preset-stage-3
+npm install --save-dev babel-preset-stage-0
+npm install --save-dev babel-preset-stage-1
+npm install --save-dev babel-preset-stage-2
+npm install --save-dev babel-preset-stage-3
 ```
 
 #### 将规则导入 .babelrc
 
-```js
+```json
 {
-  "presets": [
-    "es2015",
-    "react",
-    "stage-2"
-  ],
+  "presets": ["es2015", "react", "stage-2"],
   "plugins": []
 }
 ```
 
 #### 全局安装 babel-cli
 
-```js
+```bash
 npm install --global babel-cli
 ```
 
 #### 基本用法如下。
 
-```js
+```bash
 # 转码结果输出到标准输出
 babel example.js
 
@@ -82,7 +78,7 @@ $ babel src -d lib -s
 
 一个解决办法是将 babel-cli 安装在项目之中。
 
-```js
+```bash
 # 安装
 npm install --save-dev babel-cli
 然后，改写package.json。
@@ -95,7 +91,7 @@ npm install --save-dev babel-cli
   },
 }
 转码的时候，就执行下面的命令。
-$ npm run build
+npm run build
 ```
 
 #### babel-polyfill
@@ -106,9 +102,11 @@ Babel 默认只转换新的 JavaScript 句法（syntax），而不转换新的 A
 
 安装命令如下。
 
-```js
+```bash
 npm install --save babel-polyfill
+```
 
+```js
 然后，在脚本头部，加入如下一行代码。
 import 'babel-polyfill';
 // 或者

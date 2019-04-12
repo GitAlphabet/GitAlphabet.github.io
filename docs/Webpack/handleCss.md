@@ -2,14 +2,14 @@
 
 #### 安装 style-loader、css-loader、postcss-loader。
 
-```js
+```bash
 npm i style-loader css-loader postcss-loader --save-dev
 ```
 
 #### 安装自动添加浏览器前缀的 autoprefixer。
 
-```js
- npm i autoprefixer --save-dev
+```bash
+npm i autoprefixer --save-dev
 ```
 
 #### 根目录下新建 postcss.config.js,导入 autoprefixer。

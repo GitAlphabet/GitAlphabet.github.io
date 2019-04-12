@@ -13,8 +13,8 @@
 
 #### 暴露配置
 
-```js
-npm run eject // 暴露原有的webpack配置文件
+```bash
+npm run eject # 暴露原有的webpack配置文件
 ```
 
 #### 修改 webpack.config.js 文件
@@ -35,20 +35,20 @@ const lessModuleRegex = /\.module\.less$/
 
 2、在 sass 的配置下新增 less 配置
 
-```js
+```json
 {
-    test: lessRegex,
-    exclude: lessModuleRegex,
-    use: getStyleLoaders({
-    importLoaders: 2
+    "test": lessRegex,
+    "exclude": lessModuleRegex,
+    "use": getStyleLoaders({
+    "importLoaders": 2
     }, 'less-loader'), // 注意第二个参数
 },
 {
-    test: lessModuleRegex,
-    use: getStyleLoaders({
-        importLoaders: 2,
-        modules: true,
-        getLocalIdent: getCSSModuleLocalIdent,
+    "test": lessModuleRegex,
+    "use": getStyleLoaders({
+        "importLoaders": 2,
+        "modules": true,
+        "getLocalIdent": getCSSModuleLocalIdent,
     },
     'less-loader' // 注意第二个参数
     ),
@@ -98,7 +98,7 @@ if (preProcessor) {
 
 1、package.json 配置
 
-```js
+```json
 "babel": {
     "presets": [
       "react-app"
@@ -117,16 +117,16 @@ if (preProcessor) {
 
 1、babelrc 中配置
 
-```js
+```json
 {
-    "plugins": [
-        [
-            "import",
-            {
-                "libraryName": "antd",
-                "style": true
-            }
-        ]
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+      }
     ]
+  ]
 }
 ```

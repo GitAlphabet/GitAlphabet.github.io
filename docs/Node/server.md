@@ -2,12 +2,12 @@
 
 #### 初始化
 
-```js
-// 1、先创建一个文件夹,并初始化。
+```bash
+# 1、先创建一个文件夹,并初始化。
 npm init
-// 2、安装Express
+# 2、安装Express
 npm install express --save
-// 3、新建 app.js 和 index.html文件
+# 3、新建 app.js 和 index.html文件
 ```
 
 #### app.js 代码如下
@@ -81,7 +81,7 @@ let server = app.listen(3000, function() {
 ```
 
 ::: tip post 请求
-//bodyParser 解析 json 数据。bodyParser 变量是对中间件的引用。请求体解析后，解析值都会被放到 req.body 属性，内容为空时是一个{}空对象。  
+// bodyParser 解析 json 数据。bodyParser 变量是对中间件的引用。请求体解析后，解析值都会被放到 req.body 属性，内容为空时是一个{}空对象。  
 let bodyParser = require('body-parser');  
 // 使用 application/json 解析  
 app.use(bodyParser.json());  
@@ -143,7 +143,7 @@ $(() => {
 
 #### 开启服务
 
-```js
+```bash
 node app.js
-//接着访问地址查看控制台即可
+# 接着访问地址查看控制台即可
 ```

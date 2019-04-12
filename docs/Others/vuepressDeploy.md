@@ -9,7 +9,7 @@
 
 #### 2、部署
 
-```js
+```bash
 a) 切换到 .vuepress文件夹下的 dist 目录
 b) 执行下列代码(以放在 github 上的 username.github.io 仓库上为例)
     git init

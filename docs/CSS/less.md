@@ -2,26 +2,26 @@
 
 #### 安装 less
 
-```js
+```bash
 npm install  less -g
 ```
 
 #### 安装 less-plugin-clean-css
 
-```js
+```bash
 npm install -g less-plugin-clean-css
 ```
 
 #### 压缩
 
-```js
+```bash
 lessc -x
 lessc --compress
 ```
 
 #### 编译 less
 
-```js
+```bash
 lessc a.less a.css                          //不压缩代码
 lessc -x a.less a.css                      //压缩代码
 ```

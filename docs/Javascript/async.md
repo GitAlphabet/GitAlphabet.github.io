@@ -67,12 +67,12 @@ async renderData(){
     })
     // 下面 await 执行完之后再接着执行函数体内后面的语句
     let info = await  axios({
-            method: 'post',
-            url: '/user/info',
-            data: {
-                id
-            }
-        })
+        method: 'post',
+        url: '/user/info',
+        data: {
+            id
+        }
+    })
     info().then(res => {
         console.log(res)
     }).catch(err => {

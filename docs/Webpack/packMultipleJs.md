@@ -2,19 +2,19 @@
 
 #### 初始化项目文件，创建 package.json 文件。
 
-```js
+```bash
 npm init -y
 ```
 
 #### 项目目录安装 webpack。
 
-```js
+```bash
 npm install --save-dev webpack
 ```
 
 #### 安装 html-webpack-plugin。
 
-```js
+```bash
 npm i --save-dev html-webpack-plugin
 ```
 
@@ -89,7 +89,7 @@ module.exports = {
 
 #### 打包运行
 
-```js
+```bash
 命令行输入 webpack
 ```
 
