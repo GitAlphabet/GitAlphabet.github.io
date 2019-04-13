@@ -95,7 +95,7 @@ Action 类似于 mutation，不同在于：
 import * as types from './mutations-type'
 export const setDatas = ({ commit, state }, { count, num }) => {
   commit(types.SET_COUNT, count)
-  commit(ttypes.SET_NUM, num)
+  commit(types.SET_NUM, num)
 }
 ```
 
