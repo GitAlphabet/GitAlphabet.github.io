@@ -54,7 +54,10 @@ module.exports = {
       },
       {
         title: 'React',
-        children: ['React/reactCreateApp']
+        children: [
+          'React/reactCreateApp',
+          'React/reduxBase',
+        ]
       },
       {
         title: 'Node',
