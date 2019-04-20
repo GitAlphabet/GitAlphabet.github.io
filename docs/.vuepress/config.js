@@ -37,6 +37,7 @@ module.exports = {
       {
         title: 'Vue',
         children: [
+          'Vue/vueCodeStandard',
           'Vue/persistedstate',
           'Vue/fastclick',
           'Vue/componentCommunication',
@@ -45,6 +46,7 @@ module.exports = {
           'Vue/eslintRepair',
           'Vue/reviseStyle',
           'Vue/nextTickAndset',
+          'Vue/watch',
           'Vue/attentionPoints',
           'Vue/axios',
           'Vue/interceptor',
