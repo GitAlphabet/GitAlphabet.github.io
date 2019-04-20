@@ -8,6 +8,17 @@ yarn add redux --save
 yarn add redux-devtools-extension # 调试
 ```
 
+#### redux 文件夹下文件
+
+```js
+redux
+    actionType.js     // 放置action 常量
+    action.js         // action 函数
+    loginReducer.js   // 放置reducer,可能多个reducer
+    rootReducer.js    // 所有reducer 集合
+    store.js          // 生成 redux 的 store
+```
+
 #### actionType.js
 
 ```js
