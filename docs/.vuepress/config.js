@@ -19,7 +19,10 @@ module.exports = {
     sidebarDepth: 2,
     sidebar: [{
         title: 'CSS',
-        children: ['CSS/less', 'CSS/mobileLayout']
+        children: [
+          'CSS/less',
+          'CSS/mobileLayout'
+        ]
       },
       {
         title: 'Javascript',
@@ -40,11 +43,11 @@ module.exports = {
           'Vue/vueCodeStandard',
           'Vue/persistedstate',
           'Vue/fastclick',
-          'Vue/componentCommunication',
           'Vue/px2rem',
           'Vue/betterScroll',
           'Vue/eslintRepair',
           'Vue/reviseStyle',
+          'Vue/componentCommunication',
           'Vue/nextTickAndset',
           'Vue/watch',
           'Vue/attentionPoints',
@@ -84,12 +87,12 @@ module.exports = {
       {
         title: 'Others',
         children: [
-          'Others/script',
           'Others/whistle',
+          'Others/Markdown',
+          'Others/vuepressDeploy',
+          'Others/script',
           'Others/settingSSH',
           'Others/linkServer',
-          'Others/vuepressDeploy',
-          'Others/Markdown',
           'Others/vpn',
         ]
       }

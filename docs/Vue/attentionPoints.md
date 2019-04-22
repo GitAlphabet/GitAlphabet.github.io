@@ -1,4 +1,4 @@
-### iviewUI 注意点
+### iview 注意点
 
 #### 1、标签 Switch 和 Circle
 

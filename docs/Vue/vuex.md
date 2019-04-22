@@ -1,4 +1,4 @@
-### vuex
+### vuex 使用
 
 ```text
 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。
@@ -34,39 +34,6 @@ const state = {
 export default state
 ```
 
-#### mutations-type.js
-
-```js
-export const SET_COUNT = 'SET_COUNT '
-export const SET_NUM = 'SET_NUM '
-//这里定义常量作为 mutations.js 里面的事件类型；
-//因为这里需要暴露多个常量，在其他文件引入需要使用ES6的：
-import * as types from './mutations-type'
-```
-
-#### mutations.js
-
-```text
-更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。
-Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串的 事件类型 (type) 和 一个 回调函数 (handler)。
-这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数：
-```
-
-```js
-import * as types from './mutations-type'
-//此处就是引入 mutations-type.js。
-//mutations  里面的 types.SET_COUNT  就相当于 mutations-type.js 里面的 SET_COUNT
-const mutations = {
-  [types.SET_COUNT](state, count) {
-    state.count = count
-  },
-  [types.SET_NUM](state, num) {
-    state.num = num
-  }
-}
-export default mutations
-```
-
 #### getters.js
 
 ```js
@@ -83,6 +50,40 @@ export const num = state => {
 }
 ```
 
+#### mutations-type.js
+
+```js
+//这里定义常量作为 mutations.js 里面的事件类型；
+export const SET_COUNT = 'SET_COUNT '
+export const SET_NUM = 'SET_NUM '
+export const SET_MULTIPLE = 'SET_MULTIPLE '
+//因为这里需要暴露多个常量，在其他文件引入需要使用ES6的：
+import * as types from './mutations-type'
+```
+
+#### mutations.js
+
+```text
+更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。
+Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串 事件类型 (type)和一个回调函数 (handler)。
+这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数：
+```
+
+```js
+//此处就是引入 mutations-type.js。
+import * as types from './mutations-type'
+//mutations  里面的 types.SET_COUNT  就相当于 mutations-type.js 里面的 SET_COUNT
+const mutations = {
+  [types.SET_COUNT](state, count) {
+    state.count = count
+  },
+  [types.SET_NUM](state, num) {
+    state.num = num
+  }
+}
+export default mutations
+```
+
 #### actions.js
 
 ```text
@@ -92,10 +93,25 @@ Action 类似于 mutation，不同在于：
 ```
 
 ```js
+// 处理异步
 import * as types from './mutations-type'
-export const setDatas = ({ commit, state }, { count, num }) => {
-  commit(types.SET_COUNT, count)
-  commit(types.SET_NUM, num)
+export default const actions = {
+  [types.SET_COUNT](context,params){
+    setTimeout(() => {
+      context.commit({
+        type: "SET_COUNT",
+        count: params.count
+      })
+    }, 1000)
+  }
+}
+可以看到，Action 函数接受一个 context 参数，注意，这个参数可不一般，它与 store 实例有着相同的方法和属性，但是他们并不是同一个实例。
+// 处理多个提交
+export default const actions = {
+  [type.SET_MULTIPLE]({ commit, state }, { count, num }) => {
+    commit(types.SET_COUNT, count)
+    commit(types.SET_NUM, num)
+  }
 }
 ```
 
@@ -165,45 +181,45 @@ computed:{
 }
 
 2、getters：
+// 映射 this.count 为 store.getters.count
 computed:{
-  // 映射 `this.count` 为 `store.getters.count`
   ...mapGetters(['count','num'])
 }
 如果你想将一个 getter 属性另取一个名字，使用对象形式：
-
+// 映射 this.doneCount 为 store.getters.count
 ...mapGetters({
-  // 映射 `this.doneCount` 为 `store.getters.count`
   doneCount: 'count'
 })
 
 3、mutations:
 methods: {
   ...mapMutations([
-    // 将 `this.SET_COUNT()` 映射为 `this.$store.commit('SET_COUNT')`
+    // 将 this.SET_COUNT() 映射为 this.$store.commit('SET_COUNT',params)
     'SET_COUNT',
-
-    // `mapMutations` 也支持载荷：
-    // 将 `this.SET_COUNT(amount)` 映射为 `this.$store.commit('SET_COUNT', amount)`
-    'SET_COUNT'
+    // mapMutations 也支持载荷：
+    // 将 this.SET_NUM(params) 映射为 this.$store.commit('SET_NUM', params)
+    'SET_NUM'
   ]),
+  // 将 this.add() 映射为 this.$store.commit('SET_COUNT',params)
   ...mapMutations({
-    add: 'SET_COUNT' // 将 `this.add()` 映射为 `this.$store.commit('SET_COUNT')`
+    add: 'SET_COUNT',
   })
 }
 
 4、actions:
 methods: {
   ...mapActions([
-      // 将 `this.SET_COUNT()` 映射为 `this.$store.dispatch('SET_COUNT')`
+    // 将 this.SET_COUNT() 映射为 this.$store.dispatch('SET_COUNT',params)
     'SET_COUNT',
-
-    // `mapActions` 也支持载荷：
-    // 将 `this.SET_COUNT(amount)` 映射为 `this.$store.dispatch('SET_COUNT', amount)`
-    'SET_COUNT'
+    // mapActions 也支持载荷：
+    // 将 this.SET_MULTIPLE(params) 映射为 this.$store.commit('SET_MULTIPLE', params)
+    'SET_MULTIPLE'
   ]),
   ...mapActions({
-    // 将 `this.add()` 映射为 `this.$store.dispatch('SET_COUNT')`
-    add: 'SET_COUNT'
+    // 将 this.add() 映射为 this.$store.dispatch('SET_COUNT',params)
+    add: 'SET_COUNT',
+    // 将 this.multiple() 映射为 `this.$store.commit('SET_MULTIPLE',params)
+    multiple: 'SET_MULTIPLE'
   })
 }
 ```
