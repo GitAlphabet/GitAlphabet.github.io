@@ -33,8 +33,10 @@ module.exports = {
           'Javascript/number',
           'Javascript/babel',
           'Javascript/copy',
+          'Javascript/copy',
           'Javascript/base64',
-          'Javascript/regularExpression'
+          'Javascript/RegExp',
+          'Javascript/closure',
         ]
       },
       {
