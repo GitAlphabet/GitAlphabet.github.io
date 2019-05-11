@@ -37,6 +37,7 @@ module.exports = {
           'Javascript/base64',
           'Javascript/RegExp',
           'Javascript/closure',
+          'Javascript/eventLoop',
         ]
       },
       {
