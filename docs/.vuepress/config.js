@@ -37,6 +37,7 @@ module.exports = {
           'Javascript/RegExp',
           'Javascript/closure',
           'Javascript/eventLoop',
+          'Javascript/arraySort',
         ]
       },
       {
