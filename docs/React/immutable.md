@@ -51,7 +51,7 @@ ImmutableData.set(‘a’,10);
 #### 用法
 
 ```js
-// reducer 里面的默认值转化为 immutable类型。
+// header 里面的 reducer 默认值转化为 immutable类型。
 import * as actionTypes from './actionTypes'
 import { fromJS } from 'immutable'
 const defaultState = fromJS({
@@ -71,7 +71,18 @@ export default (state = defaultState, action) => {
 // 获取 get()
 const mapStateToProps = state => {
   return {
-    focused: state.get('focused')
+    // focused: state.headerReducer.get('focused') 数据格式需要统一。所以总的 rootReducer 默认值转为 immutable 类型
+    // focused: state.get('headerReducer').get('focused')
+    focused: state.getIn(['headerReducer','focused'])
   }
 }
+
+// rootReducer 函数 immutable 化，需要从 redux-immutable 引入 combineReducers。而不是从 redux 引入。
+// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux-immutable';
+import { headerReducer} from '../common/header/store';
+const rootReducer = combineReducers({
+    headerReducer
+})
+export default rootReducer
 ```

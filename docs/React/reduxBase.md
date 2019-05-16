@@ -1,6 +1,7 @@
 ### redux 基础用法
 
-#### redux工作流程
+#### redux 工作流程
+
 !["redux工作流程"](../images/react/reduxFlow.jpg 'redux工作流程')
 eg:
 Components:借书的人。
@@ -20,11 +21,11 @@ yarn add redux-devtools-extension # 调试
 
 ```js
 redux
-    actionType.js     // 放置action 常量
-    action.js         // action 函数
-    loginReducer.js   // 放置reducer,可能多个reducer
-    rootReducer.js    // 所有reducer 集合
-    store.js          // 生成 redux 的 store
+actionType.js // 放置action 常量
+action.js // action 函数
+loginReducer.js // 放置reducer,可能多个reducer
+rootReducer.js // 所有reducer 集合
+store.js // 生成 redux 的 store
 ```
 
 #### actionType.js
@@ -69,8 +70,9 @@ export default loginReducer
 
 #### rootReducer.js
 
+combineReducers 把多个 reducer 合并成一个 reducer
+
 ```js
-// combineReducers 把多个 reducer 合并成一个 reducer
 import loginReducer from './loginReducer'
 // import hobbyReducer from './hobbyReducer'
 import { combineReducers } from 'redux'
@@ -82,9 +84,8 @@ export default rootReducer
 ```
 
 #### store.js
-
+createStore 创建 store
 ```js
-// createStore 创建 store,
 import { createStore } from 'redux'
 import rootReducer from './rootReducer'
 let store = createStore(
@@ -146,8 +147,15 @@ const mapStateToProp = state => {
 // mapDispatchToProps 将 dispatch 挂到 props 上,this.props调用
 const mapDispatchToProps = dispatch => {
   return {
-    userInfoActions: bindActionCreators(allActions, dispatch)
+    userInfoActions() {
+      const action = allActions.login()
+      dispatch(action)
+    }
   }
+  // 或者使用 bindActionCreators
+  // return {
+  //   userInfoActions: bindActionCreators(allActions, dispatch)
+  // }
 }
 // connect 是一个 HOC（高阶组件）,传入上面两个函数后，继续返回抛出函数，暴露App组件
 // 连接 React 组件与 Redux store。连接操作不会改变原来的组件类。反而返回一个新的已与 Redux store 连接的组件类。

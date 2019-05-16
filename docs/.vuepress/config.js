@@ -36,6 +36,7 @@ module.exports = {
           'Javascript/base64',
           'Javascript/RegExp',
           'Javascript/closure',
+          'Javascript/prototype',
           'Javascript/eventLoop',
           'Javascript/arraySort',
         ]
@@ -65,6 +66,7 @@ module.exports = {
         children: [
           'React/reactCreateApp',
           'React/reduxBase',
+          'React/reduxThunk',
           'React/immutable',
           'React/hooks',
         ]
