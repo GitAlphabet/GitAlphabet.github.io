@@ -1,5 +1,13 @@
 ### redux 基础用法
 
+#### redux工作流程
+!["redux工作流程"](../images/react/reduxFlow.jpg 'redux工作流程')
+eg:
+Components:借书的人。
+ActionCreators:借书的指令（我要借什么书）。
+Store:图书馆的管理员，接收到 Reducer 新信息返回给 Components。
+Reducer:收到管理员的指令，然后返回新的信息给管理员。
+
 #### yarn 安装 redux、react-redux
 
 ```bash

@@ -65,6 +65,8 @@ module.exports = {
         children: [
           'React/reactCreateApp',
           'React/reduxBase',
+          'React/immutable',
+          'React/hooks',
         ]
       },
       {
