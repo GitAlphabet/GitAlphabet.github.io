@@ -38,6 +38,7 @@ module.exports = {
           'Javascript/closure',
           'Javascript/prototype',
           'Javascript/eventLoop',
+          'Javascript/gc',
           'Javascript/arraySort',
         ]
       },
