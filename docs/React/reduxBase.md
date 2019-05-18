@@ -3,17 +3,19 @@
 #### redux 工作流程
 
 !["redux工作流程"](../images/react/reduxFlow.jpg 'redux工作流程')
-eg:
+
+```text
 Components:借书的人。
 ActionCreators:借书的指令（我要借什么书）。
 Store:图书馆的管理员，接收到 Reducer 新信息返回给 Components。
 Reducer:收到管理员的指令，然后返回新的信息给管理员。
+```
 
 #### yarn 安装 redux、react-redux
 
 ```bash
-yarn add react-redux --save
-yarn add redux --save
+yarn add react-redux
+yarn add redux
 yarn add redux-devtools-extension # 调试
 ```
 
@@ -21,11 +23,11 @@ yarn add redux-devtools-extension # 调试
 
 ```js
 redux
-actionType.js // 放置action 常量
-action.js // action 函数
-loginReducer.js // 放置reducer,可能多个reducer
-rootReducer.js // 所有reducer 集合
-store.js // 生成 redux 的 store
+actionType.js       // 放置action 常量
+actionsCreator.js   // action 函数
+loginReducer.js     // 放置reducer,可能多个reducer
+rootReducer.js      // 所有reducer 集合
+store.js            // 生成 redux 的 store
 ```
 
 #### actionType.js
@@ -35,7 +37,7 @@ store.js // 生成 redux 的 store
 export const LOGIN = 'LOGIN'
 ```
 
-#### action.js
+#### actionsCreator.js
 
 ```js
 // 引入 actionType 常量
@@ -84,7 +86,9 @@ export default rootReducer
 ```
 
 #### store.js
+
 createStore 创建 store
+
 ```js
 import { createStore } from 'redux'
 import rootReducer from './rootReducer'
@@ -123,10 +127,12 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 class App extends Component {
   click = () => {
-    this.props.userInfoActions.login({
+    this.props.userInfoActions();
+    // 当用  bindActionCreators(allActions, dispatch)请使用下面的代码。
+    /* this.props.userInfoActions.login({
       name: 'cx',
       age: 20
-    })
+    }) */
   }
   render() {
     return (

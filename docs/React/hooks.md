@@ -21,8 +21,8 @@
 ```text
 1、initializztion:
 class 类里面的 constructor 函数里面执行，初始化 state,props
-2、componentWillReceiveProps:
+2、componentWillReceivePropsnextProps):
 只要父组件的 render 函数重新（第一次存在不执行，之前已经存在存在父组件中会被执行）被执行才会执行。
-3、shouldComponentUpdate:
-两个参数 nextProps,nextState，需要返回 true/false 是否更新（即调用render函数），一般做性能优化。
+3、shouldComponentUpdate(nextProps,nextState):
+返回 true/false 是否更新（即调用render函数），一般做性能优化。
 ```
