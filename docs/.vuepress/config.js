@@ -66,10 +66,12 @@ module.exports = {
         title: 'React',
         children: [
           'React/reactCreateApp',
+          'React/cssModule',
+          'React/hooks',
           'React/reduxBase',
           'React/reduxThunk',
           'React/immutable',
-          'React/hooks',
+         
         ]
       },
       {
