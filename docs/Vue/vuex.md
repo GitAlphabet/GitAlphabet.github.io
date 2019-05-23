@@ -177,7 +177,7 @@ computed: {
 }
 computed:{
   // 映射 this.count 为 store.state.count
-  ...mapGetters(['count','num'])
+  ...mapState(['count','num'])
 }
 
 2、getters：
