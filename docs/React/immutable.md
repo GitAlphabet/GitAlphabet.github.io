@@ -45,7 +45,16 @@ ImmutableData.getIn(['a', 'b'])
 
 ```js
 // 这里对于数据的修改，是对原数据进行操作后的值赋值给一个新的数据，并不会对原数据进行修改，因为 Immutable 是不可变的数据类型。
-ImmutableData.set(‘a’,10);
+ImmutableData.set('a',10);
+```
+
+**merge()**
+```js
+// 对于多个数据修改进行合并
+ImmutableData.merge({
+  'a',10,
+  'b',11
+});
 ```
 
 #### 用法
