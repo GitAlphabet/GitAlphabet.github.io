@@ -29,7 +29,7 @@ export default store
 #### 使用 redux-thunk
 
 ```js
-// actionsCreator.js
+// actionsCreators.js
 // actionTypes.js 定义常量
 import * as actionTypes from './actionTypes'
 import axios from 'axios'

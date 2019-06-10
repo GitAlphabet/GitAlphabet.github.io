@@ -23,24 +23,24 @@ yarn add redux-devtools-extension # 调试
 
 ```js
 redux
-actionType.js       // 放置action 常量
-actionsCreator.js   // action 函数
+actionTypes.js       // 放置action 常量
+actionsCreators.js   // action 函数
 loginReducer.js     // 放置reducer,可能多个reducer
 rootReducer.js      // 所有reducer 集合
 store.js            // 生成 redux 的 store
 ```
 
-#### actionType.js
+#### actionTypes.js
 
 ```js
 // action 的常量
 export const LOGIN = 'LOGIN'
 ```
 
-#### actionsCreator.js
+#### actionsCreators.js
 
 ```js
-// 引入 actionType 常量
+// 引入 actionTypes 常量
 import * as actionType from './actionType'
 export const login = data => {
   return {
