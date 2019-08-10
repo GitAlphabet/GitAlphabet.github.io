@@ -2,7 +2,11 @@ module.exports = {
   title: '向往飞翔的小蚂蚁',
   description: '个人博客',
   head: [
-    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.ico` }]
+    ['link', {
+      rel: 'shortcut icon',
+      type: "image/x-icon",
+      href: `/favicon.ico`
+    }]
   ],
   //base:'/dist/',
   themeConfig: {
@@ -65,12 +69,12 @@ module.exports = {
           'React/reduxBase',
           'React/reduxThunk',
           'React/immutable',
-         
+
         ]
       },
       {
         title: 'Node',
-        children: ['Node/server']
+        children: ['Node/server', 'Node/updateNode']
       },
       {
         title: 'Nginx',
