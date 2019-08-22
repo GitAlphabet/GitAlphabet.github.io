@@ -37,13 +37,14 @@ git reset --hard sha值       //回退到哪个版本，sha值是git log/reflog 
 #### 分支
 
 ```bash
-git branch (-al)                    //显示本地所有分支
-git branch -r                       //显示远程所有分支
-git checkout <branch>               //切换分支
-git branch <new branch>             //新建分支
-git branch -d <branch>              //删除本地分支
-git push origin --delete <branch>   //删除远程分支
-git merge <branch>                  //合并分支
+git branch (-al)                            //显示本地所有分支
+git branch -r                               //显示远程所有分支
+git checkout <branch>                       //切换分支
+git branch <new branch>                     //新建分支
+git branch -d <branch>                      //删除本地分支
+git push origin --delete <branch>           //删除远程分支
+git checkout -b 本地分支名 origin/远程分支名    //拉取本地没有的远程分支
+git merge <branch>                          //合并分支
 ```
 
 #### 远程操作
