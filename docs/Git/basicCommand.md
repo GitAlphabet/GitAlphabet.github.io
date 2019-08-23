@@ -47,6 +47,16 @@ git checkout -b 本地分支名 origin/远程分支名    //拉取本地没有�
 git merge <branch>                          //合并分支
 ```
 
+::: tip 拉取报错处理
+
+fatal: Cannot update paths and switch to branch 'dev2' at the same time.
+Did you intend to checkout 'origin/dev2' which can not be resolved as commit?
+
+先执行  git fetch  
+后执行  git checkout -b 本地分支名 origin/远程分支名 
+:::
+
+
 #### 远程操作
 
 ```bash
