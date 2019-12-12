@@ -93,6 +93,10 @@ module.exports = {
         children: ['Git/basicCommand']
       },
       {
+        title: 'Eslint',
+        children: ['Eslint/oftenUse']
+      },
+      {
         title: 'Others',
         children: [
           'Others/yarnUpdate',
