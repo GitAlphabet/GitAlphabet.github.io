@@ -95,13 +95,13 @@ module.exports = {
       {
         title: 'Others',
         children: [
+          'Others/yarnUpdate',
           'Others/whistle',
           'Others/Markdown',
           'Others/vuepressDeploy',
           'Others/script',
           'Others/settingSSH',
           'Others/linkServer',
-          'Others/vpn',
         ]
       }
     ]
