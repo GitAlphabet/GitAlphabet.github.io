@@ -4,7 +4,7 @@
 
 !["redux工作流程"](../images/react/reduxFlow.jpg 'redux工作流程')
 
-```text
+```plain
 Components:借书的人。
 ActionCreators:借书的指令（我要借什么书）。
 Store:图书馆的管理员，接收到 Reducer 新信息返回给 Components。
@@ -173,7 +173,7 @@ export default connect(
 
 #### bindActionCreators(actionCreators, dispatch) 介绍
 
-```text
+```plain
 描述：
 1、把 action creators 转成拥有同名 keys 的对象，但使用 dispatch 把每个 action creator 包围起来，这样可以直接调用它们。
 2、一般情况下你可以直接在 Store 实例上调用 dispatch。如果你在 React 中使用 Redux，react-redux 会提供 dispatch 。
