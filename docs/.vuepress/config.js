@@ -21,6 +21,7 @@ module.exports = {
           'CSS/less',
           'CSS/mobileLayout',
           'CSS/BFC',
+          'CSS/textOverflow',
         ]
       },
       {
@@ -40,6 +41,7 @@ module.exports = {
           'Javascript/eventLoop',
           'Javascript/gc',
           'Javascript/arraySort',
+          'Javascript/customEvents',
         ]
       },
       {
