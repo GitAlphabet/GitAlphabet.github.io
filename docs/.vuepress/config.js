@@ -19,7 +19,8 @@ module.exports = {
         title: 'CSS',
         children: [
           'CSS/less',
-          'CSS/mobileLayout'
+          'CSS/mobileLayout',
+          'CSS/BFC',
         ]
       },
       {
@@ -27,6 +28,7 @@ module.exports = {
         children: [
           'Javascript/ajax',
           'Javascript/array',
+          'Javascript/arguments',
           'Javascript/async',
           'Javascript/number',
           'Javascript/babel',
