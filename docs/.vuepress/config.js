@@ -51,6 +51,7 @@ module.exports = {
           'Vue/persistedstate',
           'Vue/fastclick',
           'Vue/px2rem',
+          'Vue/px2vw',
           'Vue/betterScroll',
           'Vue/eslintRepair',
           'Vue/reviseStyle',
