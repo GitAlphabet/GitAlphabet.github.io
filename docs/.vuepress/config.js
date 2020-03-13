@@ -42,6 +42,7 @@ module.exports = {
           'Javascript/gc',
           'Javascript/arraySort',
           'Javascript/customEvents',
+          'Javascript/typeChange',
         ]
       },
       {
