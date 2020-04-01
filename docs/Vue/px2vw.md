@@ -21,8 +21,6 @@ $ yarn add -D postcss-px-to-viewport
 
 #### 3.配置参数
 
-在项目入口文件 main.js 里 引入 lib-flexible
-
 ```js
 {
   unitToConvert: 'px', 
