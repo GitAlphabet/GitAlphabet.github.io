@@ -1,6 +1,6 @@
 ### vuex-persistedstate
 
-```plain
+```
 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。页面刷新，数据就没有了，vuex-persistedstate很好的解决了此类问题。
 ```
 
@@ -35,7 +35,7 @@ const store = new Vuex.Store({
 
 #### createPersistedState([options]) API
 
-```plain
+```
 使用给定选项创建插件的新实例。可以提供以下选项来配置插件以满足您的特定需求：
 
 key <String>：存储持久状态的关键。（默认：vuex）
