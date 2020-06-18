@@ -52,10 +52,9 @@ git merge <branch>                          //合并分支
 fatal: Cannot update paths and switch to branch 'dev2' at the same time.
 Did you intend to checkout 'origin/dev2' which can not be resolved as commit?
 
-先执行  git fetch  
-后执行  git checkout -b 本地分支名 origin/远程分支名 
+先执行 git fetch  
+后执行 git checkout -b 本地分支名 origin/远程分支名
 :::
-
 
 #### 远程操作
 
@@ -64,4 +63,31 @@ git remote -v               //查看远程版本库信息
 git pull origin <branch>    //拉取代码该分支
 git push origin <branch>    //上传代码到该分支
 git push -f origin <branch> //同步到远端仓库
+```
+
+#### git cherry-pick 使用
+
+git cherry-pick 命令的作用，就是将指定的提交（commit）应用于其他分支。
+
+```bash
+git cherry-pick <commitHash>
+```
+
+Cherry pick 支持一次转移多个提交。
+
+```bash
+git cherry-pick <HashA> <HashB>
+```
+
+如果想要转移一系列的连续提交，可以使用下面的简便语法。
+
+```bash
+git cherry-pick A..B 
+```
+上面的命令可以转移从 A 到 B 的所有提交。它们必须按照正确的顺序放置：提交 A 必须早于提交 B，否则命令将失败，但不会报错。
+
+注意，使用上面的命令，提交 A 将不会包含在 Cherry pick 中。如果要包含提交 A，可以使用下面的语法。
+
+```bash
+git cherry-pick A^..B 
 ```
