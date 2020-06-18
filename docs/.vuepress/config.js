@@ -2,27 +2,33 @@ module.exports = {
   title: '向往飞翔的小蚂蚁',
   description: '个人博客',
   head: [
-    ['link', {
-      rel: 'shortcut icon',
-      type: "image/x-icon",
-      href: `/favicon.ico`
-    }]
+    [
+      'link',
+      {
+        rel: 'shortcut icon',
+        type: 'image/x-icon',
+        href: `/favicon.ico`,
+      },
+    ],
   ],
   //base:'/dist/',
   themeConfig: {
-    nav: [{
-      text: '首页',
-      link: '/'
-    }],
+    nav: [
+      {
+        text: '首页',
+        link: '/',
+      },
+    ],
     sidebarDepth: 2,
-    sidebar: [{
+    sidebar: [
+      {
         title: 'CSS',
         children: [
           'CSS/less',
           'CSS/mobileLayout',
           'CSS/BFC',
           'CSS/textOverflow',
-        ]
+        ],
       },
       {
         title: 'Javascript',
@@ -43,7 +49,7 @@ module.exports = {
           'Javascript/arraySort',
           'Javascript/customEvents',
           'Javascript/typeChange',
-        ]
+        ],
       },
       {
         title: 'Vue',
@@ -64,7 +70,7 @@ module.exports = {
           'Vue/interceptor',
           'Vue/lazyRouter',
           'Vue/vuex',
-        ]
+        ],
       },
       {
         title: 'React',
@@ -75,45 +81,45 @@ module.exports = {
           'React/reduxBase',
           'React/reduxThunk',
           'React/immutable',
-
-        ]
+        ],
       },
       {
         title: 'Node',
-        children: ['Node/server', 'Node/updateNode']
+        children: ['Node/server', 'Node/updateNode'],
       },
       {
         title: 'Nginx',
-        children: ['Nginx/install']
+        children: ['Nginx/install'],
       },
       {
         title: 'Webpack',
         children: [
           'Webpack/handleCss',
           'Webpack/toES6',
-          'Webpack/packMultipleJs'
-        ]
+          'Webpack/packMultipleJs',
+        ],
       },
       {
         title: 'Git',
-        children: ['Git/basicCommand']
+        children: ['Git/basicCommand'],
       },
       {
         title: 'Eslint',
-        children: ['Eslint/oftenUse']
+        children: ['Eslint/oftenUse'],
       },
       {
         title: 'Others',
         children: [
           'Others/yarnUpdate',
+          'Others/npm',
           'Others/whistle',
           'Others/Markdown',
           'Others/vuepressDeploy',
           'Others/script',
           'Others/settingSSH',
           'Others/linkServer',
-        ]
-      }
-    ]
-  }
+        ],
+      },
+    ],
+  },
 }
