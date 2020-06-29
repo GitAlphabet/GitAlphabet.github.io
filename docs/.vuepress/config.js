@@ -18,6 +18,10 @@ module.exports = {
         text: '首页',
         link: '/',
       },
+      {
+        text: '算法',
+        link: '/algorithm',
+      },
     ],
     sidebarDepth: 2,
     sidebar: [
