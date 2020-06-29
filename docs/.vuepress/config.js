@@ -25,6 +25,7 @@ module.exports = {
         title: 'CSS',
         children: [
           'CSS/less',
+          'CSS/someCss',
           'CSS/mobileLayout',
           'CSS/BFC',
           'CSS/textOverflow',
@@ -113,6 +114,7 @@ module.exports = {
         children: [
           'Others/yarnUpdate',
           'Others/npm',
+          'Others/refreshOrigin',
           'Others/whistle',
           'Others/Markdown',
           'Others/vuepressDeploy',
