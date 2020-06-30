@@ -3,7 +3,7 @@
 #### 一、[正则表达式测试工具](https://regexper.com)
 eg: http(s)?:   \/\/[a-z]+\.[a-z]{2,3}
 使用工具之后展示为：
-![ml.jpg](../images/regular/reg.jpg)
+![ml.jpg](../../images/regular/reg.jpg)
 
 #### 二、正则表达式元字符
 

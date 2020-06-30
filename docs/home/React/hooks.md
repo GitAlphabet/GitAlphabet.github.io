@@ -1,6 +1,6 @@
 ### React 生命周期
 
-!["React 生命周期"](../images/react/reactHook.png 'React 生命周期')
+!["React 生命周期"](../../images/react/reactHook.png 'React 生命周期')
 
 #### 简单介绍
 

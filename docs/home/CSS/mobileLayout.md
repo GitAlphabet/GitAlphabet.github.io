@@ -2,7 +2,7 @@
 
 #### 实现下列布局:Header 定高， Main 充满其他区域。
 
-!["移动布局"](../images/buju.jpg "移动布局示例")
+!["移动布局"](../../images/buju.jpg "移动布局示例")
 
 ```css
 html,

@@ -2,7 +2,7 @@
 
 #### redux 工作流程
 
-!["redux工作流程"](../images/react/reduxFlow.jpg 'redux工作流程')
+!["redux工作流程"](../../images/react/reduxFlow.jpg 'redux工作流程')
 
 ```
 Components:借书的人。
