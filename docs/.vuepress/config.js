@@ -122,7 +122,7 @@ module.exports = {
       '/algorithm/': [
         {
           title: '简单',
-          children: ['Simple/first'],
+          children: ['Simple/first', 'Simple/second'],
         },
         {
           title: '中等',
