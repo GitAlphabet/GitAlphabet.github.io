@@ -59,6 +59,7 @@ module.exports = {
             'Javascript/arraySort',
             'Javascript/customEvents',
             'Javascript/typeChange',
+            'Javascript/fullScreen',
           ],
         },
         {
