@@ -51,6 +51,7 @@ module.exports = {
             'Javascript/babel',
             'Javascript/copy',
             'Javascript/base64',
+            'Javascript/base64ToFile',
             'Javascript/RegExp',
             'Javascript/closure',
             'Javascript/prototype',
