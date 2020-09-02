@@ -1,6 +1,6 @@
 ### vuex 使用
 
-```
+```markdown
 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。
 它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
 ```
@@ -20,7 +20,7 @@ src 文件夹下创建 store 文件夹及子目录如下：
 
 #### state.js
 
-```
+```markdown
 Vuex 使用单一状态树，用一个对象就包含了全部的应用层级状态。
 至此它便作为一个“唯一数据源 (SSOT:Single_source_of_truth)”而存在。这也意味着，每个应用将仅仅包含一个 store 实例。
 单一状态树让我们能够直接地定位任一特定的状态片段，在调试的过程中也能轻易地取得整个当前应用状态的快照。
@@ -63,7 +63,7 @@ import * as types from './mutations-type'
 
 #### mutations.js
 
-```
+```markdown
 更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。
 Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串 事件类型 (type)和一个回调函数 (handler)。
 这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数：
@@ -86,7 +86,7 @@ export default mutations
 
 #### actions.js
 
-```
+```markdown
 Action 类似于 mutation，不同在于：
 1.Action 提交的是 mutation，而不是直接变更状态。
 2.Action 可以包含任意异步操作。

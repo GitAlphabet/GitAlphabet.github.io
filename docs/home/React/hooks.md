@@ -18,7 +18,7 @@
 
 #### 注意点
 
-```
+```markdown
 1、initializztion:
 class 类里面的 constructor 函数里面执行，初始化 state,props
 2、componentWillReceivePropsnextProps):

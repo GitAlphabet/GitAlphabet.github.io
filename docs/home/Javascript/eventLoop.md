@@ -21,7 +21,7 @@ js 引擎遇到一个异步事件后并不会一直等待其返回结果，而�
 
 #### macro tasks(宏任务)与 micro tasks(微任务)
 
-```
+```markdown
 macro tasks：
     setTimeout
     setInterval

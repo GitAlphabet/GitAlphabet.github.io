@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         text: '其他',
-        link: '/other/yarnUpdate',
+        link: '/other/computerBinary',
       },
     ],
     sidebarDepth: 2,
@@ -139,6 +139,7 @@ module.exports = {
         {
           title: '其他',
           children: [
+            'computerBinary',
             'yarnUpdate',
             'npm',
             'refreshOrigin',
