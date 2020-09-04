@@ -29,6 +29,11 @@ module.exports = {
         text: '其他',
         link: '/other/computerBinary',
       },
+      {
+        text: 'Github',
+        link: 'https://github.com/GitAlphabet',
+        target: '_blank',
+      },
     ],
     sidebarDepth: 2,
     sidebar: {
