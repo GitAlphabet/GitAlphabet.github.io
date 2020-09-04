@@ -119,18 +119,18 @@ _这是倾斜的文字_`
 (```) 后面的 text 此处有很多种，下面有介绍。
 
 ````
-``` text
+``` markdown
 hello,向往飞翔的小蚂蚁!
 hello,向往飞翔的小蚂蚁!
 hello,向往飞翔的小蚂蚁!
 ```
 ````
 
-```text
+```markdown
 hello,向往飞翔的小蚂蚁!
 ```
 
-```text
+```markdown
  hello,向往飞翔的小蚂蚁!
  hello,向往飞翔的小蚂蚁!
  hello,向往飞翔的小蚂蚁!

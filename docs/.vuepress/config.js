@@ -1,6 +1,9 @@
 module.exports = {
   title: '向往飞翔的小蚂蚁',
   description: '个人博客',
+  markdown: {
+    lineNumbers: true, // 开启代码行号
+  },
   head: [
     [
       'link',
