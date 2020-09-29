@@ -4,6 +4,7 @@ module.exports = {
   markdown: {
     lineNumbers: true, // 开启代码行号
   },
+  plugins: [['vuepress-plugin-code-copy', true]],
   head: [
     [
       'link',
@@ -97,6 +98,7 @@ module.exports = {
           children: [
             'React/reactCreateApp',
             'React/cssModule',
+            'React/lifeCycle',
             'React/hooks',
             'React/reduxBase',
             'React/reduxThunk',
@@ -136,7 +138,7 @@ module.exports = {
         },
         {
           title: '中等',
-          children: [],
+          children: ['Middling/triangleNumber'],
         },
         {
           title: '困难',
