@@ -56,6 +56,18 @@ Did you intend to checkout 'origin/dev2' which can not be resolved as commit?
 后执行 git checkout -b 本地分支名 origin/远程分支名
 :::
 
+#### 标签 tag
+
+```bash
+git tag -a <tagName> -m '说明'    //创建一个包含说明的标签
+git show <tagName>               //查看标签的提交信息
+git push origin <tagName>        //上传标签到远程仓库
+git tag -d <tagName>             //删除本地tag
+git push origin :<tagName>       //删除本地tag
+git tag -l 'v0.0.*'              //搜索符合模式的标签
+git push origin –tags            //将本地所有标签全部提交到远程仓库
+```
+
 #### 远程操作
 
 ```bash
@@ -82,12 +94,13 @@ git cherry-pick <HashA> <HashB>
 如果想要转移一系列的连续提交，可以使用下面的简便语法。
 
 ```bash
-git cherry-pick A..B 
+git cherry-pick A..B
 ```
+
 上面的命令可以转移从 A 到 B 的所有提交。它们必须按照正确的顺序放置：提交 A 必须早于提交 B，否则命令将失败，但不会报错。
 
 注意，使用上面的命令，提交 A 将不会包含在 Cherry pick 中。如果要包含提交 A，可以使用下面的语法。
 
 ```bash
-git cherry-pick A^..B 
+git cherry-pick A^..B
 ```
