@@ -130,6 +130,10 @@ module.exports = {
           title: 'Eslint',
           children: ['Eslint/oftenUse'],
         },
+        {
+          title: 'DataBase',
+          children: ['DataBase/queryOperation'],
+        },
       ],
       '/algorithm/': [
         {
