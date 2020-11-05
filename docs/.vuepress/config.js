@@ -91,6 +91,7 @@ module.exports = {
             'Vue/interceptor',
             'Vue/lazyRouter',
             'Vue/vuex',
+            'Vue/routeParams',
           ],
         },
         {
