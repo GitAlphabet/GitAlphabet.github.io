@@ -111,10 +111,7 @@ module.exports = {
           title: 'Node',
           children: ['Node/server', 'Node/updateNode'],
         },
-        {
-          title: 'Nginx',
-          children: ['Nginx/install'],
-        },
+
         {
           title: 'Webpack',
           children: [
@@ -127,6 +124,14 @@ module.exports = {
         {
           title: 'Git',
           children: ['Git/basicCommand'],
+        },
+        {
+          title: 'Nginx',
+          children: ['Nginx/install'],
+        },
+        {
+          title: 'Http',
+          children: ['Http/tcp'],
         },
         {
           title: 'Eslint',
