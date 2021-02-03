@@ -3,13 +3,13 @@
 #### 1.rem对比vw优缺点
 
 * rem:
-    * 和根元素font-size值强耦合，系统字体放大或缩小时，会导致布局错乱；
-    * html文件头部需插入一段js代码
+  * 和根元素font-size值强耦合，系统字体放大或缩小时，会导致布局错乱；
+  * html文件头部需插入一段js代码
 
 * vw:
-    * vw单位兼容性比rem稍差，ios8、安卓4.4及以上才完全支持。
+  * vw单位兼容性比rem稍差，ios8、安卓4.4及以上才完全支持。
 
-#### 2.安装：
+#### 2.安装
 
 ```bash
 // npm
@@ -65,7 +65,6 @@ $ yarn add -D postcss-px-to-viewport
 * landscape (Boolean) 是否添加根据 landscapeWidth 生成的媒体查询条件 @media (orientation: landscape)
 * landscapeUnit (String) 横屏时使用的单位
 * landscapeWidth (Number) 横屏时使用的视口宽度
-
 
 #### 4.postcss.config.js 使用
 

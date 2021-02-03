@@ -42,7 +42,6 @@ object-fit: fill ｜contain ｜cover｜none;
 * scale-down 内容的尺寸与 none 或 contain 中的一个相同，取决于它们两个之间谁得到的对象尺寸会更小一些。
 如果图片比父容器尺寸大，那么按照 contain 的效果，如果图片比父容器小，那么按照 none 的效果。
 
-
 #### 5、object-position
 
 object-position:属性来指定被替换元素的内容对象在元素框内的对齐方式。
@@ -50,20 +49,24 @@ object-position:属性来指定被替换元素的内容对象在元素框内的�
 ```css
 object-position: 10px 10px; 
 ```
+
 * 可以设置 px，第一个值代表距离父容器左边的距离，第二个值代表距离父容器顶部的距离。
 * 只有一个数值则只代表距离父容器左侧的距离。也可以设置%数值，但此时只有某一边有空白才会起作用，如果没有空白，刚好铺满父元素，则不起作用。设置 px 就没有这样的问题，任何之后都会起作用。
 * sobject-position: right top;可以设置关键字，第一个值关键字可设置（left|center|right），第二个关键字可设置(top|center|bottom),此时不表示距离左侧或者顶部的距离，而表示放置在父元素的什么位置。拉变形，宽度和高度都被拉到父容器的 100%，以适应父容器
 
 #### 6、scroll-behavior
+
 当用户手动导航或者 CSSOM scrolling API 触发滚动操作时，CSS 属性 scroll-behavior 为一个滚动框指定滚动行为，其他任何的滚动，例如那些由于用户行为而产生的滚动，不受这个属性的影响。在根元素中指定这个属性时，它反而适用于视窗。
 
 ```css
 scroll-behavior: smooth | auto;
 ```
+
 * auto 滚动框立即滚动。
 * smooth 滚动框通过一个用户代理预定义的时长、使用预定义的时间函数，来实现平稳的滚动，用户代理应遵循其平台的约定，如果有的话。
 
 #### 7、:out-of-range / :in-range
+
 ```css
 input:out-of-range {
   background-color: rgba(255, 0, 0, 0.25);
@@ -72,6 +75,7 @@ input:in-range {
   background-color: rgba(255, 0, 0, 0.25);
 }
 ```
+
 * :out-of-range CSS 伪类 表示一个 input 元素，其当前值处于属性 min 和 max 限定的范围外。
 * :in-range CSS 伪类 表示一个 input 元素，其当前值处于属性 min 和 max 限定的范围内。
-
+  

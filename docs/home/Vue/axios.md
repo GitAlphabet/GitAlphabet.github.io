@@ -1,6 +1,6 @@
 ### Axios
 
-#### 使用 npm 安装 axios。
+#### 使用 npm 安装 axios
 
 ```bash
 npm install axios --save
@@ -10,7 +10,7 @@ npm install axios --save
 为了解决这个问题，有两种开发思路，一是在引入 axios 之后，修改原型链，二是结合 Vuex，封装一个 aciton。这里只说修改原型链的方式
 改写原型链。
 
-#### 首先在 main.js 中引入 axios。
+#### 首先在 main.js 中引入 axios
 
 ```js
 import axios from 'axios'
@@ -120,7 +120,7 @@ axios.patch(url[,data[,config]])
 
 #### 另外，补充
 
-vue cli 脚手架前端调后端数据接口时候的本地代理跨域问题，如我在本地 localhost 访问接口https://api.douban.com/是要跨域的，相当于浏览器设置了一到门槛，会报错XMLHTTPRequest can not load https://api.douban.com/ Response to preflight request doesn’t pass access control…. 为什么跨域同源非同源自己去查吧，在 webpack 配置一下 proxyTable 就 OK 了，如下 config/index.js
+vue cli 脚手架前端调后端数据接口时候的本地代理跨域问题，如我在本地 localhost 访问接口 https://api.douban.com/ 是要跨域的，相当于浏览器设置了一到门槛，会报错XMLHTTPRequest can not load https://api.douban.com/ Response to preflight request doesn’t pass access control…. 为什么跨域同源非同源自己去查吧，在 webpack 配置一下 proxyTable 就 OK 了，如下 config/index.js
 
 ```js
 dev: {

@@ -5,7 +5,7 @@
 配置 flexible
 安装 lib-flexible
 
-#### 1.在命令行中运行如下安装：
+#### 1.在命令行中运行如下安装
 
 ```bash
 npm i lib-flexible --save

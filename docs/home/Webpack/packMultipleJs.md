@@ -1,24 +1,24 @@
 ### 打包多个页面以及 js 文件
 
-#### 初始化项目文件，创建 package.json 文件。
+#### 初始化项目文件，创建 package.json 文件
 
 ```bash
 npm init -y
 ```
 
-#### 项目目录安装 webpack。
+#### 项目目录安装 webpack
 
 ```bash
 npm install --save-dev webpack
 ```
 
-#### 安装 html-webpack-plugin。
+#### 安装 html-webpack-plugin
 
 ```bash
 npm i --save-dev html-webpack-plugin
 ```
 
-#### 新建 webpack.config.js。
+#### 新建 webpack.config.js
 
 ```js
 let path = require('path')

@@ -1,6 +1,6 @@
 ### Babel 入门
 
-#### 初始化。
+#### 初始化
 
 ```bash
 npm init
@@ -50,7 +50,7 @@ npm install --save-dev babel-preset-stage-3
 npm install --global babel-cli
 ```
 
-#### 基本用法如下。
+#### 基本用法如下
 
 ```bash
 # 转码结果输出到标准输出

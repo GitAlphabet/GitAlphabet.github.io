@@ -22,6 +22,7 @@ const args = [...arguments];
 ```
 
 #### 对参数使用 typeof
+
 typeof参数返回 'object'。
 
 ```js

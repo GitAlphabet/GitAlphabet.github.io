@@ -224,4 +224,6 @@ methods: {
 }
 ```
 
-#### 因为 state，getter 为返回为某个状态值，所以使用计算属性。mutations，actions 需要放在方法里面。
+::: tip
+ 因为 state，getter 为返回为某个状态值，所以使用计算属性。mutations，actions 需要放在方法里面
+:::

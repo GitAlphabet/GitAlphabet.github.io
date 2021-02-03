@@ -49,7 +49,8 @@ ImmutableData.set('a',10);
 ```
 
 **merge()**
-```js
+
+``` js
 // 对于多个数据修改进行合并
 ImmutableData.merge({
   'a',10,
