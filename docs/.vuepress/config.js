@@ -131,7 +131,7 @@ module.exports = {
         },
         {
           title: 'Http',
-          children: ['Http/tcp'],
+          children: ['Http/tcp','Http/https'],
         },
         {
           title: 'Eslint',
