@@ -12,5 +12,6 @@
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.5.4"
-  }
+  },
+  "dependencies": {}
 }
