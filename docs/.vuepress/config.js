@@ -105,7 +105,6 @@ module.exports = {
             'React/reduxBase',
             'React/reduxThunk',
             'React/immutable',
-            'React/subject',
           ],
         },
         {
@@ -132,7 +131,7 @@ module.exports = {
         },
         {
           title: 'Http',
-          children: ['Http/tcp','Http/https'],
+          children: ['Http/tcp', 'Http/https'],
         },
         {
           title: 'Eslint',
@@ -141,6 +140,10 @@ module.exports = {
         {
           title: 'DataBase',
           children: ['DataBase/queryOperation'],
+        },
+        {
+          title: '面试题',
+          children: ['Subject/css', 'Subject/js', 'Subject/react'],
         },
       ],
       '/algorithm/': [
