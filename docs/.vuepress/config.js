@@ -143,7 +143,12 @@ module.exports = {
         },
         {
           title: '面试题',
-          children: ['Subject/css', 'Subject/js', 'Subject/react'],
+          children: [
+            'Subject/css',
+            'Subject/js',
+            'Subject/react',
+            'Subject/vue',
+          ],
         },
       ],
       '/algorithm/': [
