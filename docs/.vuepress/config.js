@@ -46,7 +46,7 @@ module.exports = {
             'CSS/someCss',
             'CSS/mobileLayout',
             'CSS/BFC',
-            'CSS/textOverflow',
+            'CSS/skill',
           ],
         },
         {
@@ -71,6 +71,7 @@ module.exports = {
             'Javascript/fullScreen',
             'Javascript/typeChange',
             'Javascript/debounceAndThrottle',
+            'Javascript/sort',
           ],
         },
         {
