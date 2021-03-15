@@ -132,7 +132,7 @@ module.exports = {
         },
         {
           title: 'Http',
-          children: ['Http/tcp', 'Http/https'],
+          children: ['Http/tcp', 'Http/https', 'Http/cache-control'],
         },
         {
           title: 'Eslint',
@@ -173,6 +173,7 @@ module.exports = {
             'computerBinary',
             'yarnUpdate',
             'npm',
+            'publish-npm',
             'refreshOrigin',
             'whistle',
             'Markdown',
