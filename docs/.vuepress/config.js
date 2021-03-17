@@ -109,20 +109,8 @@ module.exports = {
           ],
         },
         {
-          title: 'React',
-          children: [
-            'React/reactCreateApp',
-            'React/cssModule',
-            'React/lifeCycle',
-            // 'React/hooks',
-            'React/reduxBase',
-            'React/reduxThunk',
-            'React/immutable',
-          ],
-        },
-        {
           title: '小程序',
-          children: ['Mini/getUserInfo', 'Mini/globalData'],
+          children: ['Mini/getUserInfo', 'Mini/globalData', 'Mini/attentions'],
         },
         {
           title: 'Node',
