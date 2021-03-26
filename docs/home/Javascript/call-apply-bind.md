@@ -67,6 +67,8 @@ const Person2 = function () {
 }
 const person = new Person2();
 person.getname();       // obj
+// Person1 的 this 变成 Person2的this，并执行一遍Person1函数
+// Person2就多了一个name属性
 ```
 
 从上面我们看到，Person2 实例化出来的对象 person 通过 getname 方法拿到了 Person1 中的 name。因为在 Person2 中，Person1.call(this) 的作用就是使用 Person1 对象代替 this 对象，那么 Person2 就有了 Person1 中的所有属性和方法了，相当于 Person2 继承了 Person1 的属性和方法。
@@ -120,13 +122,13 @@ func.call(null, 'obj');      // obj undefined undefined
 
 ```js
 if (!Function.prototype.bind) {
-        Function.prototype.bind = function () {
-            const self = this,                        // 保存原函数
-                context = [].shift.call(arguments), // 保存需要绑定的this上下文
-                args = [].slice.call(arguments);    // 剩余的参数转为数组
-            return function () {                    // 返回一个新函数
-                self.apply(context,[].concat.call(args, [].slice.call(arguments)));
-            }
+    Function.prototype.bind = function () {
+        const self = this,                        // 保存原函数
+            context = [].shift.call(arguments), // 保存需要绑定的this上下文
+            args = [].slice.call(arguments);    // 剩余的参数转为数组
+        return function () {                    // 返回一个新函数
+            self.apply(context,[].concat.call(args, [].slice.call(arguments)));
         }
     }
+}
 ```
