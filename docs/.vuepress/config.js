@@ -73,6 +73,7 @@ module.exports = {
             'Javascript/typeChange',
             'Javascript/debounceAndThrottle',
             'Javascript/sort',
+            'Javascript/type-interface',
           ],
         },
         {

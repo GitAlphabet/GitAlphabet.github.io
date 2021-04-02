@@ -6,7 +6,6 @@
 + 提升性能，打开本地资源肯定会比请求服务器来的快。
 + 减少带宽消耗，当我们使用缓存时，只会产生很小的网络消耗。
 
-  
 #### 2、浏览器缓存位置
 
 + Service Worker
@@ -56,10 +55,12 @@ Push Cache（推送缓存）是 HTTP/2 中的内容，当以上三种缓存都�
   + **max-stale=n**: 用法类似max-age，但只在请求头部有效，表示客户端愿意接收一个过期的版本，该资源的过期时间不能超过给定的时间n。
 
 **设置强缓存**  
+
 + 第一次，请求服务器，然后服务器进行应答，浏览器会根据response Header来判断是否对资源进行缓存，如果响应头中**expires、pragma**或者**cache-control**字段，代表是强缓存，浏览器就会把资源缓存在**memory cache** 或 **disk cache**中。
 + 第二次，浏览器判断请求参数，如果符合强缓存条件就直接返回状态码200，从本地缓存中拿数据。否则把响应参数存在request header请求头中，看是否符合协商缓存，符合则返回状态码304，不符合则服务器会返回全新资源。
 
 ::: tip
+
 + Cache-Control可以设置多个值，以,分隔，例如Cache-Control: no-cache,max-age=3600
 + Pragma为http1.0的产物，已逐步被http1.1的cache-control:no-cache替代，功能一致。http1.1响应首部中出现的Pragma:no-cache只是为了兼容http1.0，实际Cache-Control的优先级更高。
 + **Pragma和Expires同时存在时，Expires不会生效，即Pragma的优先级要高于Expires**
@@ -84,5 +85,4 @@ Push Cache（推送缓存）是 HTTP/2 中的内容，当以上三种缓存都�
 
 + **ETag比较的是响应内容的特征值，而Last-Modified 比较的是响应内容的修改时间**。这两个是相辅相成的。服务器可以根据自己缓存机制的需要，选择ETag或者是Last-Modified来做缓存判断的依据，甚至可以两个同时参考。
 + **Etag和Last-Modified同时存在时，服务器会优先判断Etag**，如果Etag的值相同会继续判断Last-Modified，最后才决定是返回200还是304状态
-
 :::
