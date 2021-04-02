@@ -84,12 +84,10 @@ module.exports = {
             'Vue/px2rem',
             'Vue/px2vw',
             'Vue/betterScroll',
-            'Vue/eslintRepair',
             'Vue/reviseStyle',
             'Vue/componentCommunication',
             'Vue/nextTickAndset',
             'Vue/watch',
-            'Vue/attentionPoints',
             'Vue/axios',
             'Vue/interceptor',
             'Vue/lazyRouter',
@@ -137,11 +135,11 @@ module.exports = {
         },
         {
           title: 'Http',
-          children: ['Http/tcp', 'Http/https', 'Http/cache-control'],
+          children: ['Http/tcp', 'Http/https', 'Http/cache'],
         },
         {
           title: 'Eslint',
-          children: ['Eslint/oftenUse'],
+          children: ['Eslint/oftenUse', 'Eslint/eslintRepair'],
         },
         {
           title: 'DataBase',
