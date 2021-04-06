@@ -113,7 +113,7 @@ const func1 = func.bind(null,'obj');
 func('A', 'B', 'C');            // A B C
 func1('A', 'B', 'C');           // obj A B
 func1('B', 'C');                // obj B C
-func.call(null, 'obj');      // obj undefined undefined
+func.call(null, 'obj');         // obj undefined undefined
 ```
 
 **call 是把第二个及以后的参数作为 func 方法的实参传进去，而 func1 方法的实参实则是在 bind 中参数的基础上再往后排。**
@@ -123,10 +123,10 @@ func.call(null, 'obj');      // obj undefined undefined
 ```js
 if (!Function.prototype.bind) {
     Function.prototype.bind = function () {
-        const self = this,                        // 保存原函数
-            context = [].shift.call(arguments), // 保存需要绑定的this上下文
-            args = [].slice.call(arguments);    // 剩余的参数转为数组
-        return function () {                    // 返回一个新函数
+        const self = this,                  // 保存原函数
+        context = [].shift.call(arguments), // 保存需要绑定的this上下文
+        args = [].slice.call(arguments);    // 剩余的参数转为数组
+        return function () {                // 返回一个新函数
             self.apply(context,[].concat.call(args, [].slice.call(arguments)));
         }
     }

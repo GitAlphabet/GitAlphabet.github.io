@@ -63,6 +63,7 @@ module.exports = {
             'Javascript/base64ToFile',
             'Javascript/RegExp',
             'Javascript/call-apply-bind',
+            'Javascript/this',
             'Javascript/closure',
             'Javascript/prototype',
             'Javascript/eventLoop',
