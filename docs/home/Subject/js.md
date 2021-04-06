@@ -52,21 +52,20 @@ s.substring(1,4) == "ell" // true
 在两数相加时，会先转换成二进制，0.1 和 0.2 转换成二进制的时候尾数会发生无限循环，然后进行对阶运算，JS 引擎对二进制进行截断，所以造成精度丢失。
 ```
 
-#### 6、JS 数据类型JS 数据类型
+#### 6、JS 数据类型
 
-```md
-基本类型：
-- Number
-- Boolean
-- String
-- null
-- undefined
-- symbol（ES6 新增的）
-- BigInt（ES2020） 
 
-引用类型：
-- Object，对象子类型（Array，Function）
-```
++ 6 种原始类型，使用 typeof 运算符检查。
+    - undefined：typeof instance === "undefined"
+    - Boolean：typeof instance === "boolean"
+    - Number：typeof instance === "number"
+    - String：typeof instance === "string
+    - BigInt：typeof instance === "bigint"
+    - Symbol ：typeof instance === "symbol"
++ null：typeof instance === "object"。
++ Object：typeof instance === "object"。任何 constructed 对象实例的特殊非数据结构类型，也用做数据结构：new **Object**，new **Array**，new **Map**，new **Set**，new **WeakMap**，new **WeakSet**，new **Date**，和几乎所有通过 new keyword 创建的东西。
++ Function：非数据结构，尽管 typeof 操作的结果是：typeof instance === "function"。这个结果是为 Function 的一个特殊缩写，尽管每个 Function 构造器都由 Object 构造器派生。
+
 
 #### 7、['1', '2', '3'].map(parseInt)的结果是什么？
 
