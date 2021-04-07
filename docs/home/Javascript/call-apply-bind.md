@@ -1,6 +1,6 @@
 ### call、apply、bind 详解
 
-#### apply(apply(context,[]))
+#### apply(context,[])
 
 apply 方法传入两个参数：一个是作为函数上下文的对象，另外一个是作为函数参数所组成的数组。
 
@@ -16,7 +16,7 @@ fun.apply(obj, ['A', 'B']);    // A obj B
 
 obj 是作为函数上下文的对象，函数 fun 中 this 指向了 obj 这个对象。参数 A 和 B 是放在数组中传入 fun 函数，分别对应 fun 参数的列表元素。
 
-#### call(call(context,a,b,...))
+#### call(context,a,b,...)
 
 call 方法第一个参数也是作为函数上下文的对象，但是后面传入的是一个参数列表，而不是单个数组。
 
@@ -118,15 +118,26 @@ func.call(null, 'obj');         // obj undefined undefined
 
 **call 是把第二个及以后的参数作为 func 方法的实参传进去，而 func1 方法的实参实则是在 bind 中参数的基础上再往后排。**
 
+ES6 版本
+
+```js
+Function.prototype.bind = function(context, ...args) {
+    const self = this;
+    return function(...rest) {
+        self.apply(context,[...args, ...rest]);
+    }
+}
+```
+
 在低版本浏览器没有 bind 方法，我们也可以自己实现一个。
 
 ```js
 if (!Function.prototype.bind) {
     Function.prototype.bind = function () {
-        const self = this,                  // 保存原函数
-        context = [].shift.call(arguments), // 保存需要绑定的this上下文
-        args = [].slice.call(arguments);    // 剩余的参数转为数组
-        return function () {                // 返回一个新函数
+        const self = this;                          // 保存原函数
+        const context = [].shift.call(arguments);   // 保存需要绑定的this上下文
+        const args = [].slice.call(arguments);       // 剩余的参数转为数组
+        return function () {                        // 返回一个新函数
             self.apply(context,[].concat.call(args, [].slice.call(arguments)));
         }
     }
