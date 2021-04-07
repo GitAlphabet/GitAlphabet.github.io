@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mac 安装 Nginx | 向往飞翔的小蚂蚁</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico">
+    <meta name="description" content="个人博客">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.7d83402d.css" as="style"><link rel="preload" href="/blog/assets/js/app.8396ca2a.js" as="script"><link rel="preload" href="/blog/assets/js/2.76cc03dc.js" as="script"><link rel="preload" href="/blog/assets/js/52.d11cbdb0.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.9b0b024e.js"><link rel="prefetch" href="/blog/assets/js/11.af39652f.js"><link rel="prefetch" href="/blog/assets/js/12.dd27b6bf.js"><link rel="prefetch" href="/blog/assets/js/13.fae85bbe.js"><link rel="prefetch" href="/blog/assets/js/14.767fa6c4.js"><link rel="prefetch" href="/blog/assets/js/15.0ec0971b.js"><link rel="prefetch" href="/blog/assets/js/16.bbb34357.js"><link rel="prefetch" href="/blog/assets/js/17.5c4ea1ff.js"><link rel="prefetch" href="/blog/assets/js/18.227802b3.js"><link rel="prefetch" href="/blog/assets/js/19.52b4fdf7.js"><link rel="prefetch" href="/blog/assets/js/20.d4b2d66f.js"><link rel="prefetch" href="/blog/assets/js/21.967c4096.js"><link rel="prefetch" href="/blog/assets/js/22.70167a34.js"><link rel="prefetch" href="/blog/assets/js/23.16c429b3.js"><link rel="prefetch" href="/blog/assets/js/24.e8089f29.js"><link rel="prefetch" href="/blog/assets/js/25.cf1d6dd2.js"><link rel="prefetch" href="/blog/assets/js/26.01f2cf82.js"><link rel="prefetch" href="/blog/assets/js/27.03fdf803.js"><link rel="prefetch" href="/blog/assets/js/28.7fb8de40.js"><link rel="prefetch" href="/blog/assets/js/29.b750a7cf.js"><link rel="prefetch" href="/blog/assets/js/3.243055f7.js"><link rel="prefetch" href="/blog/assets/js/30.acf4213f.js"><link rel="prefetch" href="/blog/assets/js/31.0595b1c8.js"><link rel="prefetch" href="/blog/assets/js/32.93c6a50f.js"><link rel="prefetch" href="/blog/assets/js/33.dd5a8a5f.js"><link rel="prefetch" href="/blog/assets/js/34.4ce2257f.js"><link rel="prefetch" href="/blog/assets/js/35.620c64d4.js"><link rel="prefetch" href="/blog/assets/js/36.47959ed6.js"><link rel="prefetch" href="/blog/assets/js/37.09fd7db6.js"><link rel="prefetch" href="/blog/assets/js/38.3a50aee9.js"><link rel="prefetch" href="/blog/assets/js/39.67c33b2a.js"><link rel="prefetch" href="/blog/assets/js/4.a62c7ec3.js"><link rel="prefetch" href="/blog/assets/js/40.2156dd7a.js"><link rel="prefetch" href="/blog/assets/js/41.d55c5928.js"><link rel="prefetch" href="/blog/assets/js/42.f4f8c724.js"><link rel="prefetch" href="/blog/assets/js/43.ec5b2c32.js"><link rel="prefetch" href="/blog/assets/js/44.fe6c4967.js"><link rel="prefetch" href="/blog/assets/js/45.a1934ac1.js"><link rel="prefetch" href="/blog/assets/js/46.033c70da.js"><link rel="prefetch" href="/blog/assets/js/47.2f7785de.js"><link rel="prefetch" href="/blog/assets/js/48.4fb6f2b3.js"><link rel="prefetch" href="/blog/assets/js/49.3d0ef67b.js"><link rel="prefetch" href="/blog/assets/js/5.86acd385.js"><link rel="prefetch" href="/blog/assets/js/50.0968747b.js"><link rel="prefetch" href="/blog/assets/js/51.694b0b1f.js"><link rel="prefetch" href="/blog/assets/js/53.2bcf11c4.js"><link rel="prefetch" href="/blog/assets/js/54.883e446d.js"><link rel="prefetch" href="/blog/assets/js/55.c8b9bf19.js"><link rel="prefetch" href="/blog/assets/js/56.16ba8acd.js"><link rel="prefetch" href="/blog/assets/js/57.dfd6960e.js"><link rel="prefetch" href="/blog/assets/js/58.3aa65795.js"><link rel="prefetch" href="/blog/assets/js/59.99d2d1b3.js"><link rel="prefetch" href="/blog/assets/js/6.f4c0b78d.js"><link rel="prefetch" href="/blog/assets/js/60.65f433da.js"><link rel="prefetch" href="/blog/assets/js/61.df5472e3.js"><link rel="prefetch" href="/blog/assets/js/62.573b6f4d.js"><link rel="prefetch" href="/blog/assets/js/63.33809b32.js"><link rel="prefetch" href="/blog/assets/js/64.0d9550b6.js"><link rel="prefetch" href="/blog/assets/js/65.367b7a76.js"><link rel="prefetch" href="/blog/assets/js/66.d547c231.js"><link rel="prefetch" href="/blog/assets/js/67.babfb5a4.js"><link rel="prefetch" href="/blog/assets/js/68.7bd8cfbb.js"><link rel="prefetch" href="/blog/assets/js/69.a148e219.js"><link rel="prefetch" href="/blog/assets/js/7.852f5170.js"><link rel="prefetch" href="/blog/assets/js/70.65baa76b.js"><link rel="prefetch" href="/blog/assets/js/71.ecf564d9.js"><link rel="prefetch" href="/blog/assets/js/72.4944ff27.js"><link rel="prefetch" href="/blog/assets/js/73.3b9fefac.js"><link rel="prefetch" href="/blog/assets/js/74.f078ab98.js"><link rel="prefetch" href="/blog/assets/js/75.360b34ae.js"><link rel="prefetch" href="/blog/assets/js/76.bcfeaccf.js"><link rel="prefetch" href="/blog/assets/js/77.f6bcf87f.js"><link rel="prefetch" href="/blog/assets/js/78.a1778a43.js"><link rel="prefetch" href="/blog/assets/js/79.dfa51e3b.js"><link rel="prefetch" href="/blog/assets/js/8.0013f72e.js"><link rel="prefetch" href="/blog/assets/js/80.3f4a0385.js"><link rel="prefetch" href="/blog/assets/js/81.74793ed2.js"><link rel="prefetch" href="/blog/assets/js/82.350c5b19.js"><link rel="prefetch" href="/blog/assets/js/83.16a73037.js"><link rel="prefetch" href="/blog/assets/js/84.6cde2e88.js"><link rel="prefetch" href="/blog/assets/js/85.ec744de5.js"><link rel="prefetch" href="/blog/assets/js/86.40a4e45e.js"><link rel="prefetch" href="/blog/assets/js/87.28a93ff5.js"><link rel="prefetch" href="/blog/assets/js/88.b2d0a832.js"><link rel="prefetch" href="/blog/assets/js/89.3301163c.js"><link rel="prefetch" href="/blog/assets/js/9.1d922a88.js"><link rel="prefetch" href="/blog/assets/js/90.ef822659.js"><link rel="prefetch" href="/blog/assets/js/91.f6ee2d07.js"><link rel="prefetch" href="/blog/assets/js/92.581c5137.js"><link rel="prefetch" href="/blog/assets/js/93.b52e0d41.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.7d83402d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">向往飞翔的小蚂蚁</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/home/CSS/less.html" class="nav-link">
+  基础
+</a></div><div class="nav-item"><a href="/blog/algorithm/Simple/first.html" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/blog/other/computerBinary.html" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="https://github.com/GitAlphabet" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/home/CSS/less.html" class="nav-link">
+  基础
+</a></div><div class="nav-item"><a href="/blog/algorithm/Simple/first.html" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/blog/other/computerBinary.html" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="https://github.com/GitAlphabet" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Nginx</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/home/Nginx/install.html" aria-current="page" class="active sidebar-link">Mac 安装 Nginx</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Http</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Eslint</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>DataBase</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="mac-安装-nginx"><a href="#mac-安装-nginx" class="header-anchor">#</a> Mac 安装 Nginx</h3> <h4 id="安装工具"><a href="#安装工具" class="header-anchor">#</a> 安装工具</h4> <p><a href="https://brew.sh/index_zh-cn.html" target="_blank" rel="noopener noreferrer">homebrew<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h4 id="安装步骤"><a href="#安装步骤" class="header-anchor">#</a> 安装步骤</h4> <p>1、安装 homebrew</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>/usr/bin/ruby -e <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="token variable">)</span></span>&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>2、更新 homebrew</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>brew update
+<span class="token comment">#结果：Already up-to-date.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>3、安装 Nginx</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>brew <span class="token function">install</span> nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>4、查看 Nginx 安装目录</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">open</span> /usr/local/etc/nginx/
+<span class="token comment"># 成功打开nginx目录，可以看到nginx.conf的配置文件（后面会用到这个配置文件）。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>5、编辑 nginx.conf</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">cat</span> /usr/local/etc/nginx/nginx.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="nginx-命令"><a href="#nginx-命令" class="header-anchor">#</a> Nginx 命令</h4> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 启动 nginx</span>
+nginx
+
+<span class="token comment"># 修改配置后重新加载生效</span>
+nginx -s reload
+
+<span class="token comment"># 重新打开日志文件</span>
+nginx -s reopen
+
+<span class="token comment"># 测试nginx配置文件是否正确</span>
+nginx -t -c /path/to/nginx.conf
+
+<span class="token comment"># 快速停止nginx</span>
+nginx -s stop
+
+<span class="token comment"># 完整有序的停止nginx</span>
+quit
+
+<span class="token comment"># 查询nginx 进程</span>
+<span class="token function">ps</span> -ef <span class="token operator">|</span> <span class="token function">grep</span> nginx
+
+<span class="token comment"># 从容停止Nginx</span>
+<span class="token function">kill</span> -QUIT 主进程号
+
+<span class="token comment"># 快速停止Nginx</span>
+<span class="token function">kill</span> -<span class="token environment constant">TERM</span> 主进程号
+
+<span class="token comment"># 强制停止Nginx</span>
+<span class="token function">pkill</span> -9 nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h4 id="配置文件实例"><a href="#配置文件实例" class="header-anchor">#</a> 配置文件实例</h4> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#user  nobody;</span>
+worker_processes  <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">#error_log  logs/error.log;</span>
+<span class="token comment">#error_log  logs/error.log  notice;</span>
+<span class="token comment">#error_log  logs/error.log  info;</span>
+
+<span class="token comment">#pid        logs/nginx.pid;</span>
+events <span class="token punctuation">{</span>
+    worker_connections  <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+http <span class="token punctuation">{</span>
+    client_max_body_size 5m<span class="token punctuation">;</span>
+    include mime.types<span class="token punctuation">;</span>
+    default_type application/octet-stream<span class="token punctuation">;</span>
+    server <span class="token punctuation">{</span>
+        listen <span class="token number">9999</span><span class="token punctuation">;</span>        <span class="token comment"># the port nginx is listening on</span>
+        <span class="token comment">#server_name     'http://192.168.1.64';    # setup your domain here</span>
+        <span class="token function">gzip</span>            on<span class="token punctuation">;</span>
+        gzip_types      text/plain application/xml text/css application/javascript<span class="token punctuation">;</span>
+        gzip_min_length <span class="token number">1000</span><span class="token punctuation">;</span>
+        include mime.types<span class="token punctuation">;</span>
+        default_type application/octet-stream<span class="token punctuation">;</span>
+        location /uc/ <span class="token punctuation">{</span>
+            proxy_set_header Host <span class="token variable">$host</span><span class="token punctuation">;</span>
+            proxy_set_header X-Real-IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+            proxy_set_header REMOTE-HOST <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+            proxy_set_header X-Forwarded-For <span class="token variable">$proxy_add_x_forwarded_for</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$uri</span> ~* <span class="token string">&quot;^/uc/.*?&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                proxy_pass   http://192.168.1.64:7001<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            index  index.html index.htm<span class="token punctuation">;</span>
+
+            client_max_body_size    50m<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        location /ucManage/ <span class="token punctuation">{</span>
+            proxy_pass   http://192.168.4.43:6300<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/home/Git/basicCommand.html" class="prev">
+        Git 指令
+      </a></span> <span class="next"><a href="/blog/home/Http/tcp.html">
+        TCP 协议
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.8396ca2a.js" defer></script><script src="/blog/assets/js/2.76cc03dc.js" defer></script><script src="/blog/assets/js/52.d11cbdb0.js" defer></script>
+  </body>
+</html>
