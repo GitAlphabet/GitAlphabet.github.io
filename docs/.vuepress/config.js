@@ -15,7 +15,7 @@ module.exports = {
       },
     ],
   ],
-  base:'/blog/',
+  // base:'/blog/',
   themeConfig: {
     nav: [
       {
