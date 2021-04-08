@@ -54,7 +54,6 @@ s.substring(1,4) == "ell" // true
 
 #### 6、JS 数据类型
 
-
 + 6 种原始类型，使用 typeof 运算符检查。
     - undefined：typeof instance === "undefined"
     - Boolean：typeof instance === "boolean"
@@ -65,7 +64,6 @@ s.substring(1,4) == "ell" // true
 + null：typeof instance === "object"。
 + Object：typeof instance === "object"。任何 constructed 对象实例的特殊非数据结构类型，也用做数据结构：new **Object**，new **Array**，new **Map**，new **Set**，new **WeakMap**，new **WeakSet**，new **Date**，和几乎所有通过 new keyword 创建的东西。
 + Function：非数据结构，尽管 typeof 操作的结果是：typeof instance === "function"。这个结果是为 Function 的一个特殊缩写，尽管每个 Function 构造器都由 Object 构造器派生。
-
 
 #### 7、['1', '2', '3'].map(parseInt)的结果是什么？
 

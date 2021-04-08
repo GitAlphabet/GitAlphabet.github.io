@@ -56,6 +56,7 @@ module.exports = {
             'Javascript/array',
             'Javascript/arguments',
             'Javascript/async',
+            'Javascript/promise',
             'Javascript/number',
             'Javascript/babel',
             'Javascript/copy',

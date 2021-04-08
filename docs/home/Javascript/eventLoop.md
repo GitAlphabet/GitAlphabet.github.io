@@ -33,9 +33,16 @@ macro tasks：
 micro tasks:
     process.nextTick
     Promises
+    async/await
     Object.observe
     MutationObserver
 ```
+
+:::tip
+**宏任务在DOM渲染后触发**
+**微任务在DOM渲染前触发**
+**微任务执行时机比宏任务要早**
+:::
 
 实例：
 

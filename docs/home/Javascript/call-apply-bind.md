@@ -124,7 +124,7 @@ ES6 版本
 Function.prototype.bind = function(context, ...args) {
     const self = this;
     return function(...rest) {
-        self.apply(context,[...args, ...rest]);
+        return self.apply(context,[...args, ...rest]);
     }
 }
 ```
@@ -138,7 +138,7 @@ if (!Function.prototype.bind) {
         const context = [].shift.call(arguments);   // 保存需要绑定的this上下文
         const args = [].slice.call(arguments);       // 剩余的参数转为数组
         return function () {                        // 返回一个新函数
-            self.apply(context,[].concat.call(args, [].slice.call(arguments)));
+            return self.apply(context,[].concat.call(args, [].slice.call(arguments)));
         }
     }
 }
