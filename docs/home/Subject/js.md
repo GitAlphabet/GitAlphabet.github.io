@@ -54,16 +54,16 @@ s.substring(1,4) == "ell" // true
 
 #### 6、JS 数据类型
 
-+ 6 种原始类型，使用 typeof 运算符检查。
-    - undefined：typeof instance === "undefined"
-    - Boolean：typeof instance === "boolean"
-    - Number：typeof instance === "number"
-    - String：typeof instance === "string
-    - BigInt：typeof instance === "bigint"
-    - Symbol ：typeof instance === "symbol"
-+ null：typeof instance === "object"。
-+ Object：typeof instance === "object"。任何 constructed 对象实例的特殊非数据结构类型，也用做数据结构：new **Object**，new **Array**，new **Map**，new **Set**，new **WeakMap**，new **WeakSet**，new **Date**，和几乎所有通过 new keyword 创建的东西。
-+ Function：非数据结构，尽管 typeof 操作的结果是：typeof instance === "function"。这个结果是为 Function 的一个特殊缩写，尽管每个 Function 构造器都由 Object 构造器派生。
+* 6 种原始类型，使用 typeof 运算符检查。
+  * undefined：typeof instance === "undefined"
+  * Boolean：typeof instance === "boolean"
+  * Number：typeof instance === "number"
+  * String：typeof instance === "string
+  * BigInt：typeof instance === "bigint"
+  * Symbol ：typeof instance === "symbol"
+* null：typeof instance === "object"。
+* Object：typeof instance === "object"。任何 constructed 对象实例的特殊非数据结构类型，也用做数据结构：new **Object**，new **Array**，new **Map**，new **Set**，new **WeakMap**，new **WeakSet**，new **Date**，和几乎所有通过 new keyword 创建的东西。
+* Function：非数据结构，尽管 typeof 操作的结果是：typeof instance === "function"。这个结果是为 Function 的一个特殊缩写，尽管每个 Function 构造器都由 Object 构造器派生。
 
 #### 7、['1', '2', '3'].map(parseInt)的结果是什么？
 
@@ -114,3 +114,42 @@ console.log(brr);//[3, 8, 15, 22, 29, 102]
 ```md
 == 需要做类型转换，所以性能较差
 ```
+
+#### 10、宏任务和微任务
+
+* 宏任务：当前调用栈中执行的任务称为宏任务。（主代码快，定时器等等）。
+* 微任务： 当前（此次事件循环中）宏任务执行完，**在下一个宏任务开始之前需要执行的任务为微任务**。（可以理解为回调事件，promise.then，proness.nextTick等等）。
+* 宏任务中的事件放在callback queue中，由事件触发线程维护；微任务的事件放在微任务队列中，由js引擎线程维护。
+
+#### 11、陈述输入URL回车后的过程
+
+* 1、读取缓存：搜索自身的 DNS 缓存。(如果 DNS 缓存中找到IP 地址就跳过了接下来查找 IP 地址步骤，直接访问该 IP 地址。)
+* 2、DNS 解析:将域名解析成 IP 地址
+* 3、TCP 连接：TCP 三次握手，简易描述三次握手
+  * 客户端：服务端你在么？
+  * 服务端：客户端我在，你要连接我么？
+  * 客户端：是的服务端，我要链接。
+  * 连接打通，可以开始请求来
+* 4、发送 HTTP 请求
+* 5、服务器处理请求并返回 HTTP 报文
+* 6、浏览器解析渲染页面
+* 7、断开连接：TCP 四次挥手
+
+关于第六步浏览器解析渲染页面又可以聊聊如果返回的是html页面
+
+* 根据 HTML 解析出 DOM 树
+* 根据 CSS 解析生成 CSS 规则树
+* 结合 DOM 树和 CSS 规则树，生成渲染树
+* 根据渲染树计算每一个节点的信息
+* 根据计算好的信息绘制页面
+
+#### 12、原型链
+
+* 每个构造函数都有一个原型对象
+* 每个原型对象都有一个指向构造函数的指针
+* 每个实例函数都有一个指向原型对象的指针。
+* 查找方式是一层一层查找，直至顶层。Object.prototype
+
+#### 13、同源策略
+
+**协议、域名、端口**必须一致。
