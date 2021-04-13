@@ -96,6 +96,7 @@ module.exports = {
             'Vue/lazyRouter',
             'Vue/vuex',
             'Vue/routeParams',
+            'Vue/route',
           ],
         },
         {
