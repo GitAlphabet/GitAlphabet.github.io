@@ -109,6 +109,7 @@ module.exports = {
             'React/reduxBase',
             'React/reduxThunk',
             'React/immutable',
+            'React/redux-middleware',
           ],
         },
         {
