@@ -96,7 +96,7 @@ module.exports = {
             'Vue/lazyRouter',
             'Vue/vuex',
             'Vue/routeParams',
-            'Vue/route',
+            'Vue/router',
           ],
         },
         {
@@ -105,7 +105,7 @@ module.exports = {
             'React/reactCreateApp',
             'React/cssModule',
             'React/lifeCycle',
-            // 'React/hooks',
+            'React/hooks',
             'React/reduxBase',
             'React/reduxThunk',
             'React/immutable',
