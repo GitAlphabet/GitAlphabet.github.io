@@ -124,6 +124,7 @@ module.exports = {
         {
           title: 'Webpack',
           children: [
+            'Webpack/optimize',
             'Webpack/processEnv',
             'Webpack/handleCss',
             'Webpack/toES6',
