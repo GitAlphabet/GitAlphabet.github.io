@@ -74,9 +74,15 @@ module.exports = {
             'Javascript/fullScreen',
             'Javascript/typeChange',
             'Javascript/debounceAndThrottle',
-            'Javascript/sort',
-            'Javascript/type-interface',
+            'Javascript/sort' 
           ],
+        },
+        {
+          title: 'TypeScript',
+          children: [
+            'TypeScript/type-interface',
+            'TypeScript/logicalOperators',
+          ]
         },
         {
           title: 'Vue',
@@ -109,7 +115,9 @@ module.exports = {
             'React/reduxBase',
             'React/reduxThunk',
             'React/immutable',
-            'React/redux-middleware',
+            'React/immer',
+            'React/tree-shaking',
+            'React/virtualScroll'
           ],
         },
         {

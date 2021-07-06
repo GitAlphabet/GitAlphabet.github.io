@@ -1,4 +1,6 @@
-### immutable
+### immutable 
+
+`已放弃 immer 更香`
 
 #### immutable Data
 
