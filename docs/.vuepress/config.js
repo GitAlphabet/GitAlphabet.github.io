@@ -82,6 +82,7 @@ module.exports = {
           children: [
             'TypeScript/type-interface',
             'TypeScript/logicalOperators',
+            'TypeScript/echart',
           ]
         },
         {

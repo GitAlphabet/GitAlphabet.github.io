@@ -1,4 +1,4 @@
-### TS 中 type和interface 区别
+### type 和 interface 区别
 
 #### 1、相同点
 
