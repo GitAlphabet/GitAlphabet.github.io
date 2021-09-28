@@ -118,7 +118,7 @@ module.exports = {
             'React/reduxThunk',
             'React/immutable',
             'React/immer',
-            'React/tree-shaking'
+            'React/tree-shaking',
           ],
         },
         {
@@ -199,6 +199,7 @@ module.exports = {
             'script',
             'settingSSH',
             'linkServer',
+            'npmERR',
           ],
         },
       ],
