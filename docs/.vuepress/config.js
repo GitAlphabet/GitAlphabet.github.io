@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         text: '其他',
-        link: '/other/computerBinary',
+        link: '/other/computer-binary',
       },
       {
         text: 'Github',
@@ -118,6 +118,7 @@ module.exports = {
             'React/redux-thunk',
             'React/immutable',
             'React/immer',
+            'React/uim-ie11',
             'React/tree-shaking',
           ],
         },
