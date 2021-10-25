@@ -118,6 +118,7 @@ module.exports = {
             'React/redux-thunk',
             'React/immutable',
             'React/immer',
+            'React/xlsx2json',
             'React/uim-ie11',
             'React/tree-shaking',
           ],
