@@ -47,6 +47,7 @@ module.exports = {
             'CSS/mobile-layout',
             'CSS/bfc',
             'CSS/skill',
+            'CSS/scroll',
           ],
         },
         {
