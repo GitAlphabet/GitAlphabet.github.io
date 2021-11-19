@@ -130,7 +130,7 @@ module.exports = {
         },
         {
           title: 'Node',
-          children: ['Node/server', 'Node/update-node'],
+          children: ['Node/server','Node/update-node', 'Node/get-params'],
         },
 
         {
