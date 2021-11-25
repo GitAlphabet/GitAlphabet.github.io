@@ -11,6 +11,7 @@ ssh root@192.168.101.203 password
 
 ```bash
 scp localAddr root@129.28.133.151:serverAddr
+put 文件地址
 # localAddr  => 本地文件路径
 # serverAddr => 需要上传到服务器的路径
 ```
