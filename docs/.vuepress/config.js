@@ -161,7 +161,7 @@ module.exports = {
         },
         {
           title: 'DataBase',
-          children: ['DataBase/query-operation','DataBase/faq'],
+          children: ['DataBase/sql','DataBase/faq'],
         },
         {
           title: '面试题',
