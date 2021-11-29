@@ -130,7 +130,13 @@ module.exports = {
         },
         {
           title: 'Node',
-          children: ['Node/server','Node/update-node', 'Node/get-params'],
+          children: [
+            'Node/mysql',
+            'Node/server',
+            'Node/pm2',
+            'Node/update-node',
+            'Node/get-params',
+          ],
         },
 
         {
@@ -161,7 +167,7 @@ module.exports = {
         },
         {
           title: 'DataBase',
-          children: ['DataBase/sql','DataBase/faq'],
+          children: ['DataBase/sql', 'DataBase/faq'],
         },
         {
           title: '面试题',
