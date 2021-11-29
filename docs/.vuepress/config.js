@@ -146,6 +146,7 @@ module.exports = {
             'Webpack/processEnv',
             'Webpack/handle-css',
             'Webpack/toES6',
+            'Webpack/start-gzip',
             'Webpack/pack-multiple-js',
           ],
         },
