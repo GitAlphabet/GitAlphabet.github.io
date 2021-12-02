@@ -13,19 +13,19 @@ yarn add compression-webpack-plugin -D
 ```js
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 
-chainWebpack: config => {
-  if (process.env.NODE_ENV === 'production') {  // 生产模式开启
-    config.plugin('compression-webpack-plugin').use(
-      new CompressionWebpackPlugin({
+chainWebpack: (config) => {
+  if (process.env.NODE_ENV === 'production') {
+    config.plugin('compression-webpack-plugin').use(CompressionWebpackPlugin, [
+      {
         // filename: 文件名称，这里我们不设置，让它保持和未压缩的文件同一个名称
         algorithm: 'gzip', // 指定生成gzip格式
-        test: new RegExp('\\.([js|css])$'), // 匹配哪些格式文件需要压缩
+        test: /\.(js|css)$/, // 匹配哪些格式文件需要压缩
         threshold: 10240, //对超过10k的数据进行压缩
-        minRatio: 0.6 // 压缩比例，值为0 ~ 1
-      })
-    );
+        minRatio: 0.8, // 压缩比例，值为0 ~ 1
+      },
+    ]);
   }
-}
+};
 ```
 
 #### 3、服务器开启 gizp (不同的服务器开启 gizp 方式不一样)

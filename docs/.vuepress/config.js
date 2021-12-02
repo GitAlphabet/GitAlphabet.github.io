@@ -79,14 +79,7 @@ module.exports = {
             'Javascript/virtual-scroll',
           ],
         },
-        {
-          title: 'TypeScript',
-          children: [
-            'TypeScript/type-interface',
-            'TypeScript/logicalOperators',
-            'TypeScript/echart',
-          ],
-        },
+
         {
           title: 'Vue',
           children: [
@@ -125,8 +118,12 @@ module.exports = {
           ],
         },
         {
-          title: '小程序',
-          children: ['Mini/getUserInfo', 'Mini/globalData', 'Mini/attentions'],
+          title: 'TypeScript',
+          children: [
+            'TypeScript/type-interface',
+            'TypeScript/logical-operators',
+            'TypeScript/echart',
+          ],
         },
         {
           title: 'Node',
@@ -140,6 +137,10 @@ module.exports = {
         },
 
         {
+          title: 'Http',
+          children: ['Http/tcp', 'Http/https', 'Http/cache'],
+        },
+        {
           title: 'Webpack',
           children: [
             'Webpack/optimize',
@@ -151,24 +152,31 @@ module.exports = {
           ],
         },
         {
-          title: 'Git',
-          children: ['Git/basic-command'],
+          title: 'Python',
+          children: [
+            'Python/list',
+            'Python/fun-params',
+          ],
+        },
+        {
+          title: 'MiniApp',
+          children: ['Mini/getUserInfo', 'Mini/globalData', 'Mini/attentions'],
         },
         {
           title: 'Nginx',
           children: ['Nginx/install'],
         },
         {
-          title: 'Http',
-          children: ['Http/tcp', 'Http/https', 'Http/cache'],
-        },
-        {
-          title: 'Eslint',
-          children: ['Eslint/eslint-rules', 'Eslint/eslint-repair'],
+          title: 'Git',
+          children: ['Git/basic-command'],
         },
         {
           title: 'DataBase',
           children: ['DataBase/sql', 'DataBase/faq'],
+        },
+        {
+          title: 'Eslint',
+          children: ['Eslint/eslint-rules', 'Eslint/eslint-repair'],
         },
         {
           title: '面试题',
