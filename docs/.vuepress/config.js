@@ -63,6 +63,7 @@ module.exports = {
             'Javascript/copy',
             'Javascript/base64',
             'Javascript/base64-to-file',
+            'Javascript/img',
             'Javascript/RegExp',
             'Javascript/call-apply-bind',
             'Javascript/this',
@@ -77,6 +78,7 @@ module.exports = {
             'Javascript/debounce-and-throttle',
             'Javascript/sort',
             'Javascript/virtual-scroll',
+           
           ],
         },
 
