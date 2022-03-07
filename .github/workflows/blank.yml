@@ -15,3 +15,4 @@ jobs:
           access-token: ${{ secrets.ACTIONTOKEN }} // 自定义 scret name
           deploy-branch: master
           deploy-repo: GitAlphabet.github.io // 注意这里直接是仓库名称
+          folder: doc/.vuepress/dist
