@@ -78,7 +78,6 @@ module.exports = {
             'Javascript/debounce-and-throttle',
             'Javascript/sort',
             'Javascript/virtual-scroll',
-           
           ],
         },
 
@@ -155,10 +154,7 @@ module.exports = {
         },
         {
           title: 'Python',
-          children: [
-            'Python/list',
-            'Python/fun-params',
-          ],
+          children: ['Python/list', 'Python/fun-params'],
         },
         {
           title: 'MiniApp',
@@ -174,7 +170,7 @@ module.exports = {
         },
         {
           title: 'DataBase',
-          children: ['DataBase/sql', 'DataBase/faq'],
+          children: ['DataBase/sql', 'DataBase/faq', 'DataBase/mysql'],
         },
         {
           title: 'Eslint',
