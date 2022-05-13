@@ -115,6 +115,7 @@ module.exports = {
             'React/immer',
             'React/xlsx2json',
             'React/uim-ie11',
+            'React/echartsMap',
             'React/tree-shaking',
           ],
         },
