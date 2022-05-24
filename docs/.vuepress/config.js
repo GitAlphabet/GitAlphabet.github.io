@@ -70,6 +70,7 @@ module.exports = {
             'Javascript/closure',
             'Javascript/prototype',
             'Javascript/eventLoop',
+            'Javascript/encryt',
             'Javascript/gc',
             'Javascript/array-sort',
             'Javascript/custom-events',
@@ -116,7 +117,6 @@ module.exports = {
             'React/xlsx2json',
             'React/uim-ie11',
             'React/echartsMap',
-            'React/tree-shaking',
           ],
         },
         {
@@ -151,6 +151,7 @@ module.exports = {
             'Webpack/toES6',
             'Webpack/start-gzip',
             'Webpack/pack-multiple-js',
+            'Webpack/tree-shaking',
           ],
         },
         {
@@ -203,6 +204,10 @@ module.exports = {
       ],
       '/other/': [
         {
+          title: 'Mac',
+          children: ['Mac/setting-ssh', 'Mac/link-server', 'Mac/canNotOpen'],
+        },
+        {
           title: '其他',
           children: [
             'computer-binary',
@@ -214,8 +219,6 @@ module.exports = {
             'markdown',
             'vuepress-deploy',
             'script',
-            'setting-ssh',
-            'link-server',
             'npm-error',
           ],
         },
