@@ -26,17 +26,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: 构建部署
+        run: bash deploy.sh
         with:
           access-token: ${{ secrets.ACTIONTOKEN }} # 自定义 scret name
-          deploy-branch: master
-          deploy-repo: GitAlphabet.github.io # 注意这里直接是仓库名称
-          folder: doc/.vuepress/dist
-
-      - name: Use Node.js 10.x # 配置Node环境
-        uses: actions/setup-node@v1 # 配置脚本来自 https://github.com/actions/setup-node
-        with:
-          node-version: "10.x"
+          # deploy-branch: master
+          # deploy-repo: GitAlphabet.github.io # 注意这里直接是仓库名称
+          # folder: doc/.vuepress/dist
     
-      - name: 构建部署
-        run: bash deploy,sh
+
