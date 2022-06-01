@@ -151,6 +151,7 @@ module.exports = {
             'Webpack/toES6',
             'Webpack/start-gzip',
             'Webpack/pack-multiple-js',
+            'Webpack/loader-plugin',
             'Webpack/tree-shaking',
           ],
         },

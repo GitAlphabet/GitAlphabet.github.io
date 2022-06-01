@@ -20,6 +20,8 @@ console.log(obj1,obj2);
 
 #### 深拷贝
 
+<b>这种方法虽然可以实现数组或对象深拷贝,但不能处理函数和正则</b>因为这两者基于 `JSON.stringify` 和 `JSON.parse` 处理后，得到的正则就不再是正则（变为空对象），得到的函数就不再是函数（变为 `null` );
+
 ```js
 let obj1 = { a: 1, b: { c: 1 } }
 let obj2 = JSON.parse(JSON.stringify(obj1))
