@@ -32,8 +32,8 @@ jobs:
 
       - name: 构建部署
         run: bash deploy.sh
-        with:
-          access-token: ${{ secrets.ACTIONTOKEN }} # 自定义 scret name
+        # with:
+          # access-token: ${{ secrets.ACTIONTOKEN }} # 自定义 scret name
           # deploy-branch: master
           # deploy-repo: GitAlphabet.github.io # 注意这里直接是仓库名称
           # folder: doc/.vuepress/dist
