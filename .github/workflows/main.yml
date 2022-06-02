@@ -20,7 +20,7 @@ jobs:
         run: yarn install
 
       - name: build
-        run: yarn run docs:build
+        run: yarn docs:build
 
       - name: deploy
         uses: crazy-max/ghaction-github-pages@v2
