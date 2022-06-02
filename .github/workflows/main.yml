@@ -25,9 +25,11 @@ jobs:
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
-          personal_token: ${{ secrets.ACTIONTOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: GitAlphabet/blog
           # 推送的分支
           publish_branch: gh-pages
           # 推送的内容
           publish_dir: docs/.vuepress/dist
+
+# ✨ feat(cicd): 优化
