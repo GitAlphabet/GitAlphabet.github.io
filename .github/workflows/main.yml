@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: build
-        run: npm run build
+        run: npm run docs:build
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3	# 一个自动发布github pages的action
