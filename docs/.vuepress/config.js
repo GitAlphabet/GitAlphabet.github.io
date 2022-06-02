@@ -23,6 +23,10 @@ module.exports = {
         link: '/home/CSS/less',
       },
       {
+        text: '面试',
+        link: '/interview/Subject/css',
+      },
+      {
         text: '算法',
         link: '/algorithm/Simple/first',
       },
@@ -179,6 +183,8 @@ module.exports = {
           title: 'Eslint',
           children: ['Eslint/eslint-rules', 'Eslint/eslint-repair'],
         },
+      ],
+      '/interview/': [
         {
           title: '面试题',
           children: [
