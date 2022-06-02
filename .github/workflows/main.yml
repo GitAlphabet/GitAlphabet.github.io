@@ -23,9 +23,9 @@ jobs:
         run: yarn docs:build
 
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
-          deploy_key: ${{ secrets.ACTIONTOKEN }}
+          github_token: ${{ secrets.ACTIONTOKEN }}
           external_repository: GitAlphabet/blog
           # 推送的分支
           publish_branch: gh-pages
