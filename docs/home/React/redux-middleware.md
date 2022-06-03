@@ -2,12 +2,12 @@
 
 #### 1、原理
 
-Redux 的中间件提供的是位于 action 被发起之后，到达 reducer 之前的扩展点，这种机制可以让我们改变数据流，实现如异步 action ，action 过滤，日志输出，异常报告等功能。
+Redux 的中间件提供的是位于 `action` 被发起之后，到达 reducer 之前的扩展点，这种机制可以让我们改变数据流，实现如异步 action ，action 过滤，日志输出，异常报告等功能。
 
-原redux的数据流：view -> action -> reducer -> store
+原redux的数据流：`view` -> `action` -> `reducer` -> `store`
 !["redux工作流程"](../../images/react/redux.png 'redux工作流程')
 
-加上中间件后变成了： view -> action -> middleware -> reducer -> store
+加上中间件后变成了： `view` -> `action` -> `middleware` -> `reducer` -> `store`
 !["redux 中间件流程"](../../images/react/middlware.png 'redux工作流程')
 
 #### 2、createStore

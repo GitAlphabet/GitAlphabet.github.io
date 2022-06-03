@@ -56,13 +56,13 @@ Push Cache（推送缓存）是 HTTP/2 中的内容，当以上三种缓存都�
 
 **设置强缓存**  
 
-+ 第一次，请求服务器，然后服务器进行应答，浏览器会根据response Header来判断是否对资源进行缓存，如果响应头中**expires、pragma**或者**cache-control**字段，代表是强缓存，浏览器就会把资源缓存在**memory cache** 或 **disk cache**中。
++ 第一次，请求服务器，然后服务器进行应答，浏览器会根据response Header来判断是否对资源进行缓存，如果响应头中 `expires`、`pragma`或者`cache-control`字段，代表是强缓存，浏览器就会把资源缓存在**memory cache** 或 **disk cache**中。
 + 第二次，浏览器判断请求参数，如果符合强缓存条件就直接返回状态码200，从本地缓存中拿数据。否则把响应参数存在request header请求头中，看是否符合协商缓存，符合则返回状态码304，不符合则服务器会返回全新资源。
 
 ::: tip
 
-+ Cache-Control可以设置多个值，以,分隔，例如Cache-Control: no-cache,max-age=3600
-+ Pragma为http1.0的产物，已逐步被http1.1的cache-control:no-cache替代，功能一致。http1.1响应首部中出现的Pragma:no-cache只是为了兼容http1.0，实际Cache-Control的优先级更高。
++ `Cache-Control` 可以设置多个值，以,分隔，例如Cache-Control: no-cache,max-age=3600
++ `Pragma` 为http1.0的产物，已逐步被http1.1的 `cache-control:no-cache` 替代，功能一致。http1.1响应首部中出现的`Pragma:no-cache` 只是为了兼容http1.0，实际 `Cache-Control` 的优先级更高。
 + **Pragma和Expires同时存在时，Expires不会生效，即Pragma的优先级要高于Expires**
 + Expires的值是一个具体的时间点，这个时间点是相对于服务器的时间，如果客户端的时间和服务器时间不一致，比如手动修改客户机系统时间，那么这个“过期时间”的作用可能会出现偏差，或者说失效
 :::

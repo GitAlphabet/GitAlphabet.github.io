@@ -1,78 +1,58 @@
 ### Mac 安装 Nginx
 
-#### 安装工具
+#### 1、安装工具
 
 [homebrew](https://brew.sh/index_zh-cn.html)
 
-#### 安装步骤
+#### 2、安装步骤
 
-1、安装 homebrew
+* 安装 homebrew
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-2、更新 homebrew
+* 更新 homebrew
 
 ```bash
-brew update
-#结果：Already up-to-date.
+brew update # 结果：Already up-to-date.
 ```
 
-3、安装 Nginx
+* 安装 Nginx
 
 ```bash
 brew install nginx
 ```
 
-4、查看 Nginx 安装目录
+* 查看 Nginx 安装目录
 
 ```bash
 open /usr/local/etc/nginx/
 # 成功打开nginx目录，可以看到nginx.conf的配置文件（后面会用到这个配置文件）。
 ```
 
-5、编辑 nginx.conf
+* 编辑 nginx.conf
 
 ```bash
 cat /usr/local/etc/nginx/nginx.conf
 ```
 
-#### Nginx 命令
+#### 3、Nginx 命令
 
 ```bash
-# 启动 nginx
-nginx
-
-# 修改配置后重新加载生效
-nginx -s reload
-
-# 重新打开日志文件
-nginx -s reopen
-
-# 测试nginx配置文件是否正确
-nginx -t -c /path/to/nginx.conf
-
-# 快速停止nginx
-nginx -s stop
-
-# 完整有序的停止nginx
-quit
-
-# 查询nginx 进程
-ps -ef | grep nginx
-
-# 从容停止Nginx
-kill -QUIT 主进程号
-
-# 快速停止Nginx
-kill -TERM 主进程号
-
-# 强制停止Nginx
-pkill -9 nginx
+nginx # 启动 nginx
+nginx -s reload # 修改配置后重新加载生效
+nginx -s reopen # 重新打开日志文件
+nginx -t -c /path/to/nginx.conf # 测试nginx配置文件是否正确
+nginx -s stop # 快速停止nginx 
+quit # 完整有序的停止nginx
+ps -ef | grep nginx # 查询nginx 进程
+kill -QUIT 主进程号 # 从容停止Nginx
+kill -TERM 主进程号 # 快速停止Nginx
+pkill -9 nginx  # 强制停止Nginx
 ```
 
-#### 配置文件实例
+#### 4、配置文件实例
 
 ```bash
 #user  nobody;

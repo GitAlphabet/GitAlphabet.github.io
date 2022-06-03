@@ -3,10 +3,11 @@
 #### 父组件给子组件传参
 
 ```html
-/*父组件*/
+<!-- 父组件 -->
 <template>
   <div>
-    <son :father="msg"></son> //在子组件绑定所需要传的参数
+    <!-- 在子组件绑定所需要传的参数 -->
+    <son :father="msg"></son> 
   </div>
 </template>
 
@@ -22,7 +23,7 @@ export default {
 };
 </script>
 
-/*子组件*/
+<!-- 子组件 -->
 <template>
   <div>
     <p>{{father}}</p>
@@ -31,7 +32,7 @@ export default {
 
 <script>
 export default {
-  props: ["father"]      //props监听父组件传来的参数，需要和绑定在子组件上面的一致
+  props: ["father"]      // props监听父组件传来的参数，需要和绑定在子组件上面的一致
   }
 </script>
 ```
@@ -39,7 +40,7 @@ export default {
 #### 子组件给父组件传参
 
 ```html
-/*子组件*/
+<!-- 子组件 -->
 <template>
   <div>
     <p @click="sonClick">我是子组件组件</p>
@@ -65,7 +66,8 @@ export default {
 /*父件*/
 <template>
   <div>
-    <son @aaa="change"></son> //监听子组件 $emit 里面的事件参数 aaa
+    <!-- 监听子组件 $emit 里面的事件参数 aaa -->
+    <son @aaa="change"></son>
   </div>
 </template>
 
@@ -114,7 +116,7 @@ export default new Vue();
 </template>
 
 <script>
-import bus from '../js/bus'              //引入bus.js
+import bus from '../js/bus'              // 引入bus.js
 export default {
   data() {
     return {};

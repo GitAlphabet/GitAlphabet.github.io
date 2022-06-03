@@ -1,4 +1,4 @@
-### vue-router 路由懒加载
+### 路由懒加载
 
 ```js
 // router 文件夹下的 index.js。

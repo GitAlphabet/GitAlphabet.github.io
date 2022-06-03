@@ -1,15 +1,15 @@
-### redux-thunk 中间件
+### redux-thunk
 
 dispatch 一个 action 之后，到达 reducer 之前，进行一些额外的操作，就需要用到 middleware。你可以利用 Redux middleware 来进行日志记录、创建崩溃报告、调用异步接口或者路由等等。
-换言之，中间件都是对 store.dispatch()的增强
+换言之，中间件都是对 `store.dispatch()` 的增强
 
-#### 安装 redux-thunk
+#### 1、安装
 
 ```bash
 yarn add redux-thunk
 ```
 
-#### 引入 redux-thunk
+#### 2、引入
 
 ```js
 // store.js
@@ -26,7 +26,7 @@ export default store
 // 直接将thunk中间件引入，放在applyMiddleware方法之中，传入createStore方法，就完成了store.dispatch()的功能增强。即可以在reducer中进行一些异步的操作。
 ```
 
-#### 使用 redux-thunk
+#### 3、使用
 
 ```js
 // actionsCreators.js
@@ -50,9 +50,10 @@ export const init = () => {
 }
 ```
 
-#### applyMiddleware()
+#### 4、applyMiddleware()
 
 ```js
-// 其实applyMiddleware就是Redux的一个原生方法，将所有中间件组成一个数组，依次执行。中间件多了可以当做参数依次传进去
+// 其实applyMiddleware就是Redux的一个原生方法，将所有中间件组成一个数组，依次执行。
+// 中间件多了可以当做参数依次传进去
 const store = createStore(reducers, applyMiddleware(thunk, logger))
 ```

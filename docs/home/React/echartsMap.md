@@ -1,6 +1,6 @@
 ### Echart Map
 
-#### 导入的库
+#### 1、导入的库
 
 ```tsx
 import React from 'react';
@@ -10,7 +10,7 @@ import dataJson from './TX.js'; // 地图 json 数据
 import styles from './gmap.module.less';
 ```
 
-#### 枚举和 type
+#### 2、枚举和 type
 
 ```tsx
 type MapProps = {
@@ -31,7 +31,7 @@ enum ColorEnum {
 }
 ```
 
-#### React 组件
+#### 3、React 组件
 
 ```tsx
 const Index: React.FC<MapProps> = ({ projectList }) => {

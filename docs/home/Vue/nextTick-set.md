@@ -2,14 +2,15 @@
 
 #### 1、Vue.nextTick( [callback, context] )
 
-1、参数
+* 参数
 
 ```html
 { Function } ;[callback]
 { Object } ;[context]
 ```
 
-1、用法
+* 用法
+
 在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。
 
 ```js
@@ -32,14 +33,15 @@ this.nextTick().then(function() {
 
 #### 2、Vue.set( target, key, value )
 
-1、参数
+* 参数
 
 ```html
 {Object | Array} target
 {string | number} key {any} value
 ```
 
-2、用法
+* 用法
+
 向响应式对象中添加一个属性，并确保这个新属性同样是响应式的，且触发视图更新。它必须用于向响应式对象上添加新属性，因为 Vue 无法探测普通的新增属性 (比如 this.myObject.newProperty = 'hi')
 
 ```js

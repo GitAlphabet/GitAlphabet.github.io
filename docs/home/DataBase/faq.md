@@ -1,4 +1,4 @@
-### 安装 Mysql 出现的问题 
+### 安装问题 
 
 #### 1、刚安装的mysql无法启动，提示没有权限
 
@@ -8,7 +8,7 @@
 2021-11-25T05:52:43.397230Z 1 [ERROR] [MY-012271] [InnoDB] The innodb_system data file 'ibdata1' must be writable
 ```
 
-**修改权限**
+* 修改权限 
 
 ```bash
 # 查找权限文件

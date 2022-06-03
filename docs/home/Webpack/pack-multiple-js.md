@@ -1,24 +1,24 @@
-### 打包多个页面以及 js 文件
+### 多入口
 
-#### 初始化项目文件，创建 package.json 文件
+#### 1、初始化
 
 ```bash
 npm init -y
 ```
 
-#### 项目目录安装 webpack
+#### 2、安装 webpack
 
 ```bash
 npm install --save-dev webpack
 ```
 
-#### 安装 html-webpack-plugin
+#### 3、安装 html-webpack-plugin
 
 ```bash
 npm i --save-dev html-webpack-plugin
 ```
 
-#### 新建 webpack.config.js
+#### 4、新建 webpack.config.js
 
 ```js
 let path = require('path')
@@ -87,12 +87,8 @@ module.exports = {
 }
 ```
 
-#### 打包运行
+#### 5、打包运行
 
 ```bash
 命令行输入 webpack
 ```
-
-#### 打包后的目录如下
-
-![ml.jpg](https://upload-images.jianshu.io/upload_images/3811706-d6783cf7c810d86a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

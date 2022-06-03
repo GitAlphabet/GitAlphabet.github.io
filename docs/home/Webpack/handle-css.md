@@ -1,18 +1,18 @@
 ### 处理 css/less/sass
 
-#### 安装 style-loader、css-loader、postcss-loader
+#### 1、安装 style-loader、css-loader、postcss-loader
 
 ```bash
 npm i style-loader css-loader postcss-loader --save-dev
 ```
 
-#### 安装自动添加浏览器前缀的 autoprefixer
+#### 2、安装自动添加浏览器前缀的 autoprefixer
 
 ```bash
 npm i autoprefixer --save-dev
 ```
 
-#### 根目录下新建 postcss.config.js,导入 autoprefixer
+#### 3、根目录下新建 postcss.config.js,导入 autoprefixer
 
 ```js
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
 }
 ```
 
-#### webpack.config.js 配置如下
+#### 4、webpack.config.js 配置如下
 
 ```js
 let path = require('path')

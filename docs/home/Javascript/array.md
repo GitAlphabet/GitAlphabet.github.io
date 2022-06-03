@@ -1,6 +1,6 @@
 ### ES6(数组的扩展)
 
-#### 1.扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列
+#### 1、扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列
 
 ```js
 console.log(...[1, 2, 3]) // 1 2 3
@@ -8,7 +8,7 @@ console.log(1, ...[2, 3, 4], 5) // 1 2 3 4 5
 [...document.querySelectorAll('div')]// [<div>, <div>, <div>]
 ```
 
-#### 该运算符主要用于函数调用
+#### 2、该运算符主要用于函数调用
 
 ```js
 function push(array, ...items) {
@@ -77,7 +77,7 @@ arr1.concat(arr2, arr3);// [ 'a', 'b', 'c', 'd', 'e' ]
 [...arr1, ...arr2, ...arr3]// [ 'a', 'b', 'c', 'd', 'e' ]
 ```
 
-#### 2.Array.from()
+#### 2、Array.from()
 
 Array.from 方法用于将两类对象转为真正的数组：类似数组的对象（array-like object）和可遍历（iterable）的对象（包括 ES6 新增的数据结构 Set 和 Map）。
 
@@ -91,7 +91,7 @@ var arr1 = [].slice.call(arrayLike); // ['a', 'b', 'c']
 let arr2 = Array.from(arrayLike); // ['a', 'b', 'c']
 ```
 
-#### 3.Array.of()
+#### 3、Array.of()
 
 Array.of 方法用于将一组值，转换为数组。
 
@@ -101,7 +101,7 @@ Array.of(3) // [3]
 Array.of(3).length // 1
 ```
 
-#### 4.数组实例的 find() 和 findIndex()
+#### 4、数组实例的 find() 和 findIndex()
 
 数组实例的 find 方法，用于找出第一个符合条件的数组成员。它的参数是一个回调函数，所有数组成员依次执行该回调函数，直到找出第一个返回值为 true 的成员，然后返回该成员。如果没有符合条件的成员，则返回 undefined。
 
@@ -136,7 +136,7 @@ let person = { name: 'John', age: 20 }
 
 上面的代码中，find 函数接收了第二个参数 person 对象，回调函数中的 this 对象指向 person 对象。
 
-#### 5.数组实例的 fill()
+#### 5、数组实例的 fill()
 
 fill 方法使用给定值，填充一个数组。
 
@@ -149,7 +149,7 @@ fill方法还可以接受第二个和第三个参数，用于指定填充的起�
 上面代码表示，fill方法从 1 号位开始，向原数组填充 7，到 2 号位之前结束。
 ```
 
-#### 6.数组实例的 entries()，keys() 和 values
+#### 6、数组实例的 entries()，keys() 和 values
 
 ```js
 ES6 提供三个新的方法——`entries()`，`keys()`和`values()`——用于遍历数组。它们都返回一个遍历器对象，可以用`for...of`循环进行遍历，唯一的区别是`keys()`是对键名的遍历、`values()`是对键值的遍历，`entries()`是对键值对的遍历。
@@ -171,7 +171,7 @@ for (let [index, elem] of arr.entries()) {
 // 1 "b"
 ```
 
-#### 7.数组实例的 includes()
+#### 7、数组实例的 includes()
 
 ```js
 Array.prototype.includes方法返回一个布尔值，表示某个数组是否包含给定的值，与字符串的includes方法类似。ES2016 引入了该方法。

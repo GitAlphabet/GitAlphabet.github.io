@@ -1,6 +1,6 @@
-### Node 编写接口
+### 开发 API
 
-#### 初始化
+#### 1、初始化
 
 ```bash
 # 1、先创建一个文件夹,并初始化。
@@ -10,7 +10,7 @@ npm install express --save
 # 3、新建 app.js 和 index.html文件
 ```
 
-#### app.js 代码如下
+#### 2、app.js 代码如下
 
 ```js
 let express = require('express');
@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //设置跨域访问
-app.all('*', function(req, res, next) {
+app.all('*', function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'X-Requested-With');
   res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS');
@@ -43,13 +43,13 @@ let arr = [
 ];
 
 // get请求
-app.get('/api/all', function(req, res) {
+app.get('/api/all', function (req, res) {
   res.status(200);
   res.json(arr);
 });
 
 // get请求,通过 req.query 获取参数。
-app.get('/api/some', function(req, res) {
+app.get('/api/some', function (req, res) {
   let id = req.query.id;
   let obj = arr.find((item) => {
     return item.id == id;
@@ -61,7 +61,7 @@ app.get('/api/some', function(req, res) {
 });
 
 // post请求,通过 req.body 获取参数。
-app.post('/api/post', function(req, res) {
+app.post('/api/post', function (req, res) {
   let name = req.body.name;
   let obj = arr.find((item) => {
     return item.name == name;
@@ -73,7 +73,7 @@ app.post('/api/post', function(req, res) {
 });
 
 //配置服务端口
-let server = app.listen(3000, function() {
+let server = app.listen(3000, function () {
   let host = server.address().address;
   let port = server.address().port;
   console.log('http://localhost:3000', host, port);
@@ -81,11 +81,11 @@ let server = app.listen(3000, function() {
 ```
 
 ::: tip post 请求
-// bodyParser 解析 json 数据。bodyParser 变量是对中间件的引用。请求体解析后，解析值都会被放到 req.body 属性，内容为空时是一个{}空对象。  
+// `bodyParser` 解析 json 数据。bodyParser 变量是对中间件的引用。请求体解析后，解析值都会被放到 req.body 属性，内容为空时是一个{}空对象。  
 let bodyParser = require('body-parser');  
 // 使用 application/json 解析  
 app.use(bodyParser.json());  
-//使用 application/x-www-form-urlencoded 解析  
+// 使用 `application/x-www-form-urlencoded` 解析  
 app.use(bodyParser.urlencoded({ extended: true }));
 :::
 
@@ -94,7 +94,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 2、get 请求:req.query
 :::
 
-#### index.html 里面的 js 代码如下
+#### 3、index.html 里面的 js 代码如下
 
 ```js
 <script>
@@ -141,7 +141,7 @@ $(() => {
 </script>
 ```
 
-#### 开启服务
+#### 4、开启服务
 
 ```bash
 node app.js

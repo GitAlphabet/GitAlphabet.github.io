@@ -6,10 +6,10 @@
 
 一个 HTML 盒（Box）满足以下任意一条，会创建块格式化上下文：
 
-* float的值不是none.
-* position的值不是static或relative.
-* display的值是table-cell、table-caption、inline-block、flex、或inline-flex。
-* overflow的值不是visible。
+* `float` 的值不是 `none`.
+* `position` 的值不是 `static` 或 `relative`.
+* `display` 的值是 `table-cell`、`table-caption`、`inline-block`、`flex`、或`inline-flex`。
+* `overflow` 的值不是 `visible`。
 
 ::: tip
 在 BFC 中，每个盒的左外边缘都与其包含的块的左边缘相接。  

@@ -1,6 +1,6 @@
 ### Promise 
 
-#### 状态
+#### 1、状态
 
 ```md
 pending    // 进行中
@@ -8,7 +8,7 @@ fulfilled  // 已成功
 rejected   // 已失败
 ```
 
-**一旦状态改变，就不会再变**，任何时候都可以得到这个结果。Promise对象的状态改变，只有两种可能：**从pending变为fulfilled和从pending变为rejected**。只要这两种情况发生，状态就凝固了，不会再变了，会一直保持这个结果，这时就称为 resolved（已定型）。
+**一旦状态改变，就不会再变**，任何时候都可以得到这个结果。Promise对象的状态改变，只有两种可能：**从`pending`变为`fulfilled`和从`pending`变为`rejected`**。只要这两种情况发生，状态就凝固了，不会再变了，会一直保持这个结果，这时就称为 resolved（已定型）。
 
 then 和 catch 改变状态
 
@@ -47,7 +47,7 @@ Promise.resolve().then(() => { // rejected 触发 catch 回调
 })
 ```
 
-#### Promise.all()
+#### 2、Promise.all()
 
 Promise.all()方法用于将多个 Promise 实例，包装成一个新的 Promise 实例。
 
@@ -69,11 +69,11 @@ p的状态由p1、p2、p3决定，分成两种情况。
 * 如果实例没有自己的catch方法，就会调用Promise.all()的catch方法。
 :::
 
-#### Promise.any()
+#### 3、Promise.any()
 
 该方法接受一组 Promise 实例作为参数，包装成一个新的 Promise 实例返回。**只要参数实例有一个变成fulfilled状态，包装实例就会变成fulfilled状态；如果所有参数实例都变成rejected状态，包装实例就会变成rejected状态**。
 
-#### Promise.race()
+#### 4、Promise.race()
 
 Promise.race()方法同样是将多个 Promise 实例，包装成一个新的 Promise 实例。
 
@@ -83,12 +83,11 @@ const p = Promise.race([p1, p2, p3]);
 
 只要p1、p2、p3之中有一个实例率先改变状态，p的状态就跟着改变。那个率先改变的 Promise 实例的返回值，就传递给p的回调函数。
 
-#### Promise.allSettled()
+#### 5、Promise.allSettled()
 
 Promise.allSettled()方法接受一组 Promise 实例作为参数，包装成一个新的 Promise 实例。只有等到所有这些参数实例都返回结果，**不管是fulfilled还是rejected，包装实例才会结束。一旦结束，状态总是fulfilled**
 
-
-#### 多个 Promise 串行
+#### 6、多个 Promise 串行
 
 ```js
 function serialPromise(arr) {

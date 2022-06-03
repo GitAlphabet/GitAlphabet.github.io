@@ -1,6 +1,6 @@
 ### call、apply、bind 详解
 
-#### apply(context,[])
+#### 1、apply(context,[])
 
 apply 方法传入两个参数：一个是作为函数上下文的对象，另外一个是作为函数参数所组成的数组。
 
@@ -16,7 +16,7 @@ fun.apply(obj, ['A', 'B']);    // A obj B
 
 obj 是作为函数上下文的对象，函数 fun 中 this 指向了 obj 这个对象。参数 A 和 B 是放在数组中传入 fun 函数，分别对应 fun 参数的列表元素。
 
-#### call(context,a,b,...)
+#### 2、call(context,a,b,...)
 
 call 方法第一个参数也是作为函数上下文的对象，但是后面传入的是一个参数列表，而不是单个数组。
 
@@ -32,7 +32,7 @@ fun.call(obj, 'A', 'B');       // A obj B
 
 如果你的参数本来就存在一个数组中，那自然就用 apply，如果参数比较散乱相互之间没什么关联，就用 call。
 
-#### apply 和 call 的用法
+#### 3、apply 和 call 的用法
 
 + 改变 this 指向
 
@@ -82,7 +82,7 @@ function fun() {
 fun.call();   // obj
 ```
 
-#### call 和 bind 的区别
+#### 4、call 和 bind 的区别
 
 在 EcmaScript5 中扩展了叫 bind 的方法，在低版本的 IE 中不兼容。它和 call 很相似，接受的参数有两部分，第一个参数是是作为函数上下文的对象，第二部分参数是个列表，可以接受多个参数。
 它们之间的区别有以下两点。

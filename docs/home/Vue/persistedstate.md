@@ -4,13 +4,13 @@
 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。页面刷新，数据就没有了，vuex-persistedstate很好的解决了此类问题。
 ```
 
-#### vuex-persistedstate 安装
+#### 1、安装
 
 ```bash
 npm install vuex-persistedstate
 ```
 
-#### 在 index.js 里面配置
+#### 2、index.js 里面配置
 
 ```js
 import Vue from 'vue'
@@ -33,7 +33,7 @@ const store = new Vuex.Store({
 })
 ```
 
-#### createPersistedState([options]) API
+#### 3、createPersistedState([options]) API
 
 ```markdown
 使用给定选项创建插件的新实例。可以提供以下选项来配置插件以满足您的特定需求：
@@ -57,7 +57,7 @@ filter <Function>：将被调用以过滤setState最终将在存储上触发的�
 arrayMerger <Function>：用于在再水化状态下合并数组的函数。默认为function (store, saved) { return saved }（保存状态替换提供的状态）。
 ```
 
-#### 自定义存储
+#### 4、自定义存储
 
 ```js
 import { Store } from 'vuex'

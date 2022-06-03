@@ -1,6 +1,6 @@
 ### umi 兼容 IE11
 
-#### 修改 config.js
+#### 1、修改 config.js
 
 ```js
 export default defineConfig({
@@ -21,7 +21,7 @@ export default defineConfig({
 });
 ```
 
-#### 使用了 immer 需要处理
+#### 2、使用了 immer 需要处理
 
 ```js
 // 想入入口处处理

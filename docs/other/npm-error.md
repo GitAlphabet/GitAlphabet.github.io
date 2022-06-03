@@ -1,4 +1,4 @@
-### 解决 npm ERR! code ELIFECYCLE
+### npm ERR! code ELIFECYCLE
 
 #### 报错信息
 

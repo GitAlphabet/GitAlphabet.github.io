@@ -2,16 +2,13 @@
 
 配方还是一样：手淘的  [lib-flexible](https://github.com/amfe/lib-flexible) + rem
 
-配置 flexible
-安装 lib-flexible
-
-#### 1.在命令行中运行如下安装
+#### 1、安装
 
 ```bash
 npm i lib-flexible --save
 ```
 
-#### 2.引入 lib-flexible
+#### 2、引入
 
 在项目入口文件 main.js 里 引入 lib-flexible
 
@@ -19,7 +16,7 @@ npm i lib-flexible --save
 import 'lib-flexible'
 ```
 
-#### 3.添加 meta 标签
+#### 3、添加 meta 标签
 
 在项目根目录的 index.html 中添加如下 meta
 
@@ -27,20 +24,20 @@ import 'lib-flexible'
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
-#### 4.px 转 rem
+#### 4、px 转 rem
 
 实际开发中，我们通过设计稿得到的值单位是 px，所以要将 px 转换成 rem 再写进样式中。
 将 px 转换成 rem 我们将使用 px2rem 这个工具，它有 webpack 的 loader：[px2rem-loader](https://github.com/Jinjiang/px2rem-loader)
 
-#### 5.安装 px2rem-loader
+#### 5、安装 px2rem-loader
 
-在命令行中运行如下安装：
+安装：
 
 ```bash
 npm i px2rem-loader --save-dev
 ```
 
-#### 6.配置 px2rem-loader
+#### 6、配置 px2rem-loader
 
 在 vue-cli 生成的 webpack 配置中，vue-loader 的 options 和其他样式文件 loader 最终是都是由 build/utils.js 里的一个方法生成的。
 
@@ -62,7 +59,7 @@ var px2remLoader = {
 }
 ```
 
-#### 7.并放进 loaders 数组中
+#### 7、并放进 loaders 数组中
 
 ```js
 // utils.js
@@ -71,7 +68,7 @@ function generateLoaders(loader, loaderOptions) {
 }
 ```
 
-#### 8 如果某一项不想转化为 rem
+#### 8、如果某一项不想转化为 rem
 
 ```css
 border: 1px solid #ccc; /* no */

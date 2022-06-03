@@ -1,6 +1,6 @@
 ### Express 解析请求参数
 
-#### package.json
+#### 1、package.json
 
 ```json
 {
@@ -12,7 +12,7 @@
 }
 ```
 
-#### app.js
+#### 2、app.js
 
 ```js
 const express = require('express');

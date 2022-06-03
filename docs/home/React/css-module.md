@@ -1,9 +1,13 @@
-### React 中使用 CSS Module
+### CSS Module
 
 CSS 的规则都是全局的，任何一个组件的样式规则，都对整个页面有效。
-产生局部作用域的唯一方法，就是使用一个独一无二的 class 的名字，不会与其他选择器重名。这就是 CSS Modules 的做法
+产生局部作用域的唯一方法，就是使用一个独一无二的 class 的名字，不会与其他选择器重名。这就是 `CSS Modules` 的做法
 
-#### 局部作用域
+::: warning
+全局修改组件库的样式，在 `css module` 里面需要加 `:global`,否则不需要
+:::
+
+#### 1、局部作用域
 
 React 中的 App.js
 
@@ -46,7 +50,7 @@ App.css 也会同时被编译。
 
 这样一来，这个类名就变成独一无二了，只对 App 组件有效。
 
-#### 全局作用域
+#### 2、全局作用域
 
 CSS Modules 允许使用:global(.className)的语法，声明一个全局规则。凡是这样声明的 class，都不会被编译成哈希字符串。
 App.css 加入一个全局 class。
@@ -71,7 +75,7 @@ export default () => {
 }
 ```
 
-#### Class 的组合
+#### 3、Class 的组合
 
 在 CSS Modules 中，一个选择器可以继承另一个选择器的规则，这称为"组合"（"composition"）。
 

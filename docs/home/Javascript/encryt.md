@@ -2,14 +2,14 @@
 
 `密钥必须16位`
 
-#### 安装
+#### 1、安装
 
 ```bash
 npm install crypto-js --save-dev
 yarn add crypto-js --dev
 ```
 
-#### ECB 模式
+#### 2、ECB 模式
 
 ```js
 // 解密
@@ -33,7 +33,7 @@ decryptionHandler(word) {
 }
 ```
 
-#### CBC模式
+#### 3、CBC模式
 
 注：CBC模式必须要偏移量 `iv`
 

@@ -1,4 +1,4 @@
-### React hooks
+### Hooks
 
 原则
 
@@ -20,7 +20,7 @@ API
 * [useContext](https://zh-hans.reactjs.org/docs/hooks-reference.html#usecontext)
 * [useReducer](https://zh-hans.reactjs.org/docs/hooks-reference.html#usereducer)
 
-#### useState
+#### 1、useState
 
 参数为值或者函数
 
@@ -56,7 +56,7 @@ const Son = ({ Fname }) => {
 };  
 ```
 
-#### userEffect
+#### 2、userEffect
 
 * 没有依赖，re-render 会执行 effect 函数
 * 依赖为 [] 时，re-render 不会执行 effect 函数

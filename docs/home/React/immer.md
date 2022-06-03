@@ -1,8 +1,8 @@
-### immer
+### Immer
 
 本文复制 immer 文档，做个记录。 [immer 使用方法](https://immerjs.github.io/immer/update-patterns)
 
-#### Object mutations
+#### 1、Object mutations
 
 ```js
 import produce from "immer"
@@ -28,7 +28,7 @@ const updatedTodosObj = produce(todosObj, draft => {
 })
 ```
 
-#### Array mutations
+#### 2、Array mutations
 
 ```js
 import produce from "immer"
@@ -95,7 +95,7 @@ const updatedTodosArray = produce(todosArray, draft => {
 })
 ```
 
-#### Nested data structures
+#### 3、Nested data structures
 
 ```js
 import produce from "immer"

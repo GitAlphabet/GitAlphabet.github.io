@@ -1,15 +1,15 @@
-### Arguments对象
+### Arguments
 
 arguments 是一个对应于传递给函数的参数的类数组对象。
 
-#### 描述
+#### 1、描述
 
 ```markdown
-arguments对象是所有（非箭头）函数中都可用的局部变量。你可以使用arguments对象在函数中引用函数的参数。此对象包含传递给函数的每个参数，第一个参数在索引0处,以此类推。
+arguments 对象是所有（非箭头）函数中都可用的局部变量。你可以使用 arguments 对象在函数中引用函数的参数。此对象包含传递给函数的每个参数，第一个参数在索引0处,以此类推。
 ```
 
 ::: tip
-arguments对象不是一个 Array 。它类似于Array，但除了length属性和索引元素之外没有任何Array属性。例如，它没有 pop 方法。但是它可以被转换为一个真正的Array：
+`arguments` 对象不是一个 Array 。它类似于 Array，但除了 length 属性和索引元素之外没有任何 Array 属性。例如，它没有 pop 方法。但是它可以被转换为一个真正的 Array
 :::
 
 ```js
@@ -21,7 +21,7 @@ const args = Array.from(arguments);
 const args = [...arguments];
 ```
 
-#### 对参数使用 typeof
+#### 2、对参数使用 typeof
 
 typeof参数返回 'object'。
 
@@ -40,7 +40,7 @@ test(1);
 // number
 ```
 
-#### 属性
+#### 3、属性
 
 ```js
 arguments.callee

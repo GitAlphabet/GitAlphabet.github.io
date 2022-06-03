@@ -1,16 +1,20 @@
 ### Axios
 
-#### 使用 npm 安装 axios
+#### 1、安装
 
 ```bash
-npm install axios --save
+npm install axios 
+# or
+yarn add axios 
 ```
 
 安装其他插件的时候，可以直接在 main.js 中引入并 Vue.use()，但是 axios 并不能 use，只能每个需要发送请求的组件中即时引入。
 为了解决这个问题，有两种开发思路，一是在引入 axios 之后，修改原型链，二是结合 Vuex，封装一个 aciton。这里只说修改原型链的方式
 改写原型链。
 
-#### 首先在 main.js 中引入 axios
+#### 2、引入 axios
+
+main.js 中引入
 
 ```js
 import axios from 'axios'
@@ -35,11 +39,11 @@ this.axios
   })
 ```
 
-#### 配置 axios
+#### 3、配置
 
 实际上只有 url 是必须的，完整的 api 可以参考[https://www.kancloud.cn/yunye/axios/234845](https://link.jianshu.com?t=https://www.kancloud.cn/yunye/axios/234845)
 
-1、对于 get 请求
+* 对于 get 请求
 
 ```js
 axios.get('/user', {
@@ -49,7 +53,7 @@ axios.get('/user', {
 })
 ```
 
-2、对于 post 请求
+* 对于 post 请求
 
 ```js
 axios.post('/user', {
@@ -57,7 +61,7 @@ axios.post('/user', {
 })
 ```
 
-3、一次性并发多个请求
+* 一次性并发多个请求
 
 ```js
 function getUserAccount() {
@@ -73,7 +77,7 @@ axios.all([getUserAccount(), getUserPermissions()]).then(
 )
 ```
 
-4、axios 可以通过配置（config）来发送请求
+* axios 可以通过配置（config）来发送请求
 
 ```js
 //发送一个`POST`请求
@@ -86,7 +90,7 @@ axios({
 })
 ```
 
-#### 完整的请求还应当包括 .then 和 .catch
+#### 4、完整的请求还应当包括 .then 和 .catch
 
 ```js
 .then(function(res){
@@ -106,7 +110,7 @@ axios({
 }.bind(this))
 ```
 
-#### 请求方式的别名，这里对所有已经支持的请求方式都提供了方便的别名
+#### 5、请求方式的别名，这里对所有已经支持的请求方式都提供了方便的别名
 
 ```js
 axios.request(config);
@@ -118,7 +122,52 @@ axios.put(url[,data[,config]])
 axios.patch(url[,data[,config]])
 ```
 
-#### 另外，补充
+#### 6、拦截器
+
+```js
+// 新建js文件,引入axios以及element ui中的loading和message组件
+import axios from 'axios'
+import { Loading, Message } from 'element-ui'
+// 超时时间
+axios.defaults.timeout = 5000
+// http请求拦截器
+let loadinginstace
+axios.interceptors.request.use(
+  config => {
+    // element ui Loading方法
+    loadinginstace = Loading.service({
+      fullscreen: true
+    })
+    return config
+  },
+  error => {
+    loadinginstace.close()
+    Message.error({
+      message: '加载超时'
+    })
+    return Promise.reject(error)
+  }
+)
+// http响应拦截器
+axios.interceptors.response.use(
+  data => {
+    // 响应成功关闭loading
+    loadinginstace.close()
+    return data
+  },
+  error => {
+    loadinginstace.close()
+    Message.error({
+      message: '加载失败'
+    })
+    return Promise.reject(error)
+  }
+)
+// export 之后在main.js文件导入。
+export default axios
+```
+
+#### 7、另外，补充
 
 vue cli 脚手架前端调后端数据接口时候的本地代理跨域问题，如我在本地 localhost 访问接口 https://api.douban.com/ 是要跨域的，相当于浏览器设置了一到门槛，会报错XMLHTTPRequest can not load https://api.douban.com/ Response to preflight request doesn’t pass access control…. 为什么跨域同源非同源自己去查吧，在 webpack 配置一下 proxyTable 就 OK 了，如下 config/index.js
 

@@ -1,6 +1,6 @@
 ### redux 基础用法
 
-#### redux 工作流程
+#### 1、redux 工作流程
 
 !["redux工作流程"](../../images/react/reduxFlow.jpg 'redux工作流程')
 
@@ -11,7 +11,7 @@ Store:图书馆的管理员，接收到 Reducer 新信息返回给 Components。
 Reducer:收到管理员的指令，然后返回新的信息给管理员。
 ```
 
-#### yarn 安装 redux、react-redux
+#### 2、yarn 安装 redux、react-redux
 
 ```bash
 yarn add react-redux
@@ -19,7 +19,7 @@ yarn add redux
 yarn add redux-devtools-extension # 调试
 ```
 
-#### redux 文件夹下文件
+#### 3、redux 文件夹下文件
 
 ```js
 redux
@@ -30,14 +30,14 @@ rootReducer.js      // 所有reducer 集合
 store.js            // 生成 redux 的 store
 ```
 
-#### actionTypes.js
+* actionTypes.js
 
 ```js
 // action 的常量
 export const LOGIN = 'LOGIN'
 ```
 
-#### actionsCreators.js
+* actionsCreators.js
 
 ```js
 // 引入 actionTypes 常量
@@ -50,7 +50,7 @@ export const login = data => {
 }
 ```
 
-#### loginReducer.js
+* loginReducer.js
 
 ```js
 // 创建 reducer
@@ -70,7 +70,7 @@ const loginReducer = (state = initialValue, action) => {
 export default loginReducer
 ```
 
-#### rootReducer.js
+* rootReducer.js
 
 combineReducers 把多个 reducer 合并成一个 reducer
 
@@ -85,7 +85,7 @@ const rootReducer = combineReducers({
 export default rootReducer
 ```
 
-#### store.js
+* store.js
 
 createStore 创建 store
 
@@ -99,7 +99,7 @@ let store = createStore(
 export default store
 ```
 
-#### 入口 index.js 文件
+#### 4、入口 index.js 文件
 
 ```js
 import React from 'react'
@@ -117,7 +117,7 @@ render(
 // 2、这样做可以保证我们在任何时候通过 react-redux 的 connect 连接到 Redux 时，store 可以在组件中正常使用。
 ```
 
-#### redux 使用
+#### 5、redux 使用
 
 ```jsx
 import React, { Component } from 'react'
@@ -171,7 +171,7 @@ export default connect(
 )(App)
 ```
 
-#### bindActionCreators(actionCreators, dispatch) 介绍
+#### 6、bindActionCreators(actionCreators, dispatch) 介绍
 
 ```markdown
 描述：

@@ -1,8 +1,8 @@
-### React 生命周期
+### 生命周期
 
 !["React 生命周期"](../../images/react/reactHook.png 'React 生命周期')
 
-#### 简单介绍
+#### 1、简单介绍
 
 | 生命周期函数              | 描述             |
 | :------------------------ | :--------------- |
@@ -16,7 +16,7 @@
 | componentDidUpdate        | 组件更新         |
 | componentWillUnmount      | 组件移除挂载钱   |
 
-#### 注意点
+#### 2、注意点
 
 ```markdown
 1、initializztion:

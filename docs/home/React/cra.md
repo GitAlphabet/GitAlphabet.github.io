@@ -1,6 +1,6 @@
-### react-create-app@2.x 创建项目
+### react-create-app
 
-#### 安装依赖
+#### 1、安装依赖
 
 | 插件名称            | 描述              |
 | :------------------ | :---------------- |
@@ -11,15 +11,15 @@
 | antd                | React UI 插件     |
 | babel-plugin-import | antd 样式按需加载 |
 
-#### 暴露配置
+#### 2、暴露配置
 
 ```bash
 npm run eject # 暴露原有的webpack配置文件
 ```
 
-#### 修改 webpack.config.js 文件
+#### 3、修改 webpack.config.js 文件
 
-1、定义 less 文件匹配规则
+* 定义 less 文件匹配规则
 
 ```js
 // style files regexes 样式匹配规则
@@ -33,7 +33,7 @@ const lessRegex = /\.less$/
 const lessModuleRegex = /\.module\.less$/
 ```
 
-2、在 sass 的配置下新增 less 配置
+* 在 sass 的配置下新增 less 配置
 
 ```json
 {
@@ -55,7 +55,7 @@ const lessModuleRegex = /\.module\.less$/
 },
 ```
 
-3、getStyleLoaders 替换之前的方法，配置可修改的主题。
+* getStyleLoaders 替换之前的方法，配置可修改的主题。
 
 ```js
 /* 之前的方法
@@ -94,9 +94,9 @@ if (preProcessor) {
 }
 ```
 
-#### 在 package.json 中或者.babelrc 中配置按需导入的组件库规则
+#### 4、在 package.json 中或者.babelrc 中配置按需导入的组件库规则
 
-1、package.json 配置
+* package.json 配置
 
 ```json
 "babel": {
@@ -115,7 +115,7 @@ if (preProcessor) {
   }
 ```
 
-1、babelrc 中配置
+* babelrc 中配置
 
 ```json
 {

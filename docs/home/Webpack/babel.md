@@ -1,12 +1,12 @@
-### Babel 入门
+### Babel(入门)
 
-#### 初始化
+#### 1、初始化
 
 ```bash
 npm init
 ```
 
-#### 配置文件.babelrc
+#### 2、配置文件.babelrc
 
 根目录下创建 .babelrc 文件。文件基本格式如下
 
@@ -17,7 +17,7 @@ npm init
 }
 ```
 
-#### presets
+#### 3、presets
 
 presets 字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。
 
@@ -35,7 +35,7 @@ npm install --save-dev babel-preset-stage-2
 npm install --save-dev babel-preset-stage-3
 ```
 
-#### 将规则导入 .babelrc
+#### 4、将规则导入 .babelrc
 
 ```json
 {
@@ -44,13 +44,13 @@ npm install --save-dev babel-preset-stage-3
 }
 ```
 
-#### 全局安装 babel-cli
+#### 5、全局安装 babel-cli
 
 ```bash
 npm install --global babel-cli
 ```
 
-#### 基本用法如下
+#### 6、基本用法如下
 
 ```bash
 # 转码结果输出到标准输出
@@ -72,7 +72,7 @@ babel src -d lib
 $ babel src -d lib -s
 ```
 
-#### 全局 babel-cli 缺点
+#### 7、全局 babel-cli 缺点
 
 上面代码是在全局环境下，进行 Babel 转码。这意味着，如果项目要运行，全局环境必须有 Babel，也就是说项目产生了对环境的依赖。另一方面，这样做也无法支持不同项目使用不同版本的 Babel。
 
@@ -94,7 +94,7 @@ npm install --save-dev babel-cli
 npm run build
 ```
 
-#### babel-polyfill
+#### 8、babel-polyfill
 
 Babel 默认只转换新的 JavaScript 句法（syntax），而不转换新的 API，比如 Iterator、Generator、Set、Maps、Proxy、Reflect、Symbol、Promise 等全局对象，以及一些定义在全局对象上的方法（比如 Object.assign）都不会转码。
 

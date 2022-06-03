@@ -1,6 +1,6 @@
-### Mac xxx.app 打不开
+### xxx.app 打不开
 
-#### 检查 SIP 状态
+#### 1、检查 SIP 状态
 
 ```bash
 csrutil status  # 查看状态
