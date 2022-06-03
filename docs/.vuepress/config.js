@@ -1,3 +1,4 @@
+const { defaultTheme } = require('vuepress');
 module.exports = {
   title: '向往飞翔的小蚂蚁',
   description: '个人博客',
@@ -15,9 +16,10 @@ module.exports = {
       },
     ],
   ],
-  base:'/blog/',
-  themeConfig: {
-    nav: [
+  base: '/blog/',
+  theme: defaultTheme({
+    // 默认主题配置
+    navbar: [
       {
         text: '基础',
         link: '/home/CSS/less',
@@ -231,5 +233,5 @@ module.exports = {
         },
       ],
     },
-  },
+  }),
 };
