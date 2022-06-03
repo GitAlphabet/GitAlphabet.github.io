@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         text: '其他',
-        link: '/other/computer-binary',
+        link: '/other/Mac/setting-ssh',
       },
       {
         text: 'Github',
@@ -46,7 +46,7 @@ module.exports = {
     sidebar: {
       '/home/': [
         {
-          title: 'CSS',
+          text: 'CSS',
           children: [
             'CSS/less',
             'CSS/some-css',
@@ -57,7 +57,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Javascript',
+          text: 'Javascript',
           children: [
             'Javascript/ajax',
             'Javascript/array',
@@ -89,7 +89,7 @@ module.exports = {
         },
 
         {
-          title: 'Vue',
+          text: 'Vue',
           children: [
             'Vue/standard',
             'Vue/persistedstate',
@@ -110,7 +110,7 @@ module.exports = {
           ],
         },
         {
-          title: 'React',
+          text: 'React',
           children: [
             'React/cra',
             'React/css-module',
@@ -126,7 +126,7 @@ module.exports = {
           ],
         },
         {
-          title: 'TypeScript',
+          text: 'TypeScript',
           children: [
             'TypeScript/type-interface',
             'TypeScript/logical-operators',
@@ -134,7 +134,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Node',
+          text: 'Node',
           children: [
             'Node/mysql',
             'Node/server',
@@ -145,11 +145,11 @@ module.exports = {
         },
 
         {
-          title: 'Http',
+          text: 'Http',
           children: ['Http/tcp', 'Http/https', 'Http/cache'],
         },
         {
-          title: 'Webpack',
+          text: 'Webpack',
           children: [
             'Webpack/optimize',
             'Webpack/processEnv',
@@ -162,33 +162,33 @@ module.exports = {
           ],
         },
         {
-          title: 'Python',
+          text: 'Python',
           children: ['Python/list', 'Python/fun-params'],
         },
         {
-          title: 'MiniApp',
+          text: 'MiniApp',
           children: ['Mini/getUserInfo', 'Mini/globalData', 'Mini/attentions'],
         },
         {
-          title: 'Nginx',
+          text: 'Nginx',
           children: ['Nginx/install'],
         },
         {
-          title: 'Git',
+          text: 'Git',
           children: ['Git/basic-command'],
         },
         {
-          title: 'DataBase',
+          text: 'DataBase',
           children: ['DataBase/sql', 'DataBase/faq', 'DataBase/mysql'],
         },
         {
-          title: 'Eslint',
+          text: 'Eslint',
           children: ['Eslint/eslint-rules', 'Eslint/eslint-repair'],
         },
       ],
       '/interview/': [
         {
-          title: '面试题',
+          text: '面试题',
           children: [
             'Subject/css',
             'Subject/js',
@@ -199,25 +199,25 @@ module.exports = {
       ],
       '/algorithm/': [
         {
-          title: '简单',
+          text: '简单',
           children: ['Simple/first', 'Simple/second'],
         },
         {
-          title: '中等',
+          text: '中等',
           children: ['Middling/triangle-number'],
         },
         {
-          title: '困难',
+          text: '困难',
           children: [],
         },
       ],
       '/other/': [
         {
-          title: 'Mac',
+          text: 'Mac',
           children: ['Mac/setting-ssh', 'Mac/link-server', 'Mac/canNotOpen'],
         },
         {
-          title: '其他',
+          text: '其他',
           children: [
             'computer-binary',
             'yarn-update',
