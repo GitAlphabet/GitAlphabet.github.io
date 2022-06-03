@@ -36,12 +36,14 @@ module.exports = {
         text: '其他',
         link: '/other/Mac/setting-ssh',
       },
-      {
-        text: 'Github',
-        link: 'https://github.com/GitAlphabet',
-        target: '_blank',
-      },
+      // {
+      //   text: 'Github',
+      //   link: 'https://github.com/GitAlphabet',
+      //   target: '_blank',
+      // },
     ],
+    repo: 'https://github.com/GitAlphabet',
+    repoLabel:'Github',
     sidebarDepth: 2,
     sidebar: {
       '/home/CSS/': [
@@ -49,12 +51,12 @@ module.exports = {
           text: 'CSS',
           collapsible: false,
           children: [
-            'less',
-            'some-css',
-            'mobile-layout',
-            'bfc',
-            'skill',
-            'scroll',
+            '/home/CSS/less',
+            '/home/CSS/some-css',
+            '/home/CSS/mobile-layout',
+            '/home/CSS/bfc',
+            '/home/CSS/skill',
+            '/home/CSS/scroll',
           ],
         },
         {
