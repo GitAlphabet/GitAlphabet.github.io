@@ -4,7 +4,7 @@ module.exports = {
   markdown: {
     lineNumbers: true, // 开启代码行号
   },
-  // plugins: [['vuepress-plugin-code-copy', true]],
+  plugins: [['vuepress-plugin-code-copy', true]],
   head: [
     [
       'link',
