@@ -43,20 +43,28 @@ module.exports = {
       // },
     ],
     repo: 'https://github.com/GitAlphabet',
-    repoLabel:'Github',
+    repoLabel: 'Github',
     sidebarDepth: 2,
     sidebar: {
+      // 🐞 fix(config): 优化
       '/home/': [
         {
           text: 'CSS',
           collapsible: false,
           children: [
-            '/home/CSS/less.md',
-            '/home/CSS/some-css.md',
-            '/home/CSS/mobile-layout.md',
-            '/home/CSS/bfc.md',
-            '/home/CSS/skill.md',
-            '/home/CSS/scroll.md',
+            {
+              text: 'Less',
+              link: '/home/CSS/less.md',
+            },
+            {
+              text: 'some-css',
+              link: '/home/CSS/some-css.md',
+            },
+            // '/home/CSS/some-css.md',
+            // '/home/CSS/mobile-layout.md',
+            // '/home/CSS/bfc.md',
+            // '/home/CSS/skill.md',
+            // '/home/CSS/scroll.md',
           ],
         },
         {
