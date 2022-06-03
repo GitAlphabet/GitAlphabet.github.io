@@ -51,12 +51,12 @@ module.exports = {
           text: 'CSS',
           collapsible: false,
           children: [
-            '/home/CSS/less',
-            '/home/CSS/some-css',
-            '/home/CSS/mobile-layout',
-            '/home/CSS/bfc',
-            '/home/CSS/skill',
-            '/home/CSS/scroll',
+            '/home/CSS/less.md',
+            '/home/CSS/some-css.md',
+            '/home/CSS/mobile-layout.md',
+            '/home/CSS/bfc.md',
+            '/home/CSS/skill.md',
+            '/home/CSS/scroll.md',
           ],
         },
         {
