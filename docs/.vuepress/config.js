@@ -54,17 +54,28 @@ module.exports = {
           children: [
             {
               text: 'Less',
-              link: '/home/CSS/less.md',
+              link: '/home/CSS/less',
             },
             {
-              text: 'some-css',
-              link: '/home/CSS/some-css.md',
+              text: 'CSS 部分属性',
+              link: '/home/CSS/some-css',
             },
-            // '/home/CSS/some-css.md',
-            // '/home/CSS/mobile-layout.md',
-            // '/home/CSS/bfc.md',
-            // '/home/CSS/skill.md',
-            // '/home/CSS/scroll.md',
+            {
+              text: '布局',
+              link: '/home/CSS/mobile-layout',
+            },
+            {
+              text: 'BFC(块格式化上下文)',
+              link: '/home/CSS/bfc',
+            },
+            {
+              text: 'CSS常见技巧',
+              link: '/home/CSS/skill',
+            },
+            {
+              text: '滚动条样式',
+              link: '/home/CSS/scroll',
+            },
           ],
         },
         {
