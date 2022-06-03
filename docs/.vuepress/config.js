@@ -15,7 +15,7 @@ module.exports = {
       },
     ],
   ],
-  // base:'/blog/',
+  base:'/blog/',
   themeConfig: {
     nav: [
       {
@@ -49,7 +49,7 @@ module.exports = {
             'CSS/less',
             'CSS/some-css',
             'CSS/mobile-layout',
-            // 'CSS/bfc',
+            'CSS/bfc',
             'CSS/skill',
             'CSS/scroll',
           ],
@@ -223,7 +223,7 @@ module.exports = {
             'publish-npm',
             'refresh-origin',
             'whistle',
-            // 'markdown',
+            'markdown',
             'vuepress-deploy',
             'script',
             'npm-error',
