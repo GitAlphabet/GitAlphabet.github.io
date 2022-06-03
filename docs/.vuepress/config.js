@@ -46,7 +46,7 @@ module.exports = {
     repoLabel:'Github',
     sidebarDepth: 2,
     sidebar: {
-      '/home/CSS/': [
+      '/home/': [
         {
           text: 'CSS',
           collapsible: false,
