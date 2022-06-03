@@ -16,3 +16,4 @@ index.html
 *.njsproj
 *.sln
 .temp
+.cache

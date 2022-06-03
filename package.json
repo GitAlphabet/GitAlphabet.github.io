@@ -10,8 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {
-    "vuepress": "^1.9.7"
-  }
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.46"
+  },
+  "dependencies": {}
 }
