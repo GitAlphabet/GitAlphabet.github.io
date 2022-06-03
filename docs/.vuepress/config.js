@@ -5,7 +5,6 @@ module.exports = {
   markdown: {
     lineNumbers: true, // 开启代码行号
   },
-  plugins: [['vuepress-plugin-code-copy', true]],
   head: [
     [
       'link',
@@ -18,6 +17,12 @@ module.exports = {
   ],
   base: '/blog/',
   theme: defaultTheme({
+    repo: 'https://github.com/GitAlphabet',
+    repoLabel: 'Github',
+    sidebarDepth: 2,
+    editLink: false,
+    contributors: false,
+    lastUpdatedText: '最新更新时间',
     // 默认主题配置
     navbar: [
       {
@@ -40,18 +45,8 @@ module.exports = {
         link: '/other/Mac/setting-ssh',
         activeMatch: '/other',
       },
-      // {
-      //   text: 'Github',
-      //   link: 'https://github.com/GitAlphabet',
-      //   target: '_blank',
-      // },
     ],
-    repo: 'https://github.com/GitAlphabet',
-    repoLabel: 'Github',
-    sidebarDepth: 0,
-    editLink: false,
     sidebar: {
-      // 🐞 fix(config): 优化
       '/home/': [
         {
           text: 'CSS',
