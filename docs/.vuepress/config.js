@@ -44,20 +44,22 @@ module.exports = {
     ],
     sidebarDepth: 2,
     sidebar: {
-      '/home/': [
+      '/home/CSS/': [
         {
           text: 'CSS',
+          collapsible: false,
           children: [
-            'CSS/less',
-            'CSS/some-css',
-            'CSS/mobile-layout',
-            'CSS/bfc',
-            'CSS/skill',
-            'CSS/scroll',
+            'less',
+            'some-css',
+            'mobile-layout',
+            'bfc',
+            'skill',
+            'scroll',
           ],
         },
         {
           text: 'Javascript',
+          collapsible: true,
           children: [
             'Javascript/ajax',
             'Javascript/array',
@@ -90,6 +92,7 @@ module.exports = {
 
         {
           text: 'Vue',
+          collapsible: true,
           children: [
             'Vue/standard',
             'Vue/persistedstate',
@@ -111,6 +114,7 @@ module.exports = {
         },
         {
           text: 'React',
+          collapsible: true,
           children: [
             'React/cra',
             'React/css-module',
@@ -127,6 +131,7 @@ module.exports = {
         },
         {
           text: 'TypeScript',
+          collapsible: true,
           children: [
             'TypeScript/type-interface',
             'TypeScript/logical-operators',
@@ -135,6 +140,7 @@ module.exports = {
         },
         {
           text: 'Node',
+          collapsible: true,
           children: [
             'Node/mysql',
             'Node/server',
@@ -146,10 +152,12 @@ module.exports = {
 
         {
           text: 'Http',
+          collapsible: true,
           children: ['Http/tcp', 'Http/https', 'Http/cache'],
         },
         {
           text: 'Webpack',
+          collapsible: true,
           children: [
             'Webpack/optimize',
             'Webpack/processEnv',
@@ -163,32 +171,39 @@ module.exports = {
         },
         {
           text: 'Python',
+          collapsible: true,
           children: ['Python/list', 'Python/fun-params'],
         },
         {
           text: 'MiniApp',
+          collapsible: true,
           children: ['Mini/getUserInfo', 'Mini/globalData', 'Mini/attentions'],
         },
         {
           text: 'Nginx',
+          collapsible: true,
           children: ['Nginx/install'],
         },
         {
           text: 'Git',
+          collapsible: true,
           children: ['Git/basic-command'],
         },
         {
           text: 'DataBase',
+          collapsible: true,
           children: ['DataBase/sql', 'DataBase/faq', 'DataBase/mysql'],
         },
         {
           text: 'Eslint',
+          collapsible: true,
           children: ['Eslint/eslint-rules', 'Eslint/eslint-repair'],
         },
       ],
       '/interview/': [
         {
           text: '面试题',
+          collapsible: false,
           children: [
             'Subject/css',
             'Subject/js',
@@ -200,24 +215,29 @@ module.exports = {
       '/algorithm/': [
         {
           text: '简单',
+          collapsible: false,
           children: ['Simple/first', 'Simple/second'],
         },
         {
           text: '中等',
+          collapsible: true,
           children: ['Middling/triangle-number'],
         },
         {
           text: '困难',
+          collapsible: true,
           children: [],
         },
       ],
       '/other/': [
         {
           text: 'Mac',
+          collapsible: false,
           children: ['Mac/setting-ssh', 'Mac/link-server', 'Mac/canNotOpen'],
         },
         {
           text: '其他',
+          collapsible: true,
           children: [
             'computer-binary',
             'yarn-update',
