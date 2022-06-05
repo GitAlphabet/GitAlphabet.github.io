@@ -27,7 +27,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: GitAlphabet/GitAlphabet.github.io
-          # 推送的分支
-          publish_branch: master
-          # 推送的内容
-          publish_dir: docs/.vuepress/dist
+          publish_branch: master # 推送的分支
+          # external_repository: GitAlphabet/blog
+          # publish_branch: gh-pages
+          publish_dir: docs/.vuepress/dist  # 推送的内容
