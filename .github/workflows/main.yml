@@ -26,8 +26,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: GitAlphabet/blog
+          external_repository: GitAlphabet/GitAlphabet.github.io
           # 推送的分支
-          publish_branch: gh-pages
+          publish_branch: master
           # 推送的内容
           publish_dir: docs/.vuepress/dist
