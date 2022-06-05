@@ -23,11 +23,11 @@ jobs:
         run: yarn docs:build
 
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v3.7.3
+        uses: peaceiris/actions-gh-pages@v3.7.3 # https://github.com/marketplace/actions/github-pages-action
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: GitAlphabet/GitAlphabet.github.io
-          publish_branch: master # 推送的分支
-          # external_repository: GitAlphabet/blog
-          # publish_branch: gh-pages
+          # external_repository: GitAlphabet/GitAlphabet.github.io
+          # publish_branch: master # 推送的分支
+          external_repository: GitAlphabet/blog
+          publish_branch: gh-pages
           publish_dir: docs/.vuepress/dist  # 推送的内容
