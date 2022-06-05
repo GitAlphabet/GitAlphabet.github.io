@@ -16,13 +16,13 @@ jobs:
         with:
           node-version: "14.x"
     
-      - name: install deps
+      - name: Install Deps
         run: yarn install
 
-      - name: build
+      - name: Build
         run: yarn docs:build
 
-      - name: deploy
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3 # https://github.com/marketplace/actions/github-pages-action
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
