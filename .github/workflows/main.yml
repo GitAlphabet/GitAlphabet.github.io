@@ -11,7 +11,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v1
 
-      - name: Setup Node.js environment # 配置Node环境
+      - name: Setup Node.js environment # 配置 Node 环境
         uses: actions/setup-node@v3.2.0 # 配置脚本来自 https://github.com/actions/setup-node
         with:
           node-version: "14.x"
