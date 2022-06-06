@@ -15,7 +15,7 @@ module.exports = {
       },
     ],
   ],
-  base: '/blog/',
+  // base: '/blog/',
   theme: defaultTheme({
     repo: 'https://github.com/GitAlphabet',
     repoLabel: 'Github',
