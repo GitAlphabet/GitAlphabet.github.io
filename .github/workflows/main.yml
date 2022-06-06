@@ -32,6 +32,5 @@ jobs:
           external_repository: GitAlphabet/blog
           publish_branch: gh-pages # 推送的分支
           publish_dir: docs/.vuepress/dist  # 推送的内容
-           # ✨ feat(测试): 私有库部署到公有库
 
  
