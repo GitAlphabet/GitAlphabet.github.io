@@ -26,11 +26,11 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.7.3 # https://github.com/marketplace/actions/github-pages-action
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          # 部署到外部存储库
-          external_repository: GitAlphabet/GitAlphabet.github.io # 使用 GitHub Pages 的公共存储库
-
-          # external_repository: GitAlphabet/blog
-          publish_branch: master # 推送的分支
+          # 部署到外部存储库 使用 GitHub Pages 的公共存储库
+          # external_repository: GitAlphabet/GitAlphabet.github.io
+          # publish_branch: master # 推送的分支
+          
+          publish_branch: gh-pages # 推送的分支
           publish_dir: docs/.vuepress/dist  # 推送的内容
 
  
