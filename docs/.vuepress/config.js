@@ -22,8 +22,13 @@ module.exports = {
     sidebarDepth: 2,
     editLink: false,
     contributors: false,
-    lastUpdatedText: '最新更新时间',
-    // 默认主题配置
+    lastUpdatedText: '上次更新',
+    // contributorsText: '贡献者',
+    backToHome: '返回首页',
+    toggleSidebar: '切换侧边栏',
+    tip: '提示',
+    warning: '注意',
+    danger: '警告',
     navbar: [
       {
         text: '基础',

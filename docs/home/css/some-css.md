@@ -76,6 +76,6 @@ input:in-range {
 }
 ```
 
-* :out-of-range CSS 伪类 表示一个 input 元素，其当前值处于属性 min 和 max 限定的范围外。
-* :in-range CSS 伪类 表示一个 input 元素，其当前值处于属性 min 和 max 限定的范围内。
+* `:out-of-range` CSS 伪类 表示一个 input 元素，其当前值处于属性 min 和 max 限定的范围外。
+* `:in-range` CSS 伪类 表示一个 input 元素，其当前值处于属性 min 和 max 限定的范围内。
   
