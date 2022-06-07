@@ -68,7 +68,10 @@ jobs:
 
 GitHub 免费计划帐户不能使用私有存储库中的 GitHub 页面。
 要将源内容设为私有并使用 GitHub Pages 进行部署，您可以使用此选项将站点从私有存储库部署到公共存储库。
+
 **当您使用 时deploy_key，将您的私钥设置为包含此操作的存储库，并将您的公钥设置为您的外部存储库。**
 **vuepress 的配置文件的 base 修改为 /**
 
-* external_repository: GitAlphabet/GitAlphabet.github.io 外部存储库
+```yml
+external_repository: GitAlphabet/GitAlphabet.github.io # 外部存储库
+```

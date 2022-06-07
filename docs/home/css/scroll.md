@@ -6,7 +6,6 @@
 div::-webkit-scrollbar{
   width:10px;
   height:10px;
-  /**/
 }
 div::-webkit-scrollbar-track{
   background: rgb(239, 239, 239);
