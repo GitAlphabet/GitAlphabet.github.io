@@ -15,7 +15,7 @@ module.exports = {
       },
     ],
   ],
-  base: '/blog/',
+  // base: '/blog/', // 发不到 blog gh-pages 下需要配置
   theme: defaultTheme({
     repo: 'https://github.com/GitAlphabet',
     repoLabel: 'Github',
