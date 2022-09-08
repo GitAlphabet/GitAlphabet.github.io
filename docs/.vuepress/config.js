@@ -462,8 +462,12 @@ module.exports = {
           collapsible: true,
           children: [
             {
-              text: '命令行',
+              text: '基础命令',
               link: '/home/git/basic-command',
+            },
+            {
+              text: 'Tag',
+              link: '/home/git/tag',
             },
           ],
         },
