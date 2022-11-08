@@ -176,6 +176,10 @@ module.exports = {
               link: '/home/javascript/debounce-and-throttle',
             },
             {
+              text: '大屏自适应',
+              link: '/home/javascript/screen',
+            },
+            {
               text: '十种经典排序',
               link: '/home/javascript/sort',
             },
