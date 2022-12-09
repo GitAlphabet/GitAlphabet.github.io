@@ -104,3 +104,15 @@ git cherry-pick A..B
 ```bash
 git cherry-pick A^..B
 ```
+
+#### 9、stash
+
+```sh
+git stash # 保存当前未commit的代码
+git stash save "备注的内容" # 保存当前未commit的代码并添加备注
+git stash list # 列出stash的所有记录
+git stash clear # 删除stash的所有记录
+git stash apply # 应用最近一次的stash
+git stash pop # 应用最近一次的stash，随后删除该记录
+git stash drop # 删除最近的一次stash
+```
