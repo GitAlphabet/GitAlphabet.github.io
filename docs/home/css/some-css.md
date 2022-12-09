@@ -78,4 +78,67 @@ input:in-range {
 
 * `:out-of-range` CSS 伪类 表示一个 input 元素，其当前值处于属性 min 和 max 限定的范围外。
 * `:in-range` CSS 伪类 表示一个 input 元素，其当前值处于属性 min 和 max 限定的范围内。
-  
+
+#### 8、content-visibility
+
+```css
+{
+  /* Keyword values */
+  content-visibility: visible;
+  content-visibility: hidden;
+  content-visibility: auto;
+  /* Global values */
+  content-visibility: inherit;
+  content-visibility: initial;
+  content-visibility: revert;
+  content-visibility: revert-layer;
+  content-visibility: unset;
+}
+```
+
+* `visible` 没有效果。元素的内容被正常布局和呈现。
+* `hidden` 元素跳过它的内容。跳过的内容不能被用户代理功能访问，例如在页面中查找、标签顺序导航等，也不能被选择或聚焦。这类似于给内容`display: none。`。
+* `auto` 该元素打开<B>布局包含、样式包含和绘制包含</B>。如果该元素与用户不相关，它也会跳过其内容。与 hidden 不同，跳过的内容必须仍可正常用于用户代理功能，例如在页面中查找、tab 顺序导航等，并且必须正常可聚焦和可选择。<B>使用 auto 降低长页面的渲染成本</B>
+
+#### 9、contain-intrinsic-size
+
+```css
+{
+  /* Keyword values */
+contain-intrinsic-width: none;
+/* <length> values */
+contain-intrinsic-size: 1000px;
+contain-intrinsic-size: 10rem;
+/* width | height */
+contain-intrinsic-size: 1000px 1.5em;
+/* auto <length> */
+contain-intrinsic-size: auto 300px;
+/* auto width | auto height */
+contain-intrinsic-size: auto 300px auto 4rem;
+/* Global values */
+contain-intrinsic-size: inherit;
+contain-intrinsic-size: initial;
+contain-intrinsic-size: revert;
+contain-intrinsic-size: unset;
+}
+```
+
+* 可以为元素指定以下一个或两个值。如果指定了两个值，则第一个值适用于宽度，第二个值适用于高度。如果指定单个值，则它适用于宽度和高度
+
+#### 10、filter
+
+```css
+{
+filter: url("../../media/examples/shadow.svg#element-id"); 网址
+ filter: blur(5px); 模糊
+ filter: brightness(2); 亮度
+ filter: contrast(200%); 对比
+ filter: grayscale(80%); 将输入图像转换为灰度
+ filter: hue-rotate(90deg); 对输入图像应用色调旋转
+ filter: drop-shadow(16px 16px 20px red) invert(75%); 阴影
+ filter: invert(100%); 反转输入图像中的样本
+ filter: opacity(50%); 将透明度应用于输入图像中的样本
+ filter: saturate(200%); 使输入图像饱和
+ filter: sepia(100%); 将输入图像转换为棕褐
+}
+```
