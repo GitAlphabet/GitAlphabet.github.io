@@ -29,3 +29,23 @@ console.log(obj1, obj2)
 // 打印: obj1:{a:1,b:{c:1}}  {a:1,b:{c:10}}
 // 此方法是将要进行深拷贝的对象用 JSON.stringify() 字符串化，然后用 JSON.parse() 解析
 ```
+
+用递归去复制所有层级属性
+
+```js
+function deepCopyTwo(obj) {
+    let objClone = Array.isArray(obj) ? [] : {};
+    if (obj && typeof obj == 'object') {
+        for (const key in obj) {
+            //判断obj子元素是否为对象，如果是，递归复制
+            if (obj[key] && typeof obj[key] === "object") {
+                objClone[key] = deepCopyTwo(obj[key]);
+            } else {
+                //如果不是，简单复制
+                objClone[key] = obj[key];
+            }
+        }
+    }
+    return objClone;
+}
+```
