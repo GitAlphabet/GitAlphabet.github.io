@@ -156,6 +156,10 @@ module.exports = {
               link: '/home/javascript/gc',
             },
             {
+              text: 'V8 的垃圾回收机制',
+              link: '/home/javascript/v8',
+            },
+            {
               text: '数组的排序',
               link: '/home/javascript/array-sort',
             },
