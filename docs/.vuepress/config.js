@@ -157,7 +157,7 @@ module.exports = {
             },
             {
               text: 'V8 的垃圾回收机制',
-              link: '/home/javascript/v8',
+              link: '/home/javascript/v-eight',
             },
             {
               text: '数组的排序',
