@@ -124,8 +124,8 @@ contain-intrinsic-size: unset;
 #### 10、filter
 
 ```md
-filter: url("../../media/examples/shadow.svg#element-id");  /* 网址 */
-filter: blur(5px); /* 模糊 */
+filter: url("../../media/examples/shadow.svg#element-id");  网址
+filter: blur(5px); 模糊
 filter: brightness(2); /* 亮度 */
 filter: contrast(200%); /* 对比 */
 filter: grayscale(80%); /* 将输入图像转换为灰度 */
