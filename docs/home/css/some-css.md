@@ -81,7 +81,7 @@ input:in-range {
 
 #### 8、content-visibility
 
-```css
+```md
 /* Keyword values */
 content-visibility: visible;
 content-visibility: hidden;
@@ -100,7 +100,7 @@ content-visibility: unset;
 
 #### 9、contain-intrinsic-size
 
-```css
+```md
 /* Keyword values */
 contain-intrinsic-width: none;
 /* <length> values */
@@ -123,7 +123,7 @@ contain-intrinsic-size: unset;
 
 #### 10、filter
 
-```css
+```md
 filter: url("../../media/examples/shadow.svg#element-id");  /* 网址 */
 filter: blur(5px); /* 模糊 */
 filter: brightness(2); /* 亮度 */
