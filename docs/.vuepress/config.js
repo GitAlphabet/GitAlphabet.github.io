@@ -1,5 +1,7 @@
-const { defaultTheme } = require('vuepress');
-module.exports = {
+
+import { defaultTheme } from 'vuepress';
+
+export default {
   title: '向往飞翔的小蚂蚁',
   description: '个人博客',
   markdown: {
@@ -19,11 +21,14 @@ module.exports = {
   theme: defaultTheme({
     repo: 'https://github.com/GitAlphabet',
     repoLabel: 'Github',
-    sidebarDepth: 2,
+    sidebarDepth: 3,
     editLink: false,
-    contributors: false,
+    // contributors: false,
     lastUpdatedText: '上次更新',
-    // contributorsText: '贡献者',
+    prevLinks: true,
+    nextLinks: true,
+    smoothScroll: true,
+    contributorsText: '贡献者',
     backToHome: '返回首页',
     toggleSidebar: '切换侧边栏',
     tip: '提示',
@@ -80,6 +85,10 @@ module.exports = {
             {
               text: '滚动条样式',
               link: '/home/css/scroll',
+            },
+            {
+              text: 'Grid',
+              link: '/home/css/grid',
             },
           ],
         },
