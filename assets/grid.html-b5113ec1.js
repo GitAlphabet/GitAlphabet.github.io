@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2066bdd0","path":"/home/css/grid.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Grid","slug":"grid","link":"#grid","children":[]}],"git":{"updatedTime":1678950681000,"contributors":[{"name":"gitalphabet","email":"alphabet_it@163.com","commits":2}]},"filePathRelative":"home/css/grid.md"}');export{e as data};

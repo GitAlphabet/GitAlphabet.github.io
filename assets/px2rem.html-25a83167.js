@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-310a9de9","path":"/home/vue/px2rem.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"px2rem","slug":"px2rem","link":"#px2rem","children":[]}],"git":{"updatedTime":1654496712000,"contributors":[{"name":"gitalphabet","email":"alphabet_it@163.com","commits":1}]},"filePathRelative":"home/vue/px2rem.md"}');export{e as data};

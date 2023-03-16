@@ -1,3 +1,0 @@
-### Tree-shaking
-
-`Tree shaking`
