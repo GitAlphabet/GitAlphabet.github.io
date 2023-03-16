@@ -15,6 +15,9 @@ jobs:
         uses: actions/setup-node@v3.2.0 # 配置脚本来自 https://github.com/actions/setup-node
         with:
           node-version: "14.x"
+
+      - name: remove 
+        run: rm -f node_modules
     
       - name: Install Deps
         run: yarn install
