@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-cc54f404","path":"/home/http/https.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Https","slug":"https","link":"#https","children":[]}],"git":{"updatedTime":1654496712000},"filePathRelative":"home/http/https.md"}');export{t as data};
