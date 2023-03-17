@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-697fffc2","path":"/other/whistle.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"whistle","slug":"whistle","link":"#whistle","children":[]}],"git":{"updatedTime":1593484096000,"contributors":[{"name":"alphabet","email":"alphabet_it@163.com","commits":1}]},"filePathRelative":"other/whistle.md"}');export{t as data};

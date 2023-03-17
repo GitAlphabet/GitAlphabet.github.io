@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-ff696300","path":"/home/dataBase/faq.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"安装问题","slug":"安装问题","link":"#安装问题","children":[]}],"git":{"updatedTime":1654496712000,"contributors":[{"name":"gitalphabet","email":"alphabet_it@163.com","commits":1}]},"filePathRelative":"home/dataBase/faq.md"}');export{e as data};

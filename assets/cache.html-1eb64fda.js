@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2e4865c7","path":"/home/http/cache.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"缓存","slug":"缓存","link":"#缓存","children":[]}],"git":{"updatedTime":1654496712000},"filePathRelative":"home/http/cache.md"}');export{e as data};

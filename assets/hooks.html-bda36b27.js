@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-43385b90","path":"/home/react/hooks.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Hooks","slug":"hooks","link":"#hooks","children":[]}],"git":{"updatedTime":1654496712000,"contributors":[{"name":"gitalphabet","email":"alphabet_it@163.com","commits":1}]},"filePathRelative":"home/react/hooks.md"}');export{e as data};

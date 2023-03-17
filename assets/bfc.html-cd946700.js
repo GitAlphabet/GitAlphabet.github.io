@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-a8e44106","path":"/home/css/bfc.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"BFC","slug":"bfc","link":"#bfc","children":[{"level":3,"title":"块格式化上下文","slug":"块格式化上下文","link":"#块格式化上下文","children":[]}]}],"git":{"updatedTime":1679035225000},"filePathRelative":"home/css/bfc.md"}');export{e as data};

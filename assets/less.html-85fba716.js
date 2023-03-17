@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-2c36b946","path":"/home/css/less.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Less","slug":"less","link":"#less","children":[]}],"git":{"updatedTime":1654496712000,"contributors":[{"name":"gitalphabet","email":"alphabet_it@163.com","commits":1}]},"filePathRelative":"home/css/less.md"}');export{e as data};

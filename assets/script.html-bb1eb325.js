@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-1d198ed4","path":"/other/script.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"简单的脚本并配置","slug":"简单的脚本并配置","link":"#简单的脚本并配置","children":[]}],"git":{"updatedTime":1593484096000,"contributors":[{"name":"alphabet","email":"alphabet_it@163.com","commits":1}]},"filePathRelative":"other/script.md"}');export{t as data};
