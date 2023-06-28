@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-29f96e69","path":"/home/eslint/rules.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"规则","slug":"规则","link":"#规则","children":[{"level":3,"title":"忽略下一行检查","slug":"忽略下一行检查","link":"#忽略下一行检查","children":[]}]}],"git":{"updatedTime":1679035225000},"filePathRelative":"home/eslint/rules.md"}');export{e as data};
