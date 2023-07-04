@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6b18402c","path":"/home/webpack/tree-shaking.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"Tree-shaking","slug":"tree-shaking","link":"#tree-shaking","children":[]}],"git":{"updatedTime":1688433613000},"filePathRelative":"home/webpack/tree-shaking.md"}');export{e as data};
