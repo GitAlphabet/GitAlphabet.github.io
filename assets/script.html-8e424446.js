@@ -1,0 +1,12 @@
+import{_ as e,p as a,q as s,a1 as n}from"./framework-cd67069b.js";const d={},i=n(`<h2 id="脚本并配置" tabindex="-1"><a class="header-anchor" href="#脚本并配置" aria-hidden="true">#</a> 脚本并配置</h2><h3 id="创建脚本文件" tabindex="-1"><a class="header-anchor" href="#创建脚本文件" aria-hidden="true">#</a> 创建脚本文件</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 创建脚本文件,存放需要执行的命令行</span>
+<span class="token function">touch</span> demo.sh
+<span class="token comment"># 切换并编辑demo.sh文件(可以使用编辑器编辑)</span>
+<span class="token function">vi</span> demo.sh
+    <span class="token function">touch</span>  demo.txt <span class="token comment"># 创建demo文本</span>
+    <span class="token function">mkdir</span>  demo <span class="token comment"># 创建demo文件夹</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="执行脚本" tabindex="-1"><a class="header-anchor" href="#执行脚本" aria-hidden="true">#</a> 执行脚本</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">sh</span> demo.sh
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="自定义参数" tabindex="-1"><a class="header-anchor" href="#自定义参数" aria-hidden="true">#</a> 自定义参数</h3><p>添加自定义文件夹名称的命令行</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>demo.sh
+    <span class="token function">mkdir</span> <span class="token variable">$1</span> <span class="token comment">#$1表示运行脚本时候 输入的第一个参数 $2代表第二个参数，以此类推</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="执行自定义参数脚本" tabindex="-1"><a class="header-anchor" href="#执行自定义参数脚本" aria-hidden="true">#</a> 执行自定义参数脚本</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">sh</span> demo.sh lpl
+完成后，该文件下会有一个lpl的文件夹
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,10),c=[i];function l(r,t){return a(),s("div",null,c)}const h=e(d,[["render",l],["__file","script.html.vue"]]);export{h as default};

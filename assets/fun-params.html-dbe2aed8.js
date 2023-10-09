@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-06a515ae","path":"/home/python/fun-params.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"参数","slug":"参数","link":"#参数","children":[{"level":3,"title":"函数参数","slug":"函数参数","link":"#函数参数","children":[]}]}],"git":{"updatedTime":1696829060000},"filePathRelative":"home/python/fun-params.md"}');export{e as data};
