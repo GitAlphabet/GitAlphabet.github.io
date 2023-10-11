@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-d201ec3c","path":"/home/javascript/prototype.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"原型链","slug":"原型链","link":"#原型链","children":[]}],"git":{"updatedTime":1696829060000},"filePathRelative":"home/javascript/prototype.md"}');export{e as data};
