@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-09acd941","path":"/algorithm/Simple/second.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"两数之和","slug":"两数之和","link":"#两数之和","children":[]}],"git":{"updatedTime":1697771382000},"filePathRelative":"algorithm/Simple/second.md"}');export{e as data};
