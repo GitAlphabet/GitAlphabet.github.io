@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2ecac12a","path":"/home/vue/watch.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"watch 注意点","slug":"watch-注意点","link":"#watch-注意点","children":[{"level":3,"title":"监听方式","slug":"监听方式","link":"#监听方式","children":[]}]}],"git":{"updatedTime":1698398932000},"filePathRelative":"home/vue/watch.md"}');export{e as data};
