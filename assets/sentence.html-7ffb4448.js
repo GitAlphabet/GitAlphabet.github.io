@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-7850ffde","path":"/literature/sentence.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"文学","slug":"文学","link":"#文学","children":[{"level":3,"title":"好句","slug":"好句","link":"#好句","children":[]}]}],"git":{"updatedTime":1698398932000},"filePathRelative":"literature/sentence.md"}');export{e as data};
