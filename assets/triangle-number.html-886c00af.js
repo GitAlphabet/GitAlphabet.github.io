@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-18234e22","path":"/algorithm/Middling/triangle-number.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"有效三角形的个数","slug":"有效三角形的个数","link":"#有效三角形的个数","children":[]}],"git":{"updatedTime":1711421838000},"filePathRelative":"algorithm/Middling/triangle-number.md"}');export{e as data};
