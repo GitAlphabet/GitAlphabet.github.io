@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-041a6c4d","path":"/algorithm/Simple/first.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"买卖股票的最佳时机","slug":"买卖股票的最佳时机","link":"#买卖股票的最佳时机","children":[]}],"git":{"updatedTime":1711421838000},"filePathRelative":"algorithm/Simple/first.md"}');export{t as data};
