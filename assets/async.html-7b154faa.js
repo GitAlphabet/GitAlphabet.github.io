@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-299ea248","path":"/home/javascript/async.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"async 函数","slug":"async-函数","link":"#async-函数","children":[{"level":3,"title":"用法","slug":"用法","link":"#用法","children":[]}]}],"git":{"updatedTime":1715320040000},"filePathRelative":"home/javascript/async.md"}');export{e as data};
