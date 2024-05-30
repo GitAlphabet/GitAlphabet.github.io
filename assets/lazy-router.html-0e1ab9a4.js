@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-07c09bd2","path":"/home/vue/lazy-router.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"路由懒加载","slug":"路由懒加载","link":"#路由懒加载","children":[]}],"git":{"updatedTime":1717058840000},"filePathRelative":"home/vue/lazy-router.md"}');export{e as data};
